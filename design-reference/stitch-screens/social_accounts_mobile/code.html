@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'error-container': '#ffdad6', 'on-error': '#ffffff', 'on-tertiary-fixed': '#002113', 'surface-container-highest': '#dae2fd', 'on-secondary': '#ffffff', 'on-surface': '#131b2e', 'on-tertiary': '#ffffff', 'outline-variant': '#bfc9c0', 'on-secondary-fixed': '#002113', 'on-primary-fixed': '#002111', 'background': '#faf8ff', 'secondary': '#006c47', 'secondary-fixed-dim': '#71dba6', 'inverse-primary': '#93d5ad', 'surface-tint': '#2a6a49', 'outline': '#707972', 'on-error-container': '#93000a', 'secondary-container': '#8af5be', 'surface': '#faf8ff', 'surface-variant': '#dae2fd', 'secondary-fixed': '#8df7c1', 'tertiary-fixed-dim': '#4edea3', 'primary-fixed-dim': '#93d5ad', 'error': '#ba1a1a', 'on-primary-container': '#7fc099', 'on-tertiary-container': '#31c98f', 'on-tertiary-fixed-variant': '#005236', 'on-secondary-container': '#00714b', 'surface-dim': '#d2d9f4', 'inverse-surface': '#283044', 'surface-container': '#eaedff', 'surface-container-high': '#e2e7ff', 'on-background': '#131b2e', 'on-primary': '#ffffff', 'on-primary-fixed-variant': '#095133', 'tertiary': '#003623', 'primary': '#003620', 'surface-bright': '#faf8ff', 'tertiary-container': '#004f34', 'tertiary-fixed': '#6ffbbe', 'on-surface-variant': '#404942', 'surface-container-lowest': '#ffffff', 'on-secondary-fixed-variant': '#005235', 'inverse-on-surface': '#eef0ff', 'primary-fixed': '#aef1c8', 'surface-container-low': '#f2f3ff', 'primary-container': '#054f31' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'gutter': '1rem', 'margin-desktop': '2.5rem', 'gutter-desktop': '1.5rem', 'space-sm': '0.5rem', 'space-xs': '0.25rem', 'margin': '1rem', 'space-lg': '1.5rem', 'space-xl': '2.5rem', 'space-md': '1rem' }, fontFamily: { 'headline-xl': ['Space Grotesk'], 'title-md': ['Plus Jakarta Sans'], 'headline-lg': ['Space Grotesk'], 'label-sm': ['Space Grotesk'], 'body-md': ['Plus Jakarta Sans'], 'title-sm': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Space Grotesk'], 'currency-display': ['Space Grotesk'], 'label-lg': ['Space Grotesk'], 'headline-xl-mobile': ['Space Grotesk'], 'label-md': ['Space Grotesk'], 'headline-md': ['Space Grotesk'], 'headline-sm': ['Space Grotesk'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'] }, fontSize: { 'headline-xl': ['40px', { lineHeight: '48px', fontWeight: '700' }], 'title-md': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', fontWeight: '700' }], 'label-sm': ['10px', { lineHeight: '14px', fontWeight: '700' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'title-sm': ['16px', { lineHeight: '24px', fontWeight: '600' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '700' }], 'currency-display': ['36px', { lineHeight: '44px', fontWeight: '700' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'headline-xl-mobile': ['30px', { lineHeight: '36px', fontWeight: '700' }], 'label-md': ['12px', { lineHeight: '16px', fontWeight: '600' }], 'headline-md': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'headline-sm': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><img alt="TaskNaija brand logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><div class="flex items-center gap-1.5 min-w-0 truncate"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">TaskNaija</span><span class="text-outline-variant font-label-md hidden sm:inline">•</span><span class="font-label-md text-label-md text-on-surface-variant font-semibold truncate hidden sm:inline">Profile</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-high active:bg-surface-container-highest transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span></button><a class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:opacity-90 active:scale-95 transition" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl space-y-space-md">
+<div class="flex items-center justify-between pt-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Go back" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[22px]">arrow_back</span>
+</button>
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">Social Accounts</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Task verification identity</p>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">5 Linked</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-primary-container text-on-primary-container p-space-md shadow-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest/15 flex items-center justify-center flex-shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-lg text-label-lg text-surface-container-lowest font-bold">Fast-Track Verification</p>
+<p class="font-body-sm text-body-sm text-on-primary-container/90 mt-0.5">
+          Keep your social handles updated to automatically unlock targeted high-yield engagement campaigns in Nigeria.
+        </p>
+</div>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary/10 pointer-events-none blur-xl"></div>
+</div>
+<div class="flex items-center justify-between px-space-xs pt-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Active Credentials</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">All Verified (100%)</span>
+</div>
+<div class="flex flex-col space-y-space-sm" id="accounts-list">
+<div class="flex items-center justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center flex-shrink-0 shadow-inner">
+<svg class="w-6 h-6 text-primary" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Instagram</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">@tasker_ig</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest active:scale-95 transition" type="button">
+        Edit
+      </button>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center flex-shrink-0 shadow-inner">
+<svg class="w-6 h-6 text-primary" fill="currentColor" viewbox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+</svg>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Facebook</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">facebook.com/tasker</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest active:scale-95 transition" type="button">
+        Edit
+      </button>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center flex-shrink-0 shadow-inner">
+<svg class="w-6 h-6 text-primary" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path>
+</svg>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface truncate">TikTok</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">@tasker_tiktok</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest active:scale-95 transition" type="button">
+        Edit
+      </button>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center flex-shrink-0 shadow-inner">
+<svg class="w-6 h-6 text-primary" fill="currentColor" viewbox="0 0 24 24">
+<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+</svg>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface truncate">X (Twitter)</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">@tasker_x</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest active:scale-95 transition" type="button">
+        Edit
+      </button>
+</div>
+<div class="flex items-center justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center flex-shrink-0 shadow-inner">
+<svg class="w-6 h-6 text-primary" fill="currentColor" viewbox="0 0 24 24">
+<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+</svg>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface truncate">YouTube</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">@tasker_youtube</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest active:scale-95 transition" type="button">
+        Edit
+      </button>
+</div>
+</div>
+<button class="w-full h-12 bg-primary text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition" id="toggle-add-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Add Social Account</span>
+</button>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-md" id="add-account-form">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">playlist_add</span>
+<span class="font-title-sm text-title-sm text-on-surface">Link Extra Account</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-md">Step 1 of 2</span>
+</div>
+<div class="space-y-space-sm">
+<label class="block font-label-md text-label-md text-on-surface-variant" for="platform-select">Platform</label>
+<div class="relative">
+<select class="w-full h-12 px-space-md pr-10 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-xl appearance-none focus:outline-none focus:bg-surface-container-high transition" id="platform-select">
+<option value="Instagram">Instagram</option>
+<option value="Facebook">Facebook</option>
+<option value="TikTok">TikTok</option>
+<option value="X">X (Twitter)</option>
+<option value="YouTube">YouTube</option>
+<option value="Other">Other Platform (Telegram, WhatsApp, LinkedIn)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none text-[24px]">expand_more</span>
+</div>
+</div>
+<div class="space-y-space-sm">
+<label class="block font-label-md text-label-md text-on-surface-variant" for="username-input">Username / Account Link</label>
+<div class="relative">
+<input class="w-full h-12 px-space-md bg-surface-container-low text-on-surface font-body-md text-body-md rounded-xl focus:outline-none focus:bg-surface-container-high transition placeholder:text-outline" id="username-input" placeholder="@username or https://..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none text-[22px]">link</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Make sure your profile is public to verify proof submissions instantly.</p>
+</div>
+<button class="w-full h-12 bg-secondary text-on-secondary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 shadow hover:opacity-95 active:scale-[0.98] transition" id="save-account-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Save Account</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</div>
+<div class="space-y-1">
+<p class="font-label-md text-label-md text-on-surface font-bold">Payout Compliance Requirement</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          You may add multiple social accounts. Follow the requirements of each individual task when completing work. Proof screenshots must match one of your registered usernames to clear Escrow.
+        </p>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-md">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface">Data Protection</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Encrypted under NDPR standard</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">lock</span>
+</div>
+</div>
+<script>
+  (function() {
+    const saveBtn = document.getElementById('save-account-btn');
+    const inputField = document.getElementById('username-input');
+    const selectField = document.getElementById('platform-select');
+    const accountsList = document.getElementById('accounts-list');
+    const toggleBtn = document.getElementById('toggle-add-btn');
+    const formCard = document.getElementById('add-account-form');
+
+    if (toggleBtn && formCard) {
+      toggleBtn.addEventListener('click', () => {
+        formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        inputField.focus();
+      });
+    }
+
+    if (saveBtn && inputField && selectField && accountsList) {
+      saveBtn.addEventListener('click', () => {
+        const val = inputField.value.trim();
+        if (!val) {
+          inputField.focus();
+          return;
+        }
+
+        const platform = selectField.value;
+        const newCard = document.createElement('div');
+        newCard.className = 'flex items-center justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm animate-pulse';
+        newCard.innerHTML = `
+          <div class="flex items-center gap-space-sm min-w-0">
+            <div class="w-11 h-11 rounded-xl bg-surface-container flex items-center justify-center flex-shrink-0 shadow-inner">
+              <span class="material-symbols-outlined text-primary text-[22px]">public</span>
+            </div>
+            <div class="min-w-0">
+              <div class="flex items-center gap-1.5">
+                <span class="font-title-sm text-title-sm text-on-surface truncate">\${platform}</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container">Connected</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant truncate">\${val}</p>
+            </div>
+          </div>
+          <button type="button" class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md">
+            Edit
+          </button>
+        `;
+        accountsList.appendChild(newCard);
+        inputField.value = '';
+        setTimeout(() => {
+          newCard.classList.remove('animate-pulse');
+        }, 800);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-bold"><div class="flex items-stretch justify-around h-16 px-space-xs"><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface active:scale-95 transition" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm tracking-wide">Home</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface active:scale-95 transition" data-path="tasks" href="#"><span class="material-symbols-outlined text-[22px]">assignment</span><span class="font-label-sm text-label-sm tracking-wide">Tasks</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface active:scale-95 transition" data-path="wallet" href="#"><span class="material-symbols-outlined text-[22px]">account_balance_wallet</span><span class="font-label-sm text-label-sm tracking-wide">Wallet</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface active:scale-95 transition" data-path="tier" href="#"><span class="material-symbols-outlined text-[22px]">military_tech</span><span class="font-label-sm text-label-sm tracking-wide">Tier</span></a><a aria-current="page" class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 active:scale-95 transition text-primary font-bold" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm tracking-wide">Profile</span></a></div></nav></body></html>

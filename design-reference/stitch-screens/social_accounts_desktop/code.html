@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'surface-container': '#eaedff', 'on-error-container': '#93000a', 'outline-variant': '#bfc9c0', 'on-surface-variant': '#404942', 'tertiary-container': '#004f34', 'secondary-fixed-dim': '#71dba6', 'on-secondary-fixed': '#002113', 'inverse-primary': '#93d5ad', 'on-primary-fixed-variant': '#095133', 'surface-container-low': '#f2f3ff', 'surface': '#faf8ff', 'primary': '#003620', 'surface-container-lowest': '#ffffff', 'on-surface': '#131b2e', 'on-tertiary-fixed-variant': '#005236', 'on-background': '#131b2e', 'primary-fixed': '#aef1c8', 'on-secondary-fixed-variant': '#005235', 'on-primary-fixed': '#002111', 'surface-bright': '#faf8ff', 'surface-container-highest': '#dae2fd', 'on-tertiary-container': '#31c98f', 'on-error': '#ffffff', 'inverse-surface': '#283044', 'on-primary-container': '#7fc099', 'surface-tint': '#2a6a49', 'secondary-container': '#8af5be', 'background': '#faf8ff', 'error-container': '#ffdad6', 'surface-container-high': '#e2e7ff', 'on-secondary': '#ffffff', 'on-tertiary': '#ffffff', 'tertiary': '#003623', 'inverse-on-surface': '#eef0ff', 'tertiary-fixed-dim': '#4edea3', 'on-primary': '#ffffff', 'error': '#ba1a1a', 'outline': '#707972', 'surface-dim': '#d2d9f4', 'on-tertiary-fixed': '#002113', 'secondary-fixed': '#8df7c1', 'secondary': '#006c47', 'primary-fixed-dim': '#93d5ad', 'on-secondary-container': '#00714b', 'surface-variant': '#dae2fd', 'primary-container': '#054f31', 'tertiary-fixed': '#6ffbbe' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'space-xl': '2.5rem', 'space-xs': '0.25rem', 'gutter-desktop': '1.5rem', 'space-lg': '1.5rem', 'margin-desktop': '2.5rem', 'gutter': '1rem', 'margin': '1rem', 'space-sm': '0.5rem', 'space-md': '1rem' }, 'fontFamily': { 'label-sm': ['Space Grotesk'], 'title-md': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Space Grotesk'], 'title-sm': ['Plus Jakarta Sans'], 'headline-xl': ['Space Grotesk'], 'headline-sm': ['Space Grotesk'], 'body-md': ['Plus Jakarta Sans'], 'headline-md': ['Space Grotesk'], 'headline-xl-mobile': ['Space Grotesk'], 'body-lg': ['Plus Jakarta Sans'], 'label-md': ['Space Grotesk'], 'label-lg': ['Space Grotesk'], 'currency-display': ['Space Grotesk'], 'headline-lg': ['Space Grotesk'] }, 'fontSize': { 'label-sm': ['10px', { 'lineHeight': '14px', 'fontWeight': '700' }], 'title-md': ['18px', { 'lineHeight': '26px', 'fontWeight': '600' }], 'body-sm': ['12px', { 'lineHeight': '16px', 'fontWeight': '400' }], 'headline-lg-mobile': ['24px', { 'lineHeight': '32px', 'fontWeight': '700' }], 'title-sm': ['16px', { 'lineHeight': '24px', 'fontWeight': '600' }], 'headline-xl': ['40px', { 'lineHeight': '48px', 'fontWeight': '700' }], 'headline-sm': ['20px', { 'lineHeight': '28px', 'fontWeight': '600' }], 'body-md': ['14px', { 'lineHeight': '20px', 'fontWeight': '400' }], 'headline-md': ['24px', { 'lineHeight': '32px', 'fontWeight': '600' }], 'headline-xl-mobile': ['30px', { 'lineHeight': '36px', 'fontWeight': '700' }], 'body-lg': ['16px', { 'lineHeight': '24px', 'fontWeight': '400' }], 'label-md': ['12px', { 'lineHeight': '16px', 'fontWeight': '600' }], 'label-lg': ['14px', { 'lineHeight': '20px', 'fontWeight': '600' }], 'currency-display': ['36px', { 'lineHeight': '44px', 'fontWeight': '700' }], 'headline-lg': ['32px', { 'lineHeight': '40px', 'fontWeight': '700' }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg"><div class="flex flex-col gap-space-lg overflow-y-auto"><div class="px-space-lg flex items-center gap-space-sm"><img alt="TaskNaija brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">TaskNaija</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Labor Engine</span></div></div><div class="px-space-md flex flex-col gap-space-sm"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Core Navigation</span><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary text-on-primary font-title-sm text-title-sm rounded-lg"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="#">Home</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="tasks" href="#">Tasks</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="wallet" href="#">Wallet</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="tier" href="#">Tier</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#">Profile</a></nav></div><div class="px-space-md flex flex-col gap-space-sm"><span class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Operations</span><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary text-on-primary font-title-sm text-title-sm rounded-lg"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-tasks" href="#">My Tasks</a><a aria-current="page" class="flex items-center px-space-sm py-space-sm transition-all bg-primary text-on-primary font-title-sm text-title-sm rounded-lg" data-path="social-accounts" href="#">Social Accounts</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#">Notifications</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="help-support" href="#">Help &amp; Support</a></nav></div></div><div class="px-space-md"><div class="p-space-sm bg-surface-container rounded-xl flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-title-sm text-title-sm text-on-surface truncate">Tunde Babatunde</span><div class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary"><span class="material-symbols-outlined text-[14px]">verified</span><span>Tier 1 • ₦10/task</span></div></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md w-96"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-4 py-1.5 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search tasks, payouts, tickets..." type="text"/></div></div><div class="flex items-center gap-space-md"><a aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></a><div class="h-6 w-[1px] bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Tunde B.</span><span class="font-label-sm text-label-sm text-secondary font-medium leading-tight">Tier 1 Tasker</span></div></div></div></header><main class="w-full pt-16 px-margin-desktop pb-margin-desktop bg-background"><div class="flex flex-col w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary uppercase tracking-wider">
+<span>Identity &amp; Work Credentials</span>
+<span class="inline-block w-1 h-1 rounded-full bg-secondary"></span>
+<span>Validation Level 3</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Social Accounts</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Add and manage the verified social profiles you use to complete brand amplifications, engagement sprints, and automated audit verifications.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<div class="hidden xl:flex items-center gap-2 bg-surface-container-high px-space-md py-2 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-label-md text-label-md text-on-surface">5 Active Channels</span>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg shadow-sm hover:bg-surface-tint active:scale-[0.98] transition-all" id="open-add-modal-btn">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Add Social Account</span>
+</button>
+</div>
+</div>
+<div class="relative overflow-hidden bg-surface-container-low rounded-xl p-space-lg shadow-sm mb-space-xl">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-secondary/10 pointer-events-none blur-2xl"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative z-10">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">policy</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-sm text-title-sm text-on-surface flex items-center gap-space-xs">
+            Why we ask for your accounts
+            <span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase">Proof Protocol</span>
+</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Some tasks may require a specific social platform. Keeping your accounts updated helps the platform assign suitable tasks, prevent fraudulent claims, and automate instant proof verification for immediate wallet release.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest py-2.5 px-space-md rounded-lg shadow-sm">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm uppercase text-outline">Task Clearance</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">100% Guaranteed</span>
+</div>
+<div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Connected Accounts</span>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold">5 Linked</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Live Health Synced</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md mb-space-xl">
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">photo_camera</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Instagram</span>
+<span class="font-label-sm text-label-sm text-outline">Meta Graph Verified</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-1 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            Connected
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Active Handle</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Auto-Audit Ready</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight block truncate mt-0.5">@tasker_ig</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mb-space-sm">
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Approved Tasks</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">142</span>
+</div>
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Success Rate</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">99.2%</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span> ID: #IG-8942
+        </span>
+<button class="edit-account-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary py-1.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container transition-colors" data-handle="@tasker_ig" data-platform="Instagram">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit</span>
+</button>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">public</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Facebook</span>
+<span class="font-label-sm text-label-sm text-outline">Page / Profile Link</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-1 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            Connected
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Profile Link</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Auto-Audit Ready</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface tracking-tight block truncate mt-0.5 font-bold">facebook.com/tasker</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mb-space-sm">
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Approved Tasks</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">88</span>
+</div>
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Success Rate</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">98.5%</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span> ID: #FB-1204
+        </span>
+<button class="edit-account-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary py-1.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container transition-colors" data-handle="facebook.com/tasker" data-platform="Facebook">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit</span>
+</button>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">music_note</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">TikTok</span>
+<span class="font-label-sm text-label-sm text-outline">Creator Engine ID</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-1 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            Connected
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Active Handle</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Auto-Audit Ready</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight block truncate mt-0.5">@tasker_tiktok</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mb-space-sm">
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Approved Tasks</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">210</span>
+</div>
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Success Rate</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">100%</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span> ID: #TK-5561
+        </span>
+<button class="edit-account-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary py-1.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container transition-colors" data-handle="@tasker_tiktok" data-platform="TikTok">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit</span>
+</button>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">tag</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">X (formerly Twitter)</span>
+<span class="font-label-sm text-label-sm text-outline">Micro-Task API v2</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-1 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            Connected
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Active Handle</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Auto-Audit Ready</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight block truncate mt-0.5">@tasker_x</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mb-space-sm">
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Approved Tasks</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">95</span>
+</div>
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Success Rate</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">96.8%</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span> ID: #TW-3319
+        </span>
+<button class="edit-account-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary py-1.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container transition-colors" data-handle="@tasker_x" data-platform="X">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit</span>
+</button>
+</div>
+</div>
+<div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">smart_display</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">YouTube</span>
+<span class="font-label-sm text-label-sm text-outline">Channel Identity</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-1 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            Connected
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Channel Handle</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Auto-Audit Ready</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight block truncate mt-0.5">@tasker_youtube</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mb-space-sm">
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Approved Tasks</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">64</span>
+</div>
+<div class="bg-surface rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Success Rate</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">100%</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span> ID: #YT-9902
+        </span>
+<button class="edit-account-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:text-secondary py-1.5 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container transition-colors" data-handle="@tasker_youtube" data-platform="YouTube">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit</span>
+</button>
+</div>
+</div>
+<div class="cursor-pointer bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md shadow-sm transition-all flex flex-col justify-center items-center text-center group min-h-[260px]" id="trigger-quick-add">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm mb-space-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[30px]">add_link</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold mb-1">Add another account</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mb-space-md">
+        Link secondary profiles, custom client credentials, or upcoming web engines.
+      </p>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary bg-surface-container-lowest px-space-md py-2 rounded-lg shadow-sm group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+        Connect Platform
+      </span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">add_moderator</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface" id="form-heading">Add New Social Account</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Profiles undergo rapid token verification to qualify for high-tier payouts.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container-high text-on-surface px-2.5 py-1 rounded-full">Manual Link Entry</span>
+</div>
+<form class="space-y-space-md" id="social-form" onsubmit="event.preventDefault();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="platform-select">Platform</label>
+<div class="relative">
+<select class="w-full h-12 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg px-4 pr-10 appearance-none shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary" id="platform-select">
+<option value="Instagram">Instagram</option>
+<option value="Facebook">Facebook</option>
+<option value="TikTok">TikTok</option>
+<option value="X">X (formerly Twitter)</option>
+<option value="YouTube">YouTube</option>
+<option value="Other">Other / Custom Network</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="account-identifier">Username or Profile URL</label>
+<div class="relative">
+<input class="w-full h-12 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg px-4 shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary placeholder:text-outline" id="account-identifier" placeholder="Enter username (e.g. @username) or URL" type="text"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">lock</span>
+<span>TaskNaija never requests social account passwords or private access tokens.</span>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<button class="px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface hover:bg-surface-container-high transition-colors" id="form-cancel-btn" type="button">
+              Cancel
+            </button>
+<button class="px-space-lg py-2.5 rounded-lg font-label-lg text-label-lg bg-primary text-on-primary hover:bg-surface-tint shadow-sm active:scale-[0.98] transition-all flex items-center gap-2" id="form-save-btn" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Account</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+<div class="lg:col-span-4 bg-primary-container text-on-primary rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-36 h-36 rounded-full bg-secondary/20 pointer-events-none blur-xl"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-wider">Labor Architecture</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">insights</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-space-xs">Account Assignment Weight</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-space-md">
+          Higher linked social diversity unlocks higher Tier 12+ VIP campaigns with instant payout routing.
+        </p>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span>Profile Quality Score</span>
+<span class="font-bold text-secondary-fixed">98 / 100</span>
+</div>
+<div class="w-full h-2 bg-primary rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed rounded-full" style="width: 98%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-primary-container pt-1">
+<span>Eligibility Status</span>
+<span class="text-secondary-fixed font-semibold">Priority Dispatch Active</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-primary/40 p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">currency_exchange</span>
+<span class="font-label-md text-label-md text-on-primary">Average Payout: ₦450 - ₦2,200 / batch</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col md:flex-row items-start md:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">format_image_left</span>
+</div>
+<div class="flex-1">
+<h4 class="font-title-sm text-title-sm text-on-surface font-semibold mb-1">Multi-Account Support &amp; Compliance Policy</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Only add accounts you actually use to complete tasks. You may use more than one account where a client task permits it. Multiple accounts are actively supported for legitimate task workflows across separate niches (e.g. personal, tech, and lifestyle handles). Submitting proofs from accounts other than those registered here will invalidate escrow claims.
+        </p>
+</div>
+<a class="px-space-md py-2 bg-surface-container-lowest rounded-lg font-label-md text-label-md text-on-surface shadow-sm hover:bg-surface transition-colors flex-shrink-0" href="#">
+        Review Guidelines
+      </a>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<div class="bg-primary text-on-primary px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span class="font-title-sm text-title-sm" id="toast-message">Account updated successfully</span>
+</div>
+</div>
+<script>
+    (function() {
+      const modalTrigger = document.getElementById('open-add-modal-btn');
+      const quickAdd = document.getElementById('trigger-quick-add');
+      const formHeading = document.getElementById('form-heading');
+      const platformSelect = document.getElementById('platform-select');
+      const handleInput = document.getElementById('account-identifier');
+      const cancelBtn = document.getElementById('form-cancel-btn');
+      const saveBtn = document.getElementById('form-save-btn');
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+
+      function showToast(text) {
+        toastMsg.textContent = text;
+        toast.classList.remove('translate-y-20', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-20', 'opacity-0');
+        }, 3200);
+      }
+
+      function scrollToForm() {
+        formHeading.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        handleInput.focus();
+      }
+
+      if (modalTrigger) {
+        modalTrigger.addEventListener('click', () => {
+          formHeading.textContent = 'Add New Social Account';
+          platformSelect.value = 'Instagram';
+          handleInput.value = '';
+          scrollToForm();
+        });
+      }
+
+      if (quickAdd) {
+        quickAdd.addEventListener('click', () => {
+          formHeading.textContent = 'Add New Social Account';
+          platformSelect.value = 'Other';
+          handleInput.value = '';
+          scrollToForm();
+        });
+      }
+
+      document.querySelectorAll('.edit-account-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const platform = btn.getAttribute('data-platform');
+          const handle = btn.getAttribute('data-handle');
+          formHeading.textContent = 'Edit ' + platform + ' Account';
+          platformSelect.value = platform;
+          handleInput.value = handle;
+          scrollToForm();
+        });
+      });
+
+      if (cancelBtn) {
+        cancelBtn.addEventListener('click', () => {
+          formHeading.textContent = 'Add New Social Account';
+          handleInput.value = '';
+          showToast('Form cleared');
+        });
+      }
+
+      if (saveBtn) {
+        saveBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const handleVal = handleInput.value.trim();
+          if (!handleVal) {
+            showToast('Please enter a username or profile URL');
+            handleInput.focus();
+            return;
+          }
+          showToast(platformSelect.value + ' account successfully saved');
+          handleInput.value = '';
+          formHeading.textContent = 'Add New Social Account';
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

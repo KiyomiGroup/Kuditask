@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'secondary-container': '#8af5be', 'inverse-primary': '#93d5ad', 'surface-bright': '#faf8ff', 'on-primary-fixed-variant': '#095133', 'outline-variant': '#bfc9c0', 'on-background': '#131b2e', 'primary-fixed-dim': '#93d5ad', 'surface-variant': '#dae2fd', 'surface-container-highest': '#dae2fd', 'surface-dim': '#d2d9f4', 'on-secondary-fixed': '#002113', 'on-error': '#ffffff', 'secondary-fixed-dim': '#71dba6', 'inverse-surface': '#283044', 'on-secondary-fixed-variant': '#005235', 'on-tertiary': '#ffffff', 'primary-fixed': '#aef1c8', 'error': '#ba1a1a', 'on-primary-fixed': '#002111', 'surface-container-lowest': '#ffffff', 'on-primary-container': '#7fc099', 'error-container': '#ffdad6', 'surface-container': '#eaedff', 'surface-container-high': '#e2e7ff', 'on-secondary-container': '#00714b', 'on-surface': '#131b2e', 'background': '#faf8ff', 'secondary-fixed': '#8df7c1', 'inverse-on-surface': '#eef0ff', 'primary-container': '#054f31', 'on-tertiary-container': '#31c98f', 'tertiary': '#003623', 'on-tertiary-fixed': '#002113', 'tertiary-fixed': '#6ffbbe', 'on-surface-variant': '#404942', 'tertiary-container': '#004f34', 'surface-container-low': '#f2f3ff', 'outline': '#707972', 'on-tertiary-fixed-variant': '#005236', 'on-error-container': '#93000a', 'tertiary-fixed-dim': '#4edea3', 'on-secondary': '#ffffff', 'on-primary': '#ffffff', 'surface-tint': '#2a6a49', 'surface': '#faf8ff', 'secondary': '#006c47', 'primary': '#003620' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-lg': '1.5rem', 'space-xl': '2.5rem', 'gutter-desktop': '1.5rem', 'margin': '1rem', 'margin-desktop': '2.5rem', 'space-xs': '0.25rem', 'gutter': '1rem', 'space-md': '1rem', 'space-sm': '0.5rem' }, fontFamily: { 'headline-md': ['Space Grotesk'], 'label-md': ['Space Grotesk'], 'label-lg': ['Space Grotesk'], 'currency-display': ['Space Grotesk'], 'headline-lg-mobile': ['Space Grotesk'], 'headline-xl-mobile': ['Space Grotesk'], 'body-md': ['Plus Jakarta Sans'], 'title-md': ['Plus Jakarta Sans'], 'headline-lg': ['Space Grotesk'], 'headline-sm': ['Space Grotesk'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'headline-xl': ['Space Grotesk'], 'label-sm': ['Space Grotesk'], 'title-sm': ['Plus Jakarta Sans'] }, fontSize: { 'headline-md': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', fontWeight: '600' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'currency-display': ['36px', { lineHeight: '44px', fontWeight: '700' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '700' }], 'headline-xl-mobile': ['30px', { lineHeight: '36px', fontWeight: '700' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'title-md': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', fontWeight: '700' }], 'headline-sm': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'headline-xl': ['40px', { lineHeight: '48px', fontWeight: '700' }], 'label-sm': ['10px', { lineHeight: '14px', fontWeight: '700' }], 'title-sm': ['16px', { lineHeight: '24px', fontWeight: '600' }] } } } };</script><style>@layer base { html, body { margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-2"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="w-12 h-12 flex items-center justify-center rounded-xl text-on-surface hover:bg-surface-container-low active:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-sm text-title-sm text-on-surface truncate">Withdrawal Batch Details</h1></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-safe">
+<!-- Interactive Feedback Banner (Hidden by default) -->
+<div class="hidden mx-margin mt-space-sm p-space-md rounded-xl bg-secondary-container text-on-secondary-container shadow-md flex items-start gap-space-sm transition-all duration-300" id="statusToast">
+<span class="material-symbols-outlined text-[20px] text-on-secondary-container mt-0.5">verified</span>
+<div class="min-w-0 flex-1">
+<p class="font-title-sm text-title-sm" id="toastTitle">Status Transitioned</p>
+<p class="font-body-sm text-body-sm text-on-secondary-container/90" id="toastMessage">Audit trail synced with NUBAN core ledger.</p>
+</div>
+<button class="p-1 text-on-secondary-container/70 hover:text-on-secondary-container" onclick="document.getElementById('statusToast').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Main Inspection Container -->
+<div class="p-margin space-y-space-md">
+<!-- Top Identifier & Payout Highlight Header Card -->
+<section class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/15 text-primary-fixed font-label-md text-label-md tracking-wide uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+          #WD-10284
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+          Eligible &amp; Requested
+        </span>
+</div>
+<div class="space-y-1">
+<p class="font-label-md text-label-md text-primary-fixed/80">Requested Amount</p>
+<div class="flex items-baseline gap-1.5">
+<span class="font-currency-display text-currency-display tracking-tight text-surface-container-lowest">₦6,240.00</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary text-secondary-fixed-dim uppercase tracking-wider">Zero Fee</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t-0 bg-surface-container-lowest/10 -mx-space-md -mb-space-md px-space-md py-2.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-surface-container-lowest/90 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">bolt</span>
+          Paystack NUBAN Direct Rail
+        </span>
+<span class="font-label-sm text-label-sm text-surface-container-lowest/70">Batch Window #482</span>
+</div>
+</section>
+<!-- Tasker Financial Profile Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-12 h-12 shrink-0">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm bg-surface-container" data-alt="Close-up professional portrait of a young Nigerian woman named Amaka Johnson wearing a teal business casual blazer against a warm neutral office backdrop with soft natural lighting and studio depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG7LKmF7jeBc8CkpEyGNCVDMlOaQQeKtagh5mfxSBwY81Pp0v2czO4vJRU0z9bcRr8tC6_8SXubWlhCg7fJZSsytrsMlNU_Gi6Y8EWdiKvhSwvG7nOkxzIAkExM7aHJIcQ7PAD40JnVbPNXIouomrHfuNmNB5Uru1IXPv4M_XsveNqIF1NtaORyvVT97WkOQMBy1pHmSW-OUx3NX_Ei8cxep1j9_jjrIwHR0CdZFKjODarIYJdLnrl"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[12px]">verified_user</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h2 class="font-title-sm text-title-sm text-on-surface truncate">Amaka Johnson</h2>
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[11px] text-secondary">workspace_premium</span>
+                T4 Gold
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">@amaka_j • Contractor ID #7741</p>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container text-label-sm font-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[15px]">history</span>
+          Ledger
+        </button>
+</div>
+<!-- Account Details Bento Grid -->
+<div class="grid grid-cols-1 gap-2 pt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Destination Financial Institution</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-title-sm text-title-sm text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">account_balance</span>
+              Guaranty Trust Bank (GTBank)
+            </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container">NUBAN Validated</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Account Number</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-label-md mt-0.5 tracking-wider">014****1234</p>
+</div>
+<div class="p-space-sm rounded-xl bg-secondary-container/40">
+<span class="font-label-sm text-label-sm text-on-secondary-container uppercase">Name Match Integrity</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<p class="font-label-md text-label-md text-on-secondary-container font-semibold">100% AMAKA J.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Multi-tier Eligibility Check -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-title-sm text-title-sm text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">fact_check</span>
+          Compliance &amp; Eligibility Audit
+        </h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">4 / 4 Passed</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automated validation checks executed against primary rulesets.</p>
+<div class="space-y-2 pt-1">
+<!-- Item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[15px]">done</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Minimum Withdrawal ₦5,000</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Requested payout: ₦6,240</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">PASS</span>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[15px]">done</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Verified Micro-Tasks ≥ 500</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Lifetime verified: 1,248 completed</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">250% REQ</span>
+</div>
+<!-- Item 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[15px]">done</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Active Consecutive Login ≥ 10</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Current verified streak: 24 days</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">HEALTHY</span>
+</div>
+<!-- Item 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Payout Rail Scheduling</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Sunday batch at 5:00 PM WAT</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IN CYCLE</span>
+</div>
+</div>
+</section>
+<!-- Visual Withdrawal Progression Timeline -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-title-sm text-title-sm text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">alt_route</span>
+          Withdrawal Lifecycle
+        </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 3 of 5</span>
+</div>
+<!-- Linear Stepper Grid -->
+<div class="relative flex items-center justify-between">
+<!-- Background Track Line -->
+<div class="absolute left-2.5 right-2.5 top-1/2 -translate-y-1/2 h-1 bg-surface-container-high rounded-full -z-0"></div>
+<!-- Active Progress Line (Up to Step 3) -->
+<div class="absolute left-2.5 w-1/2 top-1/2 -translate-y-1/2 h-1 bg-secondary rounded-full -z-0"></div>
+<!-- 1: Locked -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Locked</span>
+</div>
+<!-- 2: Eligible -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Eligible</span>
+</div>
+<!-- 3: Requested (ACTIVE) -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center ring-4 ring-secondary-container shadow-md" id="step3Badge">
+<span class="material-symbols-outlined text-[14px]">edit_document</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container font-bold mt-1">Requested</span>
+</div>
+<!-- 4: Processing -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center text-[11px]" id="step4Badge">
+            4
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Process</span>
+</div>
+<!-- 5: Paid -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center text-[11px]" id="step5Badge">
+            5
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Paid</span>
+</div>
+</div>
+</section>
+<!-- Regulatory & Ledger Notice Callout -->
+<section class="bg-surface-container-high/60 rounded-xl p-space-md flex gap-space-sm items-start">
+<span class="material-symbols-outlined text-[22px] text-primary shrink-0 mt-0.5">policy</span>
+<div class="space-y-1">
+<h4 class="font-label-lg text-label-lg text-on-surface">Single Source of Truth Ledger</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          This Admin workflow records and verifies the withdrawal settlement status before and after manual or automated batch dispatch via Paystack/NIBSS rails. The website serves as the single source of truth for the Tasker.
+        </p>
+</div>
+</section>
+<!-- Simulated Visual Asset (Batch Terminal Context) -->
+<section class="relative rounded-xl overflow-hidden shadow-sm">
+<div class="bg-cover bg-center w-full h-32" data-alt="A modern Lagos fintech operations center with dual-monitor command desks displaying emerald green terminal dashboards, financial transaction streams, and security audit logs in ambient cool lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_uIRT256iiIxlCMdEk7uXpPYRkJPkv8qCnKXXQSldcQ72WBtBGxB4AAlK_dloCQmShySI8_Y7XBr04IsdBYJJhGg3Z_QXL_omYW5rbBezrRL2wkIWfeYA7GSGQ5cVCd0QBVCjMGr97pzC_46WE-59aOTNL8fN2PdTdrJdaro2SjpsIX8r2PBaBxYlcNgxGHEtkYS34tK86NLKVzM50xChIyaIBu9jEfKh0LgvuzM_w0E6R8R74NQI')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/70 to-transparent p-space-md flex flex-col justify-end text-on-primary">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Gateway Status</span>
+<p class="font-headline-sm text-headline-sm text-surface-container-lowest">NIBSS Settlement Grid Online</p>
+</div>
+<span class="material-symbols-outlined text-[28px] text-secondary-container">hub</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Target State Preview Card (Dynamic Collapsible Reference) -->
+<section class="bg-surface-container-low rounded-xl p-space-md space-y-space-xs transition-all" id="successPreviewCard">
+<div class="flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Post-Settlement Automation Trigger</span>
+</div>
+<p class="font-title-sm text-title-sm text-on-surface">Withdrawal Marked as Paid</p>
+<div class="space-y-0.5 text-on-surface-variant font-body-sm text-body-sm">
+<p>• ₦6,240.00 cleared to GTBank 014****1234</p>
+<p>• Tasker balance ledger updated and SMS/Push dispatched.</p>
+</div>
+</section>
+<!-- Collapsible Failure Form (Rendered when 'Mark as Failed' is triggered) -->
+<section class="hidden bg-error-container text-on-error-container rounded-xl p-space-md space-y-space-md transition-all duration-300" id="failureFormSection">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-error">warning</span>
+<h4 class="font-title-sm text-title-sm text-on-error-container">Reject &amp; Return to Ledger</h4>
+</div>
+<button class="p-1 text-on-error-container/70 hover:text-on-error-container" onclick="toggleFailureForm(false)">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-error-container/90">
+        Select the documented compliance reason. Funds will be automatically credited back to Amaka's task wallet.
+      </p>
+<!-- Failure Reasons -->
+<div class="space-y-2">
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest text-on-surface cursor-pointer">
+<input checked="" class="w-4 h-4 accent-error" name="failureReason" type="radio" value="bvn_mismatch"/>
+<span class="font-body-md text-body-md">BVN / Name mismatch on bank account</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest text-on-surface cursor-pointer">
+<input class="w-4 h-4 accent-error" name="failureReason" type="radio" value="account_compromise"/>
+<span class="font-body-md text-body-md">Suspected account compromise</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest text-on-surface cursor-pointer">
+<input class="w-4 h-4 accent-error" name="failureReason" type="radio" value="reversal_requested"/>
+<span class="font-body-md text-body-md">Reversal requested by Tasker</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest text-on-surface cursor-pointer">
+<input class="w-4 h-4 accent-error" name="failureReason" type="radio" value="rail_timeout"/>
+<span class="font-body-md text-body-md">Banking rail timeout</span>
+</label>
+</div>
+<!-- Admin Notes Field -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-error-container uppercase">Internal Audit Log Note</label>
+<textarea class="w-full rounded-lg bg-surface-container-lowest text-on-surface p-space-sm font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" id="failureNote" placeholder="Document incident report ticket or NIBSS failure reference..." rows="2"></textarea>
+</div>
+<button class="w-full py-3 px-space-md rounded-xl bg-error text-on-error font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md hover:opacity-95 active:scale-[0.99] transition-all" onclick="confirmFailureAction()">
+<span class="material-symbols-outlined text-[20px]">undo</span>
+        Confirm Failure &amp; Refund to Wallet
+      </button>
+</section>
+<!-- Admin Operational Processing Actions (One-handed Ergonomic Bar) -->
+<section class="space-y-space-sm pt-space-xs">
+<!-- Primary Forward Action -->
+<button class="w-full py-3.5 px-space-md rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md hover:bg-secondary transition-all active:scale-[0.99]" id="markProcessingBtn" onclick="advanceToProcessing()">
+<span class="material-symbols-outlined text-[22px] text-secondary-fixed">sync</span>
+        Mark as Processing
+      </button>
+<!-- Sub-action: Mark as Paid (Instant Settlement Dispatch) -->
+<button class="w-full py-3 px-space-md rounded-xl bg-secondary text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-sm hover:opacity-95 transition-all active:scale-[0.99]" id="markPaidBtn" onclick="markAsPaidAction()">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+        Mark as Paid (Dispatched)
+      </button>
+<!-- Secondary Action: Mark as Failed Toggle -->
+<button class="w-full py-2.5 px-space-md rounded-xl bg-error-container/60 text-on-error-container font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-error-container transition-colors" id="failToggleBtn" onclick="toggleFailureForm(true)">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+        Mark as Failed...
+      </button>
+</section>
+</div>
+</div>
+<script>
+  function toggleFailureForm(show) {
+    const form = document.getElementById('failureFormSection');
+    const toggleBtn = document.getElementById('failToggleBtn');
+    if (show) {
+      form.classList.remove('hidden');
+      toggleBtn.classList.add('hidden');
+      form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      form.classList.add('hidden');
+      toggleBtn.classList.remove('hidden');
+    }
+  }
+
+  function advanceToProcessing() {
+    const step4 = document.getElementById('step4Badge');
+    step4.className = "w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center ring-4 ring-secondary-container shadow-md font-bold";
+    step4.innerHTML = '<span class="material-symbols-outlined text-[14px]">autorenew</span>';
+
+    const toast = document.getElementById('statusToast');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+
+    toastTitle.innerText = "Queue Shifted: Processing";
+    toastMessage.innerText = "Transaction #WD-10284 batched into GTBank outgoing pool.";
+    toast.classList.remove('hidden');
+
+    const procBtn = document.getElementById('markProcessingBtn');
+    procBtn.classList.add('opacity-50', 'pointer-events-none');
+    procBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">hourglass_top</span> In Active Processing Queue';
+  }
+
+  function markAsPaidAction() {
+    const step4 = document.getElementById('step4Badge');
+    const step5 = document.getElementById('step5Badge');
+
+    step4.className = "w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[12px] shadow-sm";
+    step4.innerHTML = '<span class="material-symbols-outlined text-[13px]">check</span>';
+
+    step5.className = "w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center ring-4 ring-secondary-container shadow-md font-bold";
+    step5.innerHTML = '<span class="material-symbols-outlined text-[14px]">done_all</span>';
+
+    const toast = document.getElementById('statusToast');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+
+    toastTitle.innerText = "Settlement Complete: Paid";
+    toastMessage.innerText = "₦6,240.00 confirmed settled via Paystack rail. SMS notification queued.";
+    toast.classList.remove('hidden');
+
+    const card = document.getElementById('successPreviewCard');
+    card.classList.add('bg-secondary-container', 'text-on-secondary-container');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function confirmFailureAction() {
+    const form = document.getElementById('failureFormSection');
+    form.classList.add('hidden');
+
+    const toast = document.getElementById('statusToast');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+
+    toast.className = "mx-margin mt-space-sm p-space-md rounded-xl bg-error-container text-on-error-container shadow-md flex items-start gap-space-sm transition-all";
+    toastTitle.innerText = "Withdrawal Rejected & Refunded";
+    toastMessage.innerText = "₦6,240.00 restored to Amaka Johnson's wallet balance. Reversal audited.";
+    toast.classList.remove('hidden');
+
+    const procBtn = document.getElementById('markProcessingBtn');
+    const paidBtn = document.getElementById('markPaidBtn');
+    procBtn.classList.add('hidden');
+    paidBtn.classList.add('hidden');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script></main></body></html>

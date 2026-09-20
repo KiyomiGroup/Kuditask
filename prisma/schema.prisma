@@ -1,0 +1,580 @@
+// KudiTask — Prisma schema
+// Models every entity called out in the product spec. Money is stored in
+// kobo (integer) everywhere to avoid floating-point rounding on Naira values.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ==================================================
+// ENUMS
+// ==================================================
+
+enum Role {
+  TASKER
+  ADMIN
+  // Included because Phase 1 names it as a supported User role. The product
+  // spec's actual client flow (submit a request, talk to Admin on WhatsApp)
+  // never described a client login — no registration/login UI is built for
+  // this role yet. See README "Open question" before wiring a client auth flow.
+  CLIENT
+}
+
+enum AccountStatus {
+  ACTIVE
+  UNDER_REVIEW
+  SUSPENDED
+  BANNED
+}
+
+enum SocialPlatform {
+  INSTAGRAM
+  FACEBOOK
+  TIKTOK
+  X
+  YOUTUBE
+  OTHER
+}
+
+// Realigned to Phase 6's exact status list (previously SUBMITTED/IN_REVIEW/
+// PRICED/CONVERTED_TO_TASK/DECLINED — renamed to match spec verbatim).
+// Pricing (clientPriceKobo etc. below) is set while REVIEWING, ahead of the
+// move to AWAITING_PAYMENT — there's no separate "priced" status in this
+// phase's list.
+enum ClientRequestStatus {
+  REQUESTED
+  REVIEWING
+  AWAITING_PAYMENT
+  PAID
+  LAUNCHED
+  COMPLETED
+  CANCELLED
+}
+
+enum ClientStatus {
+  ACTIVE
+  PENDING
+  INACTIVE
+}
+
+// How a task's visibility is scoped. ALL_ELIGIBLE is the default (ordinary
+// tier-gated availability, unchanged from earlier phases). The other three
+// narrow the audience further — see TaskAssignedTier/TaskAssignedTasker
+// below and lib/tasks.ts for how each is enforced.
+enum TaskAssignmentScope {
+  ALL_ELIGIBLE
+  SPECIFIC_TIERS
+  SPECIFIC_TASKERS
+  SPECIFIC_PLATFORM // reuses Task.platform — a tasker qualifies if they hold an active social account on that platform
+}
+
+enum TaskStatus {
+  ACTIVE
+  IN_PROGRESS // has open reservations, still has open slots
+  PENDING_VERIFICATION
+  COMPLETED // terminal — set when verifiedCompletions >= requiredCompletions
+  REJECTED
+  PAUSED
+}
+
+enum ReservationStatus {
+  ACTIVE
+  SUBMITTED
+  EXPIRED
+  CANCELLED
+}
+
+enum SubmissionStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  FRAUD_FLAGGED
+}
+
+enum RejectionReason {
+  FAKE_SCREENSHOT
+  EDITED_SCREENSHOT
+  WRONG_ACCOUNT
+  TASK_NOT_COMPLETED
+  DUPLICATE_PROOF
+  UNCLEAR_PROOF
+  OTHER
+}
+
+enum FraudStrikeStage {
+  FIRST_WARNING
+  FINAL_WARNING
+  TIER_LOCK
+}
+
+enum FraudAppealStatus {
+  NONE
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum WalletTxType {
+  TASK_REWARD
+  DEDUCTION
+  WITHDRAWAL
+  ADJUSTMENT
+  // Platform-level accounting only (client paying for a task's escrow) —
+  // not yet wired into any flow; included so the type exists when that
+  // ledger is built.
+  CLIENT_PAYMENT
+}
+
+enum WithdrawalStatus {
+  // LOCKED and ELIGIBLE describe a tasker's ability to withdraw BEFORE any
+  // Withdrawal row exists — the UI shows them from
+  // lib/withdrawal.ts:checkWithdrawalEligibility, never from a stored row.
+  // A real Withdrawal row's status only ever starts at REQUESTED. Kept in
+  // this enum for spec fidelity (both phases list all six as "withdrawal
+  // statuses") and in case a future admin override needs them on a row.
+  LOCKED
+  ELIGIBLE
+  REQUESTED
+  PROCESSING
+  PAID
+  FAILED
+}
+
+// ==================================================
+// AUTH / USERS
+// ==================================================
+
+model User {
+  id           String   @id @default(cuid())
+  role         Role
+  email        String   @unique
+  phone        String?  @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  lastLoginAt  DateTime?
+
+  taskerProfile TaskerProfile?
+  auditLogs     AuditLog[]
+  notifications Notification[]
+  loginDays     LoginDay[]
+
+  @@index([role])
+}
+
+// Tracks distinct calendar days a tasker has logged in — needed for the
+// "10 active login days" withdrawal-eligibility rule. One row per user per day.
+model LoginDay {
+  id     String   @id @default(cuid())
+  userId String
+  user   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  date   DateTime // stored truncated to the day
+
+  @@unique([userId, date])
+}
+
+model TaskerProfile {
+  id           String   @id @default(cuid())
+  userId       String   @unique
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  fullName     String
+  username     String   @unique
+  currentTierId String
+  currentTier  Tier     @relation(fields: [currentTierId], references: [id])
+  accountStatus AccountStatus @default(ACTIVE)
+  verifiedTaskCount Int @default(0) // count of approved TaskSubmissions — denormalized, tier-gating source of truth stays the query, this is a fast-read cache
+  tierLocked   Boolean  @default(false) // set true after 3rd fraud strike until appeal approved
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  socialAccounts SocialAccount[]
+  assignedTasks  TaskAssignedTasker[]
+  announcementRecipients AnnouncementRecipient[]
+  reservations   TaskReservation[]
+  submissions    TaskSubmission[]
+  fraudViolations FraudViolation[]
+  wallet         Wallet?
+  withdrawals    Withdrawal[]
+}
+
+enum SocialAccountStatus {
+  ACTIVE
+  REMOVED
+}
+
+model SocialAccount {
+  id           String              @id @default(cuid())
+  taskerId     String
+  tasker       TaskerProfile       @relation(fields: [taskerId], references: [id], onDelete: Cascade)
+  platform     SocialPlatform
+  handle       String
+  profileUrl   String?
+  status       SocialAccountStatus @default(ACTIVE)
+  createdAt    DateTime            @default(now())
+  updatedAt    DateTime            @updatedAt
+
+  // Intentionally NO @@unique([taskerId, platform]) — taskers may hold
+  // multiple accounts per platform per spec ("do not enforce one-account-per-platform").
+  @@index([taskerId])
+}
+
+// ==================================================
+// CLIENTS (managed workflow — clients never touch tasks directly)
+// ==================================================
+
+model Client {
+  id          String       @id @default(cuid())
+  contactName String
+  companyName String?
+  email       String?
+  phone       String?
+  whatsapp    String?
+  status      ClientStatus @default(PENDING)
+  createdAt   DateTime     @default(now())
+
+  requests    ClientRequest[]
+  tasks       Task[]
+}
+
+model ClientRequest {
+  id               String               @id @default(cuid())
+  clientId         String
+  client           Client               @relation(fields: [clientId], references: [id])
+
+  // Fields the client actually fills in on the public request form.
+  taskType         String
+  platform         SocialPlatform?
+  goal             String
+  targetLink       String?
+  requestedCompletions   Int?           // the client's own ask — may differ from requiredCompletions once Admin confirms it while pricing
+  preferredCompletionDate DateTime?
+  requirements     String
+  additionalNotes  String?
+  preferredContactMethod String?        // e.g. "whatsapp", "email", "phone"
+
+  description      String               // short admin-facing summary, kept for backward compatibility with earlier phases' task-creation flow
+  status           ClientRequestStatus  @default(REQUESTED)
+
+  // Set by Admin during review — null until priced/confirmed.
+  clientPriceKobo       Int?
+  taskerRewardKobo      Int?
+  requiredCompletions   Int?
+
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  task             Task?
+
+  @@index([status])
+}
+
+// ==================================================
+// TASKS
+// ==================================================
+
+model Task {
+  id                  String     @id @default(cuid())
+  clientId            String
+  client              Client     @relation(fields: [clientId], references: [id])
+  clientRequestId     String?    @unique
+  clientRequest       ClientRequest? @relation(fields: [clientRequestId], references: [id])
+
+  title               String
+  category            String
+  platform            SocialPlatform?
+  description         String
+  instructions        String
+  targetUrl           String?
+  proofRequired       Boolean    @default(true) // MVP: always true today, but kept explicit per spec
+
+  clientPriceKobo      Int
+  taskerRewardKobo     Int
+  requiredCompletions  Int
+  verifiedCompletions  Int        @default(0) // denormalized counter — the ONLY thing this increments on is an APPROVED submission, never on mere proof submission
+
+  status              TaskStatus @default(ACTIVE)
+  minTierId           String?
+  minTier             Tier?      @relation(fields: [minTierId], references: [id])
+  assignmentScope     TaskAssignmentScope @default(ALL_ELIGIBLE)
+
+  startDate           DateTime?  @default(now())
+  endDate             DateTime?
+
+  createdByAdminId    String
+  createdAt           DateTime   @default(now())
+  updatedAt           DateTime   @updatedAt
+
+  assignedTiers       TaskAssignedTier[]
+  assignedTaskers     TaskAssignedTasker[]
+  reservations        TaskReservation[]
+  submissions         TaskSubmission[]
+
+  // remainingCompletions is NOT a stored column — it's always
+  // (requiredCompletions - verifiedCompletions), computed server-side
+  // wherever it's read (see lib/tasks.ts), so there is only ever one source
+  // of truth for it.
+
+  @@index([status])
+}
+
+// Only populated when assignmentScope = SPECIFIC_TIERS.
+model TaskAssignedTier {
+  id     String @id @default(cuid())
+  taskId String
+  task   Task   @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  tierId String
+  tier   Tier   @relation(fields: [tierId], references: [id])
+
+  @@unique([taskId, tierId])
+}
+
+// Only populated when assignmentScope = SPECIFIC_TASKERS.
+model TaskAssignedTasker {
+  id       String        @id @default(cuid())
+  taskId   String
+  task     Task          @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  taskerId String
+  tasker   TaskerProfile @relation(fields: [taskerId], references: [id])
+
+  @@unique([taskId, taskerId])
+  @@index([taskerId])
+}
+
+// The server-authoritative 10-minute slot hold created on "Start Task".
+// expiresAt is set server-side; a background sweep (or a check-on-read) flips
+// ACTIVE -> EXPIRED once now() > expiresAt, and releases the slot.
+model TaskReservation {
+  id          String             @id @default(cuid())
+  taskId      String
+  task        Task               @relation(fields: [taskId], references: [id])
+  taskerId    String
+  tasker      TaskerProfile      @relation(fields: [taskerId], references: [id])
+  status      ReservationStatus  @default(ACTIVE)
+  createdAt   DateTime           @default(now())
+  expiresAt   DateTime           // createdAt + 10 minutes, set server-side
+
+  submission  TaskSubmission?
+
+  // A tasker may only hold one ACTIVE reservation on a given task at a time.
+  @@index([taskId, status])
+  @@index([taskerId, status])
+}
+
+model TaskSubmission {
+  id                String            @id @default(cuid())
+  taskId            String
+  task              Task              @relation(fields: [taskId], references: [id])
+  taskerId          String
+  tasker            TaskerProfile     @relation(fields: [taskerId], references: [id])
+  reservationId     String            @unique
+  reservation       TaskReservation   @relation(fields: [reservationId], references: [id])
+
+  screenshotUrl     String            // storage path/key, not a public URL — signed on read
+  submittedHandle   String?           // optional username/account used ("accountUsed" in spec)
+  declaredGenuine   Boolean           // must be true to submit; the confirmation checkbox
+
+  status            SubmissionStatus  @default(PENDING)
+  submittedAt       DateTime          @default(now())
+
+  review            ProofReview?
+
+  @@index([taskId, status])
+  @@index([taskerId])
+}
+
+model ProofReview {
+  id                String            @id @default(cuid())
+  submissionId      String            @unique // enforces: at most one review per submission — the primary duplicate-approval guard
+  submission        TaskSubmission    @relation(fields: [submissionId], references: [id])
+  adminId           String
+  decision          SubmissionStatus  // APPROVED, REJECTED, or FRAUD_FLAGGED
+  rejectionReason   RejectionReason?
+  isFraudFlag       Boolean           @default(false) // "Reject Proof" vs "Flag as Fraud Violation" — distinct from a normal rejection
+  notes             String?
+  reviewedAt        DateTime          @default(now())
+
+  fraudViolation    FraudViolation?
+}
+
+// ==================================================
+// FRAUD
+// ==================================================
+
+model FraudViolation {
+  id            String            @id @default(cuid())
+  taskerId      String
+  tasker        TaskerProfile     @relation(fields: [taskerId], references: [id])
+  reviewId      String            @unique
+  review        ProofReview       @relation(fields: [reviewId], references: [id])
+  stage         FraudStrikeStage  // derived from the tasker's strike count at time of flag (1st/2nd/3rd+)
+  appealStatus  FraudAppealStatus @default(NONE)
+  appealNotes   String?
+  createdAt     DateTime          @default(now())
+
+  @@index([taskerId])
+}
+
+// ==================================================
+// WALLET
+// ==================================================
+
+model Wallet {
+  id                  String   @id @default(cuid())
+  taskerId            String   @unique
+  tasker              TaskerProfile @relation(fields: [taskerId], references: [id])
+  availableBalanceKobo Int     @default(0)
+  pendingEarningsKobo  Int     @default(0)
+  lifetimeEarningsKobo Int     @default(0)
+  // Held out of availableBalanceKobo the moment a withdrawal is REQUESTED
+  // (see lib/withdrawal.ts requestWithdrawal) so a second request can never
+  // over-claim the same money. Released back on FAILED; on PAID it's
+  // released AND availableBalanceKobo is permanently reduced by the same
+  // amount in the same transaction. "Spendable" balance for eligibility/
+  // request checks is always availableBalanceKobo - reservedForWithdrawalKobo,
+  // never availableBalanceKobo alone.
+  reservedForWithdrawalKobo Int @default(0)
+  updatedAt           DateTime @updatedAt
+
+  transactions        WalletTransaction[]
+}
+
+// Every balance-affecting event, ever. This is the audit trail — balances on
+// Wallet are a cache; WalletTransaction is the source of truth. Never
+// deleted — a correction is always a new ADJUSTMENT row, never an edit.
+model WalletTransaction {
+  id          String       @id @default(cuid())
+  walletId    String
+  wallet      Wallet       @relation(fields: [walletId], references: [id])
+  taskerId    String       // denormalized for direct querying/audit without joining through Wallet
+  type        WalletTxType
+  amountKobo  Int          // positive for TASK_REWARD/ADJUSTMENT-up, negative for DEDUCTION/WITHDRAWAL/ADJUSTMENT-down
+  balanceBeforeKobo Int    // availableBalanceKobo immediately before this transaction
+  balanceAfterKobo  Int    // availableBalanceKobo immediately after this transaction
+  description String?
+  reference   String?      // free-form audit/payment reference string
+  taskId               String?
+  referenceSubmissionId String? @unique // only ever set for TASK_REWARD — this constraint is what makes "one submission, one reward" impossible to violate even under a race
+  referenceWithdrawalId String? @unique // only ever set for WITHDRAWAL — same double-pay protection for withdrawals
+  createdAt   DateTime     @default(now())
+
+  @@index([walletId])
+  @@index([taskerId])
+}
+
+model Withdrawal {
+  id                String           @id @default(cuid())
+  taskerId          String
+  tasker            TaskerProfile    @relation(fields: [taskerId], references: [id])
+  amountKobo        Int              // must be >= 500000 kobo (₦5,000)
+  status            WithdrawalStatus @default(REQUESTED)
+  paymentProvider   String           @default("paystack")
+  paystackRef       String?
+  adminReviewerId   String?
+
+  requestedAt   DateTime  @default(now())
+  processingAt  DateTime? // moved to PROCESSING when the weekly Sunday 5PM batch picks it up
+  paidAt        DateTime?
+  failedAt      DateTime?
+  failureReason String?
+
+  @@index([taskerId, status])
+}
+
+// ==================================================
+// TIERS
+// ==================================================
+
+// One row per tier (1-100). rewardKobo is computed by the formula in
+// lib/tier.ts at seed time and stored here so it never needs recomputation
+// client-side. thresholdCount is left null for tiers whose progression
+// requirement is not yet defined by the spec (only the Tier100 = 2x Tier50
+// relationship is authoritative) — do not backfill invented numbers.
+model Tier {
+  id             String   @id @default(cuid())
+  level          Int      @unique // 1..100
+  rewardKobo     Int
+  thresholdCount Int?     // verified tasks required to REACH this tier; null = undefined by spec
+
+  taskerProfiles TaskerProfile[]
+  tasks          Task[]
+  assignedToTasks TaskAssignedTier[]
+  announcements  Announcement[]
+}
+
+// ==================================================
+// ADMIN / ANNOUNCEMENTS / NOTIFICATIONS
+// ==================================================
+
+enum AnnouncementAudience {
+  ALL_TASKERS
+  SPECIFIC_TIER
+  SPECIFIC_TASKERS
+  PLATFORM_WIDE // includes non-tasker visitors (e.g. the public site), not just logged-in taskers
+}
+
+enum AnnouncementStatus {
+  DRAFT
+  SCHEDULED
+  PUBLISHED
+}
+
+model Announcement {
+  id            String               @id @default(cuid())
+  title         String
+  body          String
+  audience      AnnouncementAudience @default(ALL_TASKERS)
+  audienceTierId String?
+  audienceTier  Tier?                @relation(fields: [audienceTierId], references: [id])
+  status        AnnouncementStatus   @default(DRAFT)
+  publishAt     DateTime?            // when status = SCHEDULED; when PUBLISHED, this (or createdAt) is the go-live time
+  createdBy     String
+  createdAt     DateTime             @default(now())
+
+  recipients    AnnouncementRecipient[] // only populated when audience = SPECIFIC_TASKERS
+}
+
+// Only populated when audience = SPECIFIC_TASKERS.
+model AnnouncementRecipient {
+  id             String       @id @default(cuid())
+  announcementId String
+  announcement   Announcement @relation(fields: [announcementId], references: [id], onDelete: Cascade)
+  taskerId       String
+  tasker         TaskerProfile @relation(fields: [taskerId], references: [id])
+
+  @@unique([announcementId, taskerId])
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  title     String
+  body      String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId, read])
+}
+
+// Append-only record of every admin action that changes state — admin login,
+// task create/edit/pause/resume/close, proof approve/reject, fraud flag,
+// tasker suspend/ban, withdrawal process/pay/fail, wallet adjustment, tier
+// adjustment, announcement publication. Never updated or deleted.
+model AuditLog {
+  id         String   @id @default(cuid())
+  actorId    String
+  actor      User     @relation(fields: [actorId], references: [id])
+  action     String   // e.g. "TASK_CREATE", "PROOF_APPROVE", "WITHDRAWAL_PAY", "ADMIN_LOGIN"
+  targetType String   // e.g. "Task", "TaskSubmission", "Withdrawal"
+  targetId   String
+  metadata   Json?
+  createdAt  DateTime @default(now())
+
+  @@index([actorId])
+  @@index([targetType, targetId])
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#283044", "tertiary-container": "#004f34", "background": "#faf8ff", "primary-fixed": "#aef1c8", "on-primary": "#ffffff", "inverse-on-surface": "#eef0ff", "inverse-primary": "#93d5ad", "surface-dim": "#d2d9f4", "surface-container-highest": "#dae2fd", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#002113", "error-container": "#ffdad6", "secondary-fixed-dim": "#71dba6", "on-background": "#131b2e", "outline-variant": "#bfc9c0", "on-tertiary-fixed-variant": "#005236", "primary-container": "#054f31", "error": "#ba1a1a", "tertiary-fixed-dim": "#4edea3", "outline": "#707972", "primary": "#003620", "surface-container-high": "#e2e7ff", "surface-bright": "#faf8ff", "on-primary-container": "#7fc099", "surface-tint": "#2a6a49", "on-surface": "#131b2e", "on-error": "#ffffff", "secondary-container": "#8af5be", "on-secondary-container": "#00714b", "primary-fixed-dim": "#93d5ad", "surface-variant": "#dae2fd", "tertiary-fixed": "#6ffbbe", "on-primary-fixed": "#002111", "on-error-container": "#93000a", "surface-container": "#eaedff", "on-secondary-fixed-variant": "#005235", "secondary-fixed": "#8df7c1", "on-tertiary-container": "#31c98f", "surface-container-lowest": "#ffffff", "on-surface-variant": "#404942", "surface-container-low": "#f2f3ff", "on-tertiary-fixed": "#002113", "surface": "#faf8ff", "secondary": "#006c47", "on-primary-fixed-variant": "#095133", "tertiary": "#003623" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "1rem", "margin-desktop": "2.5rem", "space-xl": "2.5rem", "space-md": "1rem" }, "fontFamily": { "label-sm": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "currency-display": ["Space Grotesk"], "label-lg": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "title-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "currency-display": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #054f31
+- Font: spaceGrotesk
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">TaskNaija</span><span class="sr-only">Become A Tasker</span></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button aria-label="Open Menu" class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-safe">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full px-gutter pt-space-lg pb-space-xl overflow-hidden bg-surface-container-low">
+<!-- Ambient Velocity Glows -->
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 -left-12 w-40 h-40 rounded-full bg-primary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>BECOME A TASKER</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight uppercase mb-space-sm">
+        TURN YOUR FREE TIME INTO COMPLETED TASKS.
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+        Find available microtasks, complete them, submit proof, and earn when your work is verified.
+      </p>
+<div class="flex flex-col w-full gap-space-sm">
+<a class="w-full h-12 flex items-center justify-center gap-space-xs rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md active:scale-[0.98] transition-transform" href="#register">
+<span>CREATE TASKER ACCOUNT</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full h-12 flex items-center justify-center gap-space-xs rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg active:scale-[0.98] transition-transform" data-path="how-it-works" href="#">
+<span>HOW IT WORKS</span>
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 2. DASHBOARD PREVIEW CARD -->
+<section class="w-full px-gutter -mt-space-md relative z-20">
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-xl flex flex-col gap-space-md">
+<!-- Live Dashboard Header Metric -->
+<div class="flex items-center justify-between bg-primary text-on-primary rounded-lg p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-primary-fixed">Tier 2</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">Active Level</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-container-high">Standard Base Rate</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">₦20</span>
+<span class="font-label-sm text-label-sm block text-surface-container-high">/ task</span>
+</div>
+</div>
+<!-- Available Task Subcard -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-secondary">share</span>
+<span>Social Engagement</span>
+</div>
+<div class="flex items-center gap-1 text-error font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>14 slots left</span>
+</div>
+</div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<h4 class="font-title-sm text-title-sm text-on-surface truncate">Twitter Repost &amp; Like</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Follow, quote-post, and upload proof snapshot</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">₦20.00</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span id="demo-timer">04:58 remaining</span>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold shadow-sm active:scale-95 transition-transform" type="button">
+            Start Task
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. WHAT YOU GET (4 stacked cards) -->
+<section class="w-full px-gutter py-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">TASKER ADVANTAGES</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">What You Get</h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">FLEXIBLE TASKS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Tasks carefully curated to match your specific profile, interests, and device setup.
+          </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">price_check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">CLEAR REWARDS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Know your guaranteed payout in Naira before starting work. Zero hidden escrow cuts.
+          </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">trending_up</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">PROGRESSIVE TIERS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            100 dynamic tiers unlocking compounding multipliers up to ₦510 per verified microtask.
+          </p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface">TRACK YOUR MONEY</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Real-time balance breakdown across Available, Pending Escrow, and Lifetime settlements.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. TIER PROGRESSION -->
+<section class="w-full bg-surface-container-low py-space-xl px-gutter flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 self-start px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">military_tech</span>
+<span>GROWTH LADDER</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Progressive Tier Engine</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Higher tiers require sustained verified activity.</p>
+</div>
+<!-- Visual Tier Progression Track -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md overflow-hidden">
+<!-- Horizontal Scrollable Track -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scroll-smooth">
+<!-- Tier 1 -->
+<div class="flex flex-col items-center justify-center shrink-0 w-24 py-space-sm px-2 rounded-lg bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tier 1</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₦10</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/task</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">arrow_forward</span>
+<!-- Tier 2 (Current Active Highlight) -->
+<div class="flex flex-col items-center justify-center shrink-0 w-28 py-space-sm px-2 rounded-lg bg-primary text-on-primary text-center shadow-md relative">
+<div class="absolute -top-2 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[9px] uppercase font-bold">
+            Popular
+          </div>
+<span class="font-label-sm text-label-sm text-primary-fixed mt-1">Tier 2</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">₦20</span>
+<span class="font-label-sm text-label-sm text-surface-container-high">/task</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">arrow_forward</span>
+<!-- Tier 3 -->
+<div class="flex flex-col items-center justify-center shrink-0 w-24 py-space-sm px-2 rounded-lg bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tier 3</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₦25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/task</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">arrow_forward</span>
+<!-- Tier 4 -->
+<div class="flex flex-col items-center justify-center shrink-0 w-24 py-space-sm px-2 rounded-lg bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tier 4</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₦30</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/task</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">more_horiz</span>
+<!-- Tier 100 -->
+<div class="flex flex-col items-center justify-center shrink-0 w-28 py-space-sm px-2 rounded-lg bg-secondary-container text-on-secondary-container text-center">
+<span class="font-label-sm text-label-sm font-bold text-on-secondary-container">Tier 100</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-secondary-container">₦510</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container">/task</span>
+</div>
+</div>
+<!-- Segmented Bar Indicator -->
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden flex">
+<div class="h-full bg-secondary w-1/4 rounded-full"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Tier 1 (Starter)</span>
+<span class="font-bold text-secondary">Level 100 Apex Unlock</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. WHAT YOU NEED -->
+<section class="w-full px-gutter py-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">REQUIREMENTS</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">Getting Started is Simple</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Item 1 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Basic Personal Information</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Legal name and identification for Paystack bank verification.</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Valid Email &amp; Phone Number</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active Nigerian mobile number with SMS OTP delivery.</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Social Accounts You May Use</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active handles on X (Twitter), Instagram, TikTok, or YouTube.</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Ability to Provide Genuine Proof</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Smartphone capability to snap clear, unaltered completion screenshots.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. IMPORTANT RULES (Fraud Policy) -->
+<section class="w-full px-gutter pb-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-bold">INTEGRITY POLICY</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background">Keep Your Task History Clean</h2>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-error font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">flip_camera_ios</span>
+<span>Three-Strike Proof Validation System</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Offense 1 -->
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-on-surface font-label-sm text-label-sm font-bold shrink-0">
+            1
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">First Offense</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Second chance provided. Task payout rejected with feedback notice.</span>
+</div>
+</div>
+<!-- Offense 2 -->
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-error font-label-sm text-label-sm font-bold shrink-0">
+            2
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Second Offense</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Final warning issued. Task allocation paused for 48 hours.</span>
+</div>
+</div>
+<!-- Offense 3 -->
+<div class="flex items-start gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="w-6 h-6 rounded-full bg-error-container flex items-center justify-center text-on-error-container font-label-sm text-label-sm font-bold shrink-0">
+            3
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-error font-bold">Third Offense</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tier progression paused permanently until formal admin appeal is resolved.</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">fact_check</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+          Screenshots are reviewed by admin. Maintain genuine task proofs.
+        </p>
+</div>
+</div>
+</section>
+<!-- 7. WITHDRAWAL UNLOCK -->
+<section class="w-full px-gutter pb-space-xl">
+<div class="w-full rounded-xl bg-primary-container text-on-primary p-space-md flex flex-col gap-space-md shadow-lg relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">lock_open</span>
+<span class="font-label-lg text-label-lg font-bold text-secondary-fixed uppercase tracking-wider">Settlement Rules</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/10 font-label-sm text-label-sm text-primary-fixed">
+          Automated
+        </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-body-sm text-body-sm text-surface-container-high">Minimum Threshold</span>
+<span class="font-currency-display text-currency-display text-secondary-fixed tracking-tight">₦5,000.00</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-lg bg-primary/40 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-surface-container-high">Requirement</span>
+<span class="font-label-md text-label-md font-bold text-on-primary">500 Tasks + 10 Days</span>
+</div>
+<div class="p-space-sm rounded-lg bg-primary/40 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-surface-container-high">Payout Window</span>
+<span class="font-label-md text-label-md font-bold text-secondary-fixed">Sunday 5:00 PM</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Disbursed directly to any Nigerian bank via Paystack</span>
+</div>
+</div>
+</section>
+<!-- 8. FINAL CTA -->
+<section class="w-full px-gutter pb-space-xl flex flex-col items-center text-center" id="register">
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-xl flex flex-col items-center gap-space-md">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary uppercase">
+          READY TO BECOME A TASKER?
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Registration takes only a few minutes. Start earning within the hour.
+        </p>
+</div>
+<button class="w-full h-14 flex items-center justify-center gap-space-sm rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-lg active:scale-[0.98] transition-transform" type="button">
+<span>CREATE MY ACCOUNT</span>
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+        No upfront fees or deposit needed. Completely free to join.
+      </span>
+</div>
+</section>
+<script>
+    // Subtle countdown micro-interaction for dashboard card preview
+    (function() {
+      let seconds = 298;
+      const timerEl = document.getElementById('demo-timer');
+      if (timerEl) {
+        setInterval(() => {
+          if (seconds > 0) {
+            seconds--;
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            timerEl.textContent = `0${mins}:${secs < 10 ? '0' : ''}${secs} remaining`;
+          }
+        }, 1000);
+      }
+    })();
+  </script>
+</div><footer class="w-full bg-surface-container-low px-gutter py-space-xl mt-auto"><div class="max-w-md mx-auto flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary">TaskNaija</span><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">NG</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Nigeria's leading micro-task platform for high-velocity verified payouts.</p></div><div class="grid grid-cols-2 gap-space-md font-label-lg text-label-lg"><a class="text-on-surface hover:text-secondary py-space-xs transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="text-on-surface hover:text-secondary py-space-xs transition-colors" data-path="become-a-tasker" href="#">Become a Tasker</a><a class="text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="terms" href="#">Terms</a><a class="text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="support" href="#">Support</a></div><div class="flex flex-col gap-space-sm pt-space-xs"><div class="inline-flex items-center gap-space-xs self-start px-space-md py-space-xs rounded-full bg-surface-container border-0"><span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span><span class="font-label-md text-label-md text-on-surface font-semibold">Paystack Verified Settlement</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 TaskNaija Ltd. All rights reserved.</p></div></div></footer></main></body></html>

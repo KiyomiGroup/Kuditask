@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'error-container': '#ffdad6', 'on-error': '#ffffff', 'on-tertiary-fixed': '#002113', 'surface-container-highest': '#dae2fd', 'on-secondary': '#ffffff', 'on-surface': '#131b2e', 'on-tertiary': '#ffffff', 'outline-variant': '#bfc9c0', 'on-secondary-fixed': '#002113', 'on-primary-fixed': '#002111', 'background': '#faf8ff', 'secondary': '#006c47', 'secondary-fixed-dim': '#71dba6', 'inverse-primary': '#93d5ad', 'surface-tint': '#2a6a49', 'outline': '#707972', 'on-error-container': '#93000a', 'secondary-container': '#8af5be', 'surface': '#faf8ff', 'surface-variant': '#dae2fd', 'secondary-fixed': '#8df7c1', 'tertiary-fixed-dim': '#4edea3', 'primary-fixed-dim': '#93d5ad', 'error': '#ba1a1a', 'on-primary-container': '#7fc099', 'on-tertiary-container': '#31c98f', 'on-tertiary-fixed-variant': '#005236', 'on-secondary-container': '#00714b', 'surface-dim': '#d2d9f4', 'inverse-surface': '#283044', 'surface-container': '#eaedff', 'surface-container-high': '#e2e7ff', 'on-background': '#131b2e', 'on-primary': '#ffffff', 'on-primary-fixed-variant': '#095133', 'tertiary': '#003623', 'primary': '#003620', 'surface-bright': '#faf8ff', 'tertiary-container': '#004f34', 'tertiary-fixed': '#6ffbbe', 'on-surface-variant': '#404942', 'surface-container-lowest': '#ffffff', 'on-secondary-fixed-variant': '#005235', 'inverse-on-surface': '#eef0ff', 'primary-fixed': '#aef1c8', 'surface-container-low': '#f2f3ff', 'primary-container': '#054f31' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'gutter': '1rem', 'margin-desktop': '2.5rem', 'gutter-desktop': '1.5rem', 'space-sm': '0.5rem', 'space-xs': '0.25rem', 'margin': '1rem', 'space-lg': '1.5rem', 'space-xl': '2.5rem', 'space-md': '1rem' }, fontFamily: { 'headline-xl': ['Space Grotesk'], 'title-md': ['Plus Jakarta Sans'], 'headline-lg': ['Space Grotesk'], 'label-sm': ['Space Grotesk'], 'body-md': ['Plus Jakarta Sans'], 'title-sm': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Space Grotesk'], 'currency-display': ['Space Grotesk'], 'label-lg': ['Space Grotesk'], 'headline-xl-mobile': ['Space Grotesk'], 'label-md': ['Space Grotesk'], 'headline-md': ['Space Grotesk'], 'headline-sm': ['Space Grotesk'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'] }, fontSize: { 'headline-xl': ['40px', { lineHeight: '48px', fontWeight: '700' }], 'title-md': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', fontWeight: '700' }], 'label-sm': ['10px', { lineHeight: '14px', fontWeight: '700' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'title-sm': ['16px', { lineHeight: '24px', fontWeight: '600' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '700' }], 'currency-display': ['36px', { lineHeight: '44px', fontWeight: '700' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'headline-xl-mobile': ['30px', { lineHeight: '36px', fontWeight: '700' }], 'label-md': ['12px', { lineHeight: '16px', fontWeight: '600' }], 'headline-md': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'headline-sm': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #054f31
+- Font: spaceGrotesk
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">TaskNaija</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-high active:bg-surface-container-highest transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Visual Banner & Context Frame -->
+<div class="px-gutter pt-space-md pb-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container mb-1.5">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Live Payout Queue</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Available Tasks</h1>
+</div>
+<!-- User Tier Mini Shield -->
+<div class="flex items-center gap-1.5 bg-surface-container-high px-3 py-1.5 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Tier Level</span>
+<span class="font-headline-sm text-headline-sm text-primary leading-tight">07</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Choose a task you're eligible to complete and unlock instant wallet settlement.</p>
+</div>
+<!-- Search & Sticky Action Filter Header -->
+<div class="px-gutter space-y-space-sm pt-space-xs pb-space-sm">
+<!-- Search Bar with Micro-counter -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-12 pl-10 pr-10 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none placeholder:text-outline focus:bg-surface-container-low transition-colors" id="taskSearchInput" placeholder="Search tasks, platforms or rewards..." type="text"/>
+<button aria-label="Voice Search" class="absolute right-3 text-on-surface-variant hover:text-primary" type="button">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+</div>
+<!-- Horizontally Scrollable Category Filter Chips -->
+<div class="overflow-x-auto no-scrollbar -mx-gutter px-gutter flex items-center gap-2 py-1">
+<button class="filter-chip active flex-shrink-0 px-3.5 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span>All Tasks</span>
+<span class="bg-primary-container text-on-primary-container px-1.5 py-0.2 rounded-full font-label-sm text-label-sm">24</span>
+</button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" type="button">
+<span>Instagram</span>
+<span class="text-on-surface-variant/70 font-label-sm text-label-sm">8</span>
+</button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" type="button">
+<span>X / Twitter</span>
+<span class="text-on-surface-variant/70 font-label-sm text-label-sm">6</span>
+</button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" type="button">
+<span>TikTok</span>
+<span class="text-on-surface-variant/70 font-label-sm text-label-sm">4</span>
+</button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" type="button">
+<span>App Testing</span>
+<span class="text-on-surface-variant/70 font-label-sm text-label-sm">3</span>
+</button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" type="button">
+<span>Surveys</span>
+<span class="text-on-surface-variant/70 font-label-sm text-label-sm">3</span>
+</button>
+</div>
+<!-- Sort & Tier Summary Strip -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1 rounded-lg">
+<span class="h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface">24 Tasks Available • Tier 7 (<span class="font-bold text-secondary">₦45/task</span>)</span>
+</div>
+<button class="flex items-center gap-1 text-on-surface font-label-md text-label-md px-2 py-1 rounded-lg hover:bg-surface-container transition-colors" type="button">
+<span>Sort: Recommended</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Main Tasks Stack -->
+<div class="px-gutter py-space-sm space-y-space-md">
+<!-- Card 1: Instagram Follow & Like -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">camera_alt</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Instagram</span>
+<span class="h-1 w-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Social Task</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight">Instagram Follow &amp; Like</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Payout</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">₦45.00</span>
+</div>
+</div>
+<!-- Task Details & Verification Instruction -->
+<div class="bg-surface-container-low rounded-lg p-space-sm text-on-surface-variant font-body-sm text-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">verified_user</span>
+<p class="line-clamp-2">Follow target handle and submit uncropped screenshot proof for instant automated escrow release.</p>
+</div>
+<!-- Slots & Progress Segment -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">group</span>
+            38 slots remaining
+          </span>
+<span class="text-on-surface-variant">62% claimed</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 62%;"></div>
+</div>
+</div>
+<!-- CTA Reservation Button -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.99] hover:bg-primary-container shadow-sm transition-all" type="button">
+<span>Start Task</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2: X (Twitter) Repost & Like (Urgent) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<!-- Fast claim urgency tag -->
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1 bg-error-container text-on-error-container px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>Filling Fast</span>
+</div>
+<div class="flex items-center gap-1 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>Lock: 15 mins</span>
+</div>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">repeat</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">X (Twitter)</span>
+<span class="h-1 w-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Engagement</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight">X (Twitter) Repost &amp; Like</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Payout</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">₦45.00</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm text-on-surface-variant font-body-sm text-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">verified_user</span>
+<p class="line-clamp-2">Quote-repost promotional tweet with mandatory hashtag #NaijaGrow and hit the like icon.</p>
+</div>
+<!-- Slots & High Urgency Progress Bar -->
+<div class="space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+            14 slots remaining
+          </span>
+<span class="text-on-surface-variant">86% claimed</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 86%;"></div>
+</div>
+</div>
+<!-- Secondary Mint Accent Fast CTA -->
+<button class="w-full h-12 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.99] shadow-sm transition-all hover:bg-secondary/90" type="button">
+<span>Start Task</span>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</button>
+</div>
+<!-- Visual Media Spot / Sorter Banner -->
+<div class="relative rounded-xl overflow-hidden bg-surface-container p-space-md flex items-center justify-between shadow-sm">
+<div class="relative z-10 max-w-[210px] space-y-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Fast-Track Verification</span>
+<h3 class="font-title-sm text-title-sm text-primary">Need instant approvals?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Upload clean screen recordings for instant 60-second AI validation.</p>
+</div>
+<div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-inner flex-shrink-0">
+<span class="material-symbols-outlined text-[32px]">speed</span>
+</div>
+</div>
+<!-- Card 3: Google PlayStore App Review -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">shop</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">PlayStore</span>
+<span class="h-1 w-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">App Review</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight">Download &amp; Rate Merchant App</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Payout</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">₦50.00</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm text-on-surface-variant font-body-sm text-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">verified_user</span>
+<p class="line-clamp-2">Install app via PlayStore link, submit 5-star feedback and attach your store display name.</p>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">group</span>
+            22 slots remaining
+          </span>
+<span class="text-on-surface-variant">78% claimed</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.99] hover:bg-primary-container shadow-sm transition-all" type="button">
+<span>Start Task</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 4: 3-min Consumer Survey -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all hover:shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Forms</span>
+<span class="h-1 w-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Research (3 min)</span>
+</div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight">Lagos Telecoms Consumer Survey</h2>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Payout</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">₦45.00</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm text-on-surface-variant font-body-sm text-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">verified_user</span>
+<p class="line-clamp-2">Complete 8 simple multiple-choice questions on 4G network coverage in Ikeja and Surulere.</p>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">group</span>
+            45 slots remaining
+          </span>
+<span class="text-on-surface-variant">55% claimed</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 55%;"></div>
+</div>
+</div>
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.99] hover:bg-primary-container shadow-sm transition-all" type="button">
+<span>Start Task</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Delightful Empty State / Discovery Fallback Card -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg text-center flex flex-col items-center justify-center gap-3 mt-space-md shadow-sm">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[28px]">radar</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-headline-sm text-headline-sm text-primary">Looking for more?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mx-auto">
+          No tasks available in custom filters right now. New tasks are published regularly by Nigerian brands every 15 minutes.
+        </p>
+</div>
+<button class="mt-2 px-5 py-2.5 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-all flex items-center gap-2 active:scale-95" id="refreshTasksBtn" type="button">
+<span class="material-symbols-outlined text-[18px]" id="refreshIcon">refresh</span>
+<span>Refresh Tasks</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Dynamic Filter Chip Toggle
+    const chips = document.querySelectorAll('.filter-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', function() {
+        chips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary');
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+          const badge = c.querySelector('span:last-child');
+          if (badge) {
+            badge.classList.remove('bg-primary-container', 'text-on-primary-container');
+            badge.classList.add('text-on-surface-variant/70');
+          }
+        });
+        this.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        this.classList.add('bg-primary', 'text-on-primary');
+        const activeBadge = this.querySelector('span:last-child');
+        if (activeBadge) {
+          activeBadge.classList.remove('text-on-surface-variant/70');
+          activeBadge.classList.add('bg-primary-container', 'text-on-primary-container');
+        }
+      });
+    });
+
+    // Refresh Micro-interaction
+    const refreshBtn = document.getElementById('refreshTasksBtn');
+    const refreshIcon = document.getElementById('refreshIcon');
+    if (refreshBtn && refreshIcon) {
+      refreshBtn.addEventListener('click', function() {
+        refreshIcon.classList.add('animate-spin');
+        refreshBtn.setAttribute('disabled', 'true');
+        setTimeout(() => {
+          refreshIcon.classList.remove('animate-spin');
+          refreshBtn.removeAttribute('disabled');
+        }, 800);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-bold"><div class="flex items-stretch justify-around h-16 px-space-xs"><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm tracking-wide">Home</span></a><a aria-current="page" class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 transition-colors text-primary font-bold" data-path="tasks" href="#"><span class="material-symbols-outlined text-[22px]">assignment</span><span class="font-label-sm text-label-sm tracking-wide">Tasks</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-[22px]">account_balance_wallet</span><span class="font-label-sm text-label-sm tracking-wide">Wallet</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="tier" href="#"><span class="material-symbols-outlined text-[22px]">military_tech</span><span class="font-label-sm text-label-sm tracking-wide">Tier</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm tracking-wide">Profile</span></a></div></nav></body></html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#131b2e", "surface-tint": "#2a6a49", "on-secondary-fixed": "#002113", "on-secondary-container": "#00714b", "outline": "#707972", "error": "#ba1a1a", "surface-container": "#eaedff", "on-error": "#ffffff", "on-secondary-fixed-variant": "#005235", "on-tertiary-fixed": "#002113", "surface": "#faf8ff", "secondary-fixed": "#8df7c1", "background": "#faf8ff", "secondary": "#006c47", "on-primary-fixed-variant": "#095133", "secondary-container": "#8af5be", "primary-container": "#054f31", "primary": "#003620", "on-surface-variant": "#404942", "primary-fixed": "#aef1c8", "surface-container-highest": "#dae2fd", "on-primary-container": "#7fc099", "tertiary": "#003623", "primary-fixed-dim": "#93d5ad", "on-error-container": "#93000a", "on-tertiary-container": "#31c98f", "inverse-primary": "#93d5ad", "on-secondary": "#ffffff", "surface-variant": "#dae2fd", "surface-dim": "#d2d9f4", "tertiary-container": "#004f34", "on-primary-fixed": "#002111", "tertiary-fixed": "#6ffbbe", "surface-container-high": "#e2e7ff", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#005236", "tertiary-fixed-dim": "#4edea3", "surface-bright": "#faf8ff", "error-container": "#ffdad6", "surface-container-low": "#f2f3ff", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", "inverse-surface": "#283044", "on-surface": "#131b2e", "outline-variant": "#bfc9c0", "secondary-fixed-dim": "#71dba6", "inverse-on-surface": "#eef0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "margin": "1rem", "margin-desktop": "2.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "headline-md": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "headline-xl": [ "Space Grotesk" ], "label-md": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "label-sm": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Space Grotesk" ], "title-sm": [ "Plus Jakarta Sans" ], "label-lg": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "title-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "currency-display": [ "Space Grotesk" ] }, "fontSize": { "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "36px", "fontWeight": "700" } ], "title-sm": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "currency-display": [ "36px", { "lineHeight": "44px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #054f31 - Font: spaceGrotesk - Mode: light - Roundness: rounded-md" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">TaskNaija</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container tracking-wide">NGN</span></div><div class="px-space-md pt-space-md"><p class="px-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant opacity-75">Tasker Main</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Home</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary font-semibold" data-path="tasks" href="#"><span class="material-symbols-outlined text-[20px]">task</span><span>Tasks</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="wallet" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Wallet</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="tier" href="#"><span class="material-symbols-outlined text-[20px]">military_tech</span><span>Tier</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span>Profile</span></a></nav></div><div class="px-space-md pt-space-lg"><p class="px-space-sm pb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant opacity-75">Operations</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="my-tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">assignment_turned_in</span><span>My Tasks</span></div><span class="inline-flex items-center px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">Active</span></a><a class="flex items-center justify-between px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span>Notifications</span></div><span class="inline-flex items-center justify-center w-5 h-5 rounded-full font-label-sm text-label-sm bg-error text-on-error">3</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-title-sm text-title-sm transition-colors" data-path="help-support" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span>Help &amp; Support</span></a></nav></div></div><div class="p-space-md m-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center flex-shrink-0 text-on-primary font-label-md text-label-md">TB</div><div class="flex-1 min-w-0"><p class="font-title-sm text-title-sm text-on-surface truncate">Tunde Babatunde</p><p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tier 7 • <span class="text-secondary font-bold">₦45/task</span></p></div><a class="text-on-surface-variant hover:text-on-surface transition-colors p-1" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">more_vert</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter-desktop"><div class="h-16 w-full flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-1 max-w-md"><div class="w-full flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xs rounded-lg shadow-[0_1px_3px_rgba(15,23,42,0.05)]"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface focus:outline-none placeholder:text-outline" placeholder="Search tasks, escrow ID, transactions..." type="text"/></div></div><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #054f31 - Font: spaceGrotesk - Mode: light - Roundness: rounded-md" class="h-8 w-auto object-contain md:hidden" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><button aria-label="Notifications" class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:block text-left"><p class="font-label-md text-label-md text-on-surface leading-none">Tunde B.</p><p class="font-label-sm text-label-sm text-secondary font-semibold leading-tight">Verified Tasker</p></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Interactive View State Controller -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-md py-space-sm rounded-xl mb-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<span class="font-label-md text-label-md text-on-surface">Interactive Prototype Preview:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Switch between active reservation and expired state</span>
+</div>
+<div class="inline-flex p-1 bg-surface-container-highest rounded-lg">
+<button class="px-space-md py-1 rounded-md font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm" id="btn-state-active" onclick="setViewState('active')" type="button">Active State</button>
+<button class="px-space-md py-1 rounded-md font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface" id="btn-state-expired" onclick="setViewState('expired')" type="button">Expired State</button>
+</div>
+</div>
+<!-- Breadcrumb & Top Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<nav class="flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Tasks</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Active Task</span>
+<span class="text-outline-variant">/</span>
+<span class="font-mono text-outline">#TSK-89240</span>
+</nav>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Instagram Follow</h1>
+<!-- Dynamic Status Badge -->
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md" id="task-status-badge">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span id="task-status-text">In Progress</span>
+</div>
+</div>
+</div>
+<!-- Payout Lock Capsule -->
+<div class="flex items-center gap-space-md bg-surface-container-lowest px-space-lg py-space-sm rounded-xl shadow-sm">
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Escrow Reward</span>
+<div class="flex items-baseline gap-1">
+<span class="font-currency-display text-currency-display text-primary font-bold">₦10<span class="font-headline-sm text-headline-sm text-on-surface-variant">.00</span></span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+</div>
+</div>
+<!-- Countdown Timer Banner Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg mb-space-xl shadow-sm transition-all" id="timer-card">
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<!-- Circular Progress Indicator -->
+<div class="relative w-16 h-16 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 48 48">
+<circle class="text-surface-container fill-none" cx="24" cy="24" r="20" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-secondary transition-all duration-1000 fill-none" cx="24" cy="24" id="timer-progress-ring" r="20" stroke="currentColor" stroke-dasharray="125.6" stroke-dashoffset="18.8" stroke-linecap="round" stroke-width="4"></circle>
+</svg>
+<span class="material-symbols-outlined absolute text-[24px] text-secondary" id="timer-icon">timer</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Reservation Remaining</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-mono bg-surface-container text-on-surface-variant" id="timer-sync-pill">Auto-release enabled</span>
+</div>
+<p class="font-headline-xl text-headline-xl text-on-background tracking-tight tabular-nums font-bold" id="timer-display">
+            09:42
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant" id="timer-subtext">
+            Complete this task and submit your proof before the reservation expires to guarantee your reward.
+          </p>
+</div>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="flex items-center gap-space-xl bg-surface-container-low px-space-lg py-space-sm rounded-lg">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Slot Allocation</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">1 of 500 Used</span>
+</div>
+<div class="h-8 w-px bg-surface-container-highest"></div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Disbursement</span>
+<span class="font-label-lg text-label-lg text-secondary font-semibold">Instant Escrow</span>
+</div>
+</div>
+</div>
+<!-- Expired Warning Banner (Hidden by Default) -->
+<div class="hidden mt-space-md p-space-md rounded-lg bg-error-container text-on-error-container flex items-start gap-space-sm" id="expired-banner">
+<span class="material-symbols-outlined text-error text-[24px] flex-shrink-0">event_busy</span>
+<div class="flex-1">
+<p class="font-title-sm text-title-sm font-bold text-error">Your 10-minute reservation has expired.</p>
+<p class="font-body-sm text-body-sm mt-0.5">This task slot has been safely released back into the public TaskNaija pool. Any unsubmitted proof cannot be processed for this reservation.</p>
+</div>
+</div>
+</div>
+<!-- Main Content Grid (65% / 35%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Left Column (Instructions & Proof Pipeline) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Task Instructions Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">format_list_numbered</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Task Instructions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Follow these steps strictly to ensure verification approval.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-mono">Step-by-Step</span>
+</div>
+<ol class="space-y-space-md mb-space-lg">
+<li class="flex items-start gap-space-md">
+<span class="flex-shrink-0 w-7 h-7 rounded-full bg-surface-container-high text-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">1</span>
+<div class="pt-0.5">
+<p class="font-title-sm text-title-sm text-on-surface font-semibold">Open Instagram</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Launch your mobile application or switch to your logged-in browser tab.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-md">
+<span class="flex-shrink-0 w-7 h-7 rounded-full bg-surface-container-high text-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">2</span>
+<div class="pt-0.5">
+<p class="font-title-sm text-title-sm text-on-surface font-semibold">Visit the target profile</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Navigate to the exact handle specified below. Ensure you are on the authentic page.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-md">
+<span class="flex-shrink-0 w-7 h-7 rounded-full bg-surface-container-high text-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">3</span>
+<div class="pt-0.5">
+<p class="font-title-sm text-title-sm text-on-surface font-semibold">Tap Follow</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Click the blue Follow button. Your account must remain following for at least 30 days.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-md">
+<span class="flex-shrink-0 w-7 h-7 rounded-full bg-surface-container-high text-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">4</span>
+<div class="pt-0.5">
+<p class="font-title-sm text-title-sm text-on-surface font-semibold">Capture clear screenshot</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Take a full-screen image showing the active "Following" status tag and your visible handle icon.</p>
+</div>
+</li>
+<li class="flex items-start gap-space-md">
+<span class="flex-shrink-0 w-7 h-7 rounded-full bg-surface-container-high text-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">5</span>
+<div class="pt-0.5">
+<p class="font-title-sm text-title-sm text-on-surface font-semibold">Return &amp; submit validation</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Upload the screenshot in the proof dialog before your reservation timer reaches 00:00.</p>
+</div>
+</li>
+</ol>
+<!-- Target Account Box -->
+<div class="p-space-md bg-surface-container-low rounded-xl mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-gradient-to-tr from-amber-400 via-rose-500 to-purple-600 p-0.5 flex-shrink-0">
+<div class="w-full h-full bg-surface-container-lowest rounded-full p-0.5 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full rounded-full object-cover" data-alt="Official brand logo avatar with sleek emerald geometric branding against clean white background for high trust micro-tasking" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6iSI5pW3On8RzIqhIkm66vCd51pc4AmhDn1ln5FVvKJGxawqJw_rDsUDwMD778kA1aIpEWMGhbi6d1-fI3jXPx1VJ4hH-PUYKTaf6j1yI0UZiFC6gZwFth0WSULS39gpIdquYWuDLzsj_VaFuXC-JAj9oENvkoL3Ne82Z23NAUemDjm7a5syBnb9b5lZmi1k7x3hg4J1HG1UXBCnNoyVUZ4L06y9uKt455OCnD77jAGJDpiX1EGmL"/>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-bold">@naijatechhub</span>
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="px-2 py-0.5 rounded text-[10px] bg-secondary-container text-on-secondary-container font-semibold uppercase">Verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Target Account: 124K Followers • Technology &amp; Fintech Media</p>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container font-label-md text-label-md font-semibold transition-all shadow-sm" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span>Open Instagram</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Visual Verification Checklist -->
+<div class="bg-surface-container-lowest pt-space-xs">
+<h3 class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-space-sm">Self-Checklist Prior to Submission</h3>
+<div class="space-y-space-xs">
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors select-none">
+<input checked="" class="chk-item w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="updateChecklistProgress()" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">I opened the target account (@naijatechhub)</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors select-none">
+<input class="chk-item w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="updateChecklistProgress()" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">I clicked Follow and the button now states "Following"</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors select-none">
+<input class="chk-item w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" onchange="updateChecklistProgress()" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">I captured an unedited screenshot with current device time visible</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Proof Sample Guidance Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold mb-space-sm">Reference Proof Example</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Ensure your screenshot matches the sample framing. Redacted or cropped usernames will be rejected by our automated vision verification pipeline.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="relative rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-40 object-cover" data-alt="Smartphone mockup screenshot displaying an Instagram profile page with highlighted Following button and clearly visible follower stats and system time in daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD64rP_foHyZLA7JitPLTP4HO2gAF9Pc6EMnPczuPkEWvU1lFKCysp8lzs7yaCW1KN8SGcsd7tcdg5FIbzzwWRxVD0u6FKPwnX9CrLmtWt2O57LLGP14vrIoprxaQNCbvxlGckzSczFHWuXhFooPIZXn-rD2tfrs7kAvaAki8SKX8iruMFHZLLpMhM_nfsFadisN5aRp0yNUu5QJjOVcODPCyfrM5Ymt4BVM5q-TXNKdJeLD3dKwgB"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Acceptable Format</span>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-40 object-cover opacity-60" data-alt="Smartphone screen showing blurry, dark, heavily cropped social media interface with obscured button state and unreadable text" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm2HscGlVV-3VQVQM_K7TGK41AuxOwWx78osCmmgE8lfUZhgwATpRGEEn4Qs41xxKM9WGiMwZ53jUk1R3b8Myfun8GEY9km4s_uKzd34A2uK_oJFJ15-ziGmIzd3BLZ-SGSLtH0DOU277BknZxa-bBvTXEz1s1pF6NYpBj7d1iVsKpNX-boo_-Z-2DW1MzNiVX7moqk4CG5tUV5pZVF9Elyzzakx5d964h_d1mHKyYNVHT-VugimSc"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+<span>Rejected (Blurry/Cropped)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (Task Summary & CTA Engine) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Task Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h2 class="font-title-md text-title-md text-on-surface font-bold mb-space-md">Task Summary</h2>
+<div class="space-y-space-sm mb-space-lg">
+<div class="flex items-center justify-between py-2 bg-surface-container-low px-space-sm rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total Reward</span>
+<span class="font-title-sm text-title-sm font-bold text-secondary">₦10.00</span>
+</div>
+<div class="flex items-center justify-between py-2 px-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Platform</span>
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-pink-600">photo_camera</span>
+<span>Instagram</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-2 bg-surface-container-low px-space-sm rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Category</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Social Media Growth</span>
+</div>
+<div class="flex items-center justify-between py-2 px-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Task Status</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold" id="summary-status-tag">In Progress</span>
+</div>
+<div class="flex items-center justify-between py-2 bg-surface-container-low px-space-sm rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reservation Window</span>
+<span class="font-mono text-body-sm text-on-surface font-medium">10 Minutes</span>
+</div>
+<div class="flex items-center justify-between py-2 px-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Started At</span>
+<span class="font-mono text-body-sm text-on-surface font-medium">10:18 AM WAT</span>
+</div>
+<div class="flex items-center justify-between py-2 bg-surface-container-low px-space-sm rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Review Speed</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">~15 Minutes</span>
+</div>
+</div>
+<!-- Action Buttons Container -->
+<div class="space-y-space-sm">
+<button class="w-full py-3.5 px-space-md rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-title-sm font-bold tracking-tight transition-all shadow-md flex items-center justify-center gap-space-sm active:scale-[0.99]" id="btn-submit-proof" onclick="handleProofSubmit()" type="button">
+<span>Submit Proof</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="hidden w-full py-3.5 px-space-md rounded-xl bg-primary text-on-primary font-headline-sm text-title-sm font-bold tracking-tight transition-all shadow-md items-center justify-center gap-space-sm" id="btn-back-tasks" onclick="location.reload()" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Back to Available Tasks</span>
+</button>
+<button class="w-full py-2.5 px-space-md rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/20 font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1" id="btn-cancel-task" onclick="handleTaskCancel()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span>Cancel Task</span>
+</button>
+</div>
+</div>
+<!-- Quick Trust Metric Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">workspace_premium</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Tier 7 Multiplier Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Your current Tier grants priority automated escrow settlement within 30 minutes of verification.
+        </p>
+</div>
+</div>
+</div>
+<!-- Full-Width Quality Assurance Warning Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">gshield</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Proof matters</h4>
+<span class="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-error/10 text-error font-bold">Enforced Protocol</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Only submit genuine proof showing that you completed this task. Fake, edited, duplicated, or misleading screenshots may result in the reward being withheld, irreversible tier demotion, and account suspension under Nigerian Micro-Labor terms of service.
+        </p>
+</div>
+<div class="flex-shrink-0">
+<a class="font-label-md text-label-md text-secondary hover:text-primary font-semibold flex items-center gap-1 transition-colors" href="#">
+<span>Read Verification Rules</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let currentCountdown = 582; // 09:42 in seconds
+  let timerInterval = null;
+  let isExpired = false;
+
+  function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+  }
+
+  function startTimer() {
+    if (timerInterval) clearInterval(timerInterval);
+    timerInterval = setInterval(() => {
+      if (currentCountdown > 0) {
+        currentCountdown--;
+        const display = document.getElementById('timer-display');
+        if (display && !isExpired) {
+          display.textContent = formatTime(currentCountdown);
+          // Update dashoffset (125.6 is full circumference)
+          const ring = document.getElementById('timer-progress-ring');
+          if (ring) {
+            const offset = (1 - (currentCountdown / 600)) * 125.6;
+            ring.style.strokeDashoffset = offset;
+          }
+        }
+      } else {
+        setViewState('expired');
+      }
+    }, 1000);
+  }
+
+  function setViewState(state) {
+    const btnActive = document.getElementById('btn-state-active');
+    const btnExpired = document.getElementById('btn-state-expired');
+    const timerDisplay = document.getElementById('timer-display');
+    const timerSubtext = document.getElementById('timer-subtext');
+    const timerProgressRing = document.getElementById('timer-progress-ring');
+    const timerIcon = document.getElementById('timer-icon');
+    const expiredBanner = document.getElementById('expired-banner');
+    const statusBadge = document.getElementById('task-status-badge');
+    const statusText = document.getElementById('task-status-text');
+    const summaryStatusTag = document.getElementById('summary-status-tag');
+    const btnSubmit = document.getElementById('btn-submit-proof');
+    const btnBack = document.getElementById('btn-back-tasks');
+    const btnCancel = document.getElementById('btn-cancel-task');
+
+    if (state === 'expired') {
+      isExpired = true;
+      if (timerInterval) clearInterval(timerInterval);
+
+      // Button toggle styling
+      btnActive.className = "px-space-md py-1 rounded-md font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface";
+      btnExpired.className = "px-space-md py-1 rounded-md font-label-md text-label-md transition-all bg-surface-container-lowest text-error shadow-sm font-bold";
+
+      // Timer updates
+      timerDisplay.textContent = "00:00";
+      timerDisplay.classList.add("text-error");
+      timerDisplay.classList.remove("text-on-background");
+      timerSubtext.textContent = "Your reservation window has lapsed. The task escrow allocation has been refunded.";
+
+      // Ring updates
+      timerProgressRing.style.strokeDashoffset = "125.6";
+      timerProgressRing.classList.remove("text-secondary");
+      timerProgressRing.classList.add("text-error");
+
+      timerIcon.classList.remove("text-secondary");
+      timerIcon.classList.add("text-error");
+      timerIcon.textContent = "timer_off";
+
+      // Banner show
+      expiredBanner.classList.remove("hidden");
+
+      // Badges
+      statusBadge.className = "inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md";
+      statusBadge.innerHTML = `<span class="material-symbols-outlined text-[14px]">cancel</span><span>Reservation Expired</span>`;
+      
+      summaryStatusTag.className = "font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold";
+      summaryStatusTag.textContent = "Expired";
+
+      // Actions
+      btnSubmit.classList.add("hidden");
+      btnBack.classList.remove("hidden");
+      btnBack.classList.add("flex");
+      btnCancel.classList.add("opacity-40", "pointer-events-none");
+    } else {
+      isExpired = false;
+      currentCountdown = 582;
+
+      // Button toggle styling
+      btnActive.className = "px-space-md py-1 rounded-md font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm font-bold";
+      btnExpired.className = "px-space-md py-1 rounded-md font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface";
+
+      // Timer updates
+      timerDisplay.textContent = "09:42";
+      timerDisplay.classList.remove("text-error");
+      timerDisplay.classList.add("text-on-background");
+      timerSubtext.textContent = "Complete this task and submit your proof before the reservation expires to guarantee your reward.";
+
+      // Ring updates
+      timerProgressRing.style.strokeDashoffset = "18.8";
+      timerProgressRing.classList.add("text-secondary");
+      timerProgressRing.classList.remove("text-error");
+
+      timerIcon.classList.add("text-secondary");
+      timerIcon.classList.remove("text-error");
+      timerIcon.textContent = "timer";
+
+      // Banner hide
+      expiredBanner.classList.add("hidden");
+
+      // Badges
+      statusBadge.className = "inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md";
+      statusBadge.innerHTML = `
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+        </span>
+        <span id="task-status-text">In Progress</span>
+      `;
+      
+      summaryStatusTag.className = "font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold";
+      summaryStatusTag.textContent = "In Progress";
+
+      // Actions
+      btnSubmit.classList.remove("hidden");
+      btnBack.classList.add("hidden");
+      btnBack.classList.remove("flex");
+      btnCancel.classList.remove("opacity-40", "pointer-events-none");
+
+      startTimer();
+    }
+  }
+
+  function updateChecklistProgress() {
+    const checkboxes = document.querySelectorAll('.chk-item');
+    const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+    const btnSubmit = document.getElementById('btn-submit-proof');
+    
+    if (checkedCount === 3) {
+      btnSubmit.classList.add("ring-2", "ring-secondary", "ring-offset-2");
+    } else {
+      btnSubmit.classList.remove("ring-2", "ring-secondary", "ring-offset-2");
+    }
+  }
+
+  function handleProofSubmit() {
+    if (isExpired) return;
+    const checkboxes = document.querySelectorAll('.chk-item');
+    const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+    
+    if (checkedCount < 3) {
+      alert("Please check all verification checklist items before submitting proof.");
+      return;
+    }
+    
+    alert("Redirecting to screenshot proof uploader dialog with instant metadata checking...");
+  }
+
+  function handleTaskCancel() {
+    if (confirm("Are you sure you want to release this reservation? This task will be made available to other taskers.")) {
+      setViewState('expired');
+    }
+  }
+
+  // Initialize countdown on DOM load
+  startTimer();
+</script></main></div></body></html>

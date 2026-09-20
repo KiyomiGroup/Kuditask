@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom, 0px) + 1.5rem);}.pt-safe{padding-top:env(safe-area-inset-top, 0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#131b2e", "surface-tint": "#2a6a49", "on-secondary-fixed": "#002113", "on-secondary-container": "#00714b", "outline": "#707972", "error": "#ba1a1a", "surface-container": "#eaedff", "on-error": "#ffffff", "on-secondary-fixed-variant": "#005235", "on-tertiary-fixed": "#002113", "surface": "#faf8ff", "secondary-fixed": "#8df7c1", "background": "#faf8ff", "secondary": "#006c47", "on-primary-fixed-variant": "#095133", "secondary-container": "#8af5be", "primary-container": "#054f31", "primary": "#003620", "on-surface-variant": "#404942", "primary-fixed": "#aef1c8", "surface-container-highest": "#dae2fd", "on-primary-container": "#7fc099", "tertiary": "#003623", "primary-fixed-dim": "#93d5ad", "on-error-container": "#93000a", "on-tertiary-container": "#31c98f", "inverse-primary": "#93d5ad", "on-secondary": "#ffffff", "surface-variant": "#dae2fd", "surface-dim": "#d2d9f4", "tertiary-container": "#004f34", "on-primary-fixed": "#002111", "tertiary-fixed": "#6ffbbe", "surface-container-high": "#e2e7ff", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#005236", "tertiary-fixed-dim": "#4edea3", "surface-bright": "#faf8ff", "error-container": "#ffdad6", "surface-container-low": "#f2f3ff", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", "inverse-surface": "#283044", "on-surface": "#131b2e", "outline-variant": "#bfc9c0", "secondary-fixed-dim": "#71dba6", "inverse-on-surface": "#eef0ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "margin": "1rem", "margin-desktop": "2.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "headline-md": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Space Grotesk"], "label-md": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-sm": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Space Grotesk"], "title-sm": ["Plus Jakarta Sans"], "label-lg": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "title-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "currency-display": ["Space Grotesk"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "currency-display": ["36px", { "lineHeight": "44px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #054f31 - Font: spaceGrotesk - Mode: light - Roundness: rounded-md" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><h1 class="font-title-md text-title-md text-on-surface truncate max-w-[180px]">Task Execution</h1></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-safe px-gutter flex flex-col"><div class="flex flex-col w-full pb-24">
+<!-- Top Mobile Sub-Bar & Reward Header -->
+<div class="flex flex-col gap-space-sm pt-space-xs mb-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Active Task</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">In Progress</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">Instagram Follow</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-primary text-on-primary shadow-sm flex items-center gap-1">
+<span class="font-label-md text-label-md">₦10.00</span>
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">bolt</span>
+</div>
+</div>
+</div>
+<!-- Countdown Banner -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-md mb-space-lg relative overflow-hidden transition-all duration-300" id="countdown-card">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]" id="timer-icon">timer</span>
+<span class="font-headline-md text-headline-md tracking-wider font-currency-display text-surface-bright" id="timer-display">09:42</span>
+<span class="font-body-sm text-body-sm text-on-primary-container" id="timer-status-text">remaining</span>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-on-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" id="toggle-expired-btn">
+<span class="material-symbols-outlined text-[14px]">published_with_changes</span>
+<span>Simulate Expired</span>
+</button>
+</div>
+<!-- Active progress track -->
+<div class="w-full bg-on-primary/15 h-2 rounded-full overflow-hidden mb-2" id="progress-wrapper">
+<div class="h-full bg-secondary-fixed rounded-full transition-all duration-300 w-[78%]" id="progress-fill"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed" id="countdown-subtext">
+      Finish the task and submit proof before your reservation expires.
+    </p>
+<!-- Expired State Overlay Box (hidden by default) -->
+<div class="hidden flex flex-col gap-2 pt-1" id="expired-content">
+<div class="flex items-center gap-2 text-error-container">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+<span class="font-title-sm text-title-sm">Reservation Expired</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-bright/90">
+        Your 10-minute reservation has expired and the slot has been released back to the marketplace pool.
+      </p>
+</div>
+</div>
+<!-- Content Stack -->
+<div class="flex flex-col gap-space-lg" id="active-task-content">
+<!-- 1. Target Account Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Target Profile</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Instant Verify</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Vibrant modern African lifestyle fashion brand logo displayed on an emerald green gradient studio portrait background, high detail editorial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQAizyRYW1T5LSjbh1mSQlJCsE0SSePCJ_rDvO-SQPcB6RCk_NMuBhliX0sSymt_EcMZZYrVqVC8z269o7ch_cUP2ln41GxhFAQYdZnawcvSQ0Ss5GuPIcxQ1v_1dQd2BNr2xKCvVPRa_4Fphh1g9sb1v8gTsTGayTzIRyrL73Wirpw5RS6sXlAuL4rAjAITbMZuIX3UGvxbNRM4qqMYlXprdSh7OF9UFW8C2cTcHbrzNK2Ptiz8WE"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary text-[10px]">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">Lagos Artisan Hub</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">alternate_email</span>lagosartisans
+          </span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5 font-semibold">142.8K Followers • Verified Partner</span>
+</div>
+</div>
+<a class="w-full h-12 rounded-lg bg-surface-container-highest hover:bg-surface-container transition-colors flex items-center justify-center gap-2 text-on-surface font-title-sm text-title-sm" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-primary">open_in_new</span>
+<span>Open Instagram ↗</span>
+</a>
+</div>
+<!-- 2. Task Instructions -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-title-sm text-title-sm text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">list_alt</span>
+<span>Task Instructions</span>
+</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 steps</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Step 01 -->
+<div class="flex items-start gap-3 p-2 rounded-lg bg-surface-container-low/60">
+<div class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md flex-shrink-0">
+            01
+          </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Open Instagram</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Launch the mobile app or web browser logged into your account.</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="flex items-start gap-3 p-2 rounded-lg bg-surface-container-low/60">
+<div class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md flex-shrink-0">
+            02
+          </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Visit Target Account</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Navigate to @lagosartisans using the direct profile button above.</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="flex items-start gap-3 p-2 rounded-lg bg-surface-container-low/60">
+<div class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md flex-shrink-0">
+            03
+          </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Follow Account</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tap the blue Follow button so the status confirms 'Following'.</span>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="flex items-start gap-3 p-2 rounded-lg bg-surface-container-low/60">
+<div class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md flex-shrink-0">
+            04
+          </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Capture Clear Screenshot</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ensure your username handle and the following indicator are fully legible.</span>
+</div>
+</div>
+<!-- Step 05 -->
+<div class="flex items-start gap-3 p-2 rounded-lg bg-surface-container-low/60">
+<div class="w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md flex-shrink-0">
+            05
+          </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Return &amp; Submit Proof</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Upload your verification snapshot before the clock hits zero.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Completion Checklist -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between mb-1">
+<h2 class="font-title-sm text-title-sm text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">checklist</span>
+<span>Action Checklist</span>
+</h2>
+<span class="font-label-sm text-label-sm text-secondary font-bold" id="checklist-counter">0 / 3 Complete</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Tap each condition once satisfied to proceed smoothly.</p>
+<div class="flex flex-col gap-2">
+<label class="checklist-item flex items-center gap-3 p-3 rounded-lg bg-surface-container-low active:scale-[0.99] transition cursor-pointer select-none">
+<input class="task-checkbox w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">I opened the target account</span>
+</label>
+<label class="checklist-item flex items-center gap-3 p-3 rounded-lg bg-surface-container-low active:scale-[0.99] transition cursor-pointer select-none">
+<input class="task-checkbox w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">I completed the requested action</span>
+</label>
+<label class="checklist-item flex items-center gap-3 p-3 rounded-lg bg-surface-container-low active:scale-[0.99] transition cursor-pointer select-none">
+<input class="task-checkbox w-5 h-5 accent-secondary rounded cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">I captured valid screenshot proof</span>
+</label>
+</div>
+</div>
+<!-- 4. Task Summary Stats -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest text-center shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Platform</span>
+<span class="font-title-sm text-title-sm text-on-surface mt-0.5">Instagram</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest text-center shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Reservation</span>
+<span class="font-title-sm text-title-sm text-on-surface mt-0.5">10 Mins</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-lowest text-center shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Started</span>
+<span class="font-title-sm text-title-sm text-on-surface mt-0.5">10:18 AM</span>
+</div>
+</div>
+<!-- Visual Inspiration Banner -->
+<div class="relative w-full h-28 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A focused young Nigerian professional using a smartphone in a bright modern tech co-working space in Yaba Lagos, warm natural sunlit tones, clean digital workplace setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgYkY1o-CLU876AJTYh9Mh5OHpsSuz6q33ZsZlnOf_IrPytYLW-CLFFZim-xeAc86LcTf9t8UuLTOm6uJmoECUgSkvAjSSUqFMZZMl-mHJ8nA286c6LSopeiWulzmOr0BGolXLxA2XePBeI2j5QUIwbyIGthhU8E32UU19IfXqtNidwso-SC-hVg1B6eFIT6HwHrClLfF7ws11GMzS7U2AbR2DrdzGlTx1Bzgixgw1gdGChWPi4T9z"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/90 via-primary-container/60 to-transparent p-space-md flex flex-col justify-center">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-bold">Fast Payouts</span>
+<span class="font-title-sm text-title-sm text-on-primary">Disbursed to wallet directly after swift QA</span>
+</div>
+</div>
+<!-- 5. Proof Warning Notice -->
+<div class="rounded-xl bg-error-container/40 p-space-md flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-error-container">Strict Proof Policy</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+          Only submit genuine proof showing that you completed this task. Fake, edited, duplicated, or misleading screenshots may result in the reward being withheld and permanent disciplinary account suspension.
+        </p>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom CTA Area -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md p-gutter shadow-[0_-4px_16px_rgba(0,0,0,0.05)] flex flex-col gap-2">
+<div class="max-w-md mx-auto w-full flex flex-col gap-2">
+<!-- Active Submit CTA -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm tracking-wide hover:bg-secondary transition active:scale-[0.98] shadow-md flex items-center justify-center gap-2" id="submit-proof-btn">
+<span>Submit Proof</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<!-- Expired Alternate CTA (hidden by default) -->
+<button class="hidden w-full h-12 rounded-xl bg-outline text-surface-bright font-headline-sm text-headline-sm tracking-wide transition active:scale-[0.98] shadow-md items-center justify-center gap-2" id="expired-back-btn">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Back to Tasks</span>
+</button>
+<!-- Cancel Task Link -->
+<button class="text-center py-1 font-title-sm text-title-sm text-outline hover:text-error transition" id="cancel-task-btn">
+        Cancel Task
+      </button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    var isExpired = false;
+    var toggleBtn = document.getElementById('toggle-expired-btn');
+    var countdownCard = document.getElementById('countdown-card');
+    var timerDisplay = document.getElementById('timer-display');
+    var timerIcon = document.getElementById('timer-icon');
+    var timerStatusText = document.getElementById('timer-status-text');
+    var progressWrapper = document.getElementById('progress-wrapper');
+    var countdownSubtext = document.getElementById('countdown-subtext');
+    var expiredContent = document.getElementById('expired-content');
+    var submitBtn = document.getElementById('submit-proof-btn');
+    var expiredBackBtn = document.getElementById('expired-back-btn');
+    var cancelBtn = document.getElementById('cancel-task-btn');
+    var activeContent = document.getElementById('active-task-content');
+
+    // Toggle Preview Expired State
+    toggleBtn.addEventListener('click', function() {
+      isExpired = !isExpired;
+
+      if (isExpired) {
+        countdownCard.classList.remove('bg-primary-container');
+        countdownCard.classList.add('bg-error');
+        timerDisplay.textContent = '00:00';
+        timerDisplay.classList.add('text-error-container');
+        timerIcon.textContent = 'timer_off';
+        timerIcon.classList.remove('text-secondary-fixed');
+        timerIcon.classList.add('text-error-container');
+        timerStatusText.textContent = 'expired';
+        
+        progressWrapper.classList.add('hidden');
+        countdownSubtext.classList.add('hidden');
+        expiredContent.classList.remove('hidden');
+
+        submitBtn.classList.add('hidden');
+        expiredBackBtn.classList.remove('hidden');
+        expiredBackBtn.classList.add('flex');
+        cancelBtn.classList.add('hidden');
+        activeContent.classList.add('opacity-40', 'pointer-events-none');
+        toggleBtn.querySelector('span:last-child').textContent = 'Preview Active';
+      } else {
+        countdownCard.classList.add('bg-primary-container');
+        countdownCard.classList.remove('bg-error');
+        timerDisplay.textContent = '09:42';
+        timerDisplay.classList.remove('text-error-container');
+        timerIcon.textContent = 'timer';
+        timerIcon.classList.add('text-secondary-fixed');
+        timerIcon.classList.remove('text-error-container');
+        timerStatusText.textContent = 'remaining';
+        
+        progressWrapper.classList.remove('hidden');
+        countdownSubtext.classList.remove('hidden');
+        expiredContent.classList.add('hidden');
+
+        submitBtn.classList.remove('hidden');
+        expiredBackBtn.classList.add('hidden');
+        expiredBackBtn.classList.remove('flex');
+        cancelBtn.classList.remove('hidden');
+        activeContent.classList.remove('opacity-40', 'pointer-events-none');
+        toggleBtn.querySelector('span:last-child').textContent = 'Simulate Expired';
+      }
+    });
+
+    // Checkbox counter tracker
+    var checkboxes = document.querySelectorAll('.task-checkbox');
+    var counterBadge = document.getElementById('checklist-counter');
+
+    checkboxes.forEach(function(box) {
+      box.addEventListener('change', function() {
+        var checkedCount = document.querySelectorAll('.task-checkbox:checked').length;
+        counterBadge.textContent = checkedCount + ' / 3 Complete';
+        if (checkedCount === 3) {
+          counterBadge.classList.add('text-on-secondary-container');
+          submitBtn.classList.add('ring-2', 'ring-secondary-fixed');
+        } else {
+          counterBadge.classList.remove('text-on-secondary-container');
+          submitBtn.classList.remove('ring-2', 'ring-secondary-fixed');
+        }
+      });
+    });
+
+    // Button interactions
+    expiredBackBtn.addEventListener('click', function() {
+      history.back();
+    });
+
+    cancelBtn.addEventListener('click', function() {
+      if (confirm('Cancel this task reservation? The slot will be reassigned.')) {
+        history.back();
+      }
+    });
+
+    submitBtn.addEventListener('click', function() {
+      var checkedCount = document.querySelectorAll('.task-checkbox:checked').length;
+      if (checkedCount < 3) {
+        alert('Please review and check off all steps in the action checklist before submitting proof.');
+      } else {
+        alert('Proceeding to Proof-of-Work upload step...');
+      }
+    });
+  })();
+</script></main></body></html>

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-container-high":"#e2e7ff","surface-container":"#eaedff","on-secondary":"#ffffff","on-tertiary-container":"#31c98f","on-background":"#131b2e","on-primary-fixed":"#002111","tertiary-fixed":"#6ffbbe","surface":"#faf8ff","inverse-on-surface":"#eef0ff","tertiary":"#003623","tertiary-fixed-dim":"#4edea3","primary-fixed-dim":"#93d5ad","tertiary-container":"#004f34","inverse-primary":"#93d5ad","surface-variant":"#dae2fd","secondary-fixed-dim":"#71dba6","surface-container-highest":"#dae2fd","secondary-container":"#8af5be","surface-container-low":"#f2f3ff","on-tertiary-fixed":"#002113","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#005235","error":"#ba1a1a","primary-container":"#054f31","on-tertiary-fixed-variant":"#005236","inverse-surface":"#283044","secondary-fixed":"#8df7c1","on-secondary-fixed":"#002113","on-surface-variant":"#404942","surface-dim":"#d2d9f4","surface-bright":"#faf8ff","on-surface":"#131b2e","on-primary-fixed-variant":"#095133","secondary":"#006c47","on-error-container":"#93000a","on-secondary-container":"#00714b","on-primary-container":"#7fc099","primary":"#003620","on-error":"#ffffff","surface-tint":"#2a6a49","on-primary":"#ffffff","error-container":"#ffdad6","outline":"#707972","background":"#faf8ff","on-tertiary":"#ffffff","outline-variant":"#bfc9c0","primary-fixed":"#aef1c8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem","gutter":"1rem","space-lg":"1.5rem","margin-desktop":"2.5rem","margin":"1rem","space-xl":"2.5rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"label-lg":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-sm":["Space Grotesk"],"label-md":["Space Grotesk"],"headline-xl":["Space Grotesk"],"headline-xl-mobile":["Space Grotesk"],"title-md":["Plus Jakarta Sans"],"currency-display":["Space Grotesk"],"title-sm":["Plus Jakarta Sans"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-sm":["Space Grotesk"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"36px","fontWeight":"700"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"currency-display":["36px",{"lineHeight":"44px","fontWeight":"700"}],"title-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 bottom-0 w-72 bg-surface-container-lowest flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">account_tree</span></div><div><span class="font-label-lg text-label-lg text-primary tracking-tight block">TaskNaija</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Admin Ops Node</span></div></div><span class="inline-flex items-center px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">v2.4</span></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary text-on-primary font-bold shadow-[0_1px_3px_rgba(0,0,0,0.08)]"><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-title-sm text-title-sm">Dashboard</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 rounded transition-colors bg-primary text-on-primary font-bold shadow-[0_1px_3px_rgba(0,0,0,0.08)]" data-path="taskers" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-title-sm text-title-sm">Taskers</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-title-sm text-title-sm">Tasks</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="verification" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-title-sm text-title-sm">Verification</span></div><span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">184</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="withdrawals" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-title-sm text-title-sm">Withdrawals</span></div><span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">27</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="clients" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">corporate_fare</span><span class="font-title-sm text-title-sm">Clients</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="transactions" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-title-sm text-title-sm">Transactions</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tier-management" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">military_tech</span><span class="font-title-sm text-title-sm">Tier Management</span></div></a><div class="pt-space-xs pb-1 px-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Communications &amp; Config</span></div><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="announcements" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-title-sm text-title-sm">Announcements</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-title-sm text-title-sm">Reports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-sm text-title-sm">Settings</span></div></a></nav><div class="p-space-sm bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded bg-surface-container-lowest"><div class="flex items-center gap-space-sm min-w-0"><div class="w-9 h-9 rounded bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified</span></div><div class="min-w-0 flex-1"><p class="font-label-md text-label-md text-on-surface truncate">Emeka Nwosu</p><p class="font-label-sm text-label-sm text-secondary truncate">Super Admin • Lagos</p></div></div><button class="p-1 text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded transition-colors" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-space-lg flex items-center justify-between gap-space-md"><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-24 py-2 text-body-sm font-body-sm bg-surface-container-low text-on-surface rounded placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" placeholder="Search Taskers (NIN/BVN), Task IDs, Disbursals, Hash..." type="text"/><span class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">⌘K</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 px-space-sm py-1.5 rounded bg-surface-container-low"><div class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></div><span class="font-label-sm text-label-sm text-on-surface-variant">Lagos Core 01</span><span class="text-outline font-label-sm text-label-sm">•</span><span class="font-label-sm text-label-sm text-secondary font-bold">99.98% SLA</span></div><div class="flex items-center gap-space-sm"><button class="relative p-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><button class="relative p-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">sync</span></button></div><button class="flex items-center gap-1.5 bg-primary text-on-primary hover:bg-primary-container px-3 py-2 rounded font-label-md text-label-md transition-colors"><span class="material-symbols-outlined text-[18px]">add</span><span>Fast Action</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg">
+<!-- Breadcrumbs & Quick Anchor Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<nav class="flex items-center gap-2 text-outline">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">group</span>
+<span>Taskers</span>
+</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-body-md text-body-md font-semibold text-primary">John Ade</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant ml-2">UID: NG-88204-JAD</span>
+</nav>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest px-2.5 py-1 rounded shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">security</span>
+          Level 2 KYC Verified (NIN + BVN)
+        </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest px-2.5 py-1 rounded shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span>
+          Last Active: 14 mins ago
+        </span>
+</div>
+</div>
+<!-- Page Header Identity & Quick Governance Actions -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-20 h-20 rounded-xl object-cover shadow-md" data-alt="Close up photographic portrait of John Ade, a confident young Nigerian professional in his mid-twenties with warm lighting, wearing a minimalist dark green linen shirt, against a soft neutral studio background with shallow depth of field, high detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClslmTlAxkKfFz4-5JlWLU4Ec9w-iBrHk1Y31OT412Fkp_oaH8H1Xwzxrjjy0IHhAE4sebXQsqax5_zZZELV-p9Dxep6R0MlTCtIwuSawyXUgV3WZaJMsyxapjznaQjNJ2QVEEE13uVL36ZV_5JW1-5ZCnw8L6IptqSoX5rmQYPCNuRApIzia4gSy3CXDtF5yttYeKzYNQB2ppEue04mctoYGNSxwRS4rbnUfmQlGfDJYPdDcuzyXa"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+</div>
+<div class="min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">John Ade</h1>
+<span class="font-body-lg text-body-lg text-outline">(@johnade)</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+              Active
+            </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary text-on-primary font-bold">Contractor</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span> Lagos Core Node (Ikeja)
+            </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">badge</span> BVN Validated (Access Bank Core)
+            </span>
+<span>•</span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> 0 Flagged Instances
+            </span>
+</p>
+</div>
+</div>
+<!-- Action Group -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors shadow-sm" onclick="document.getElementById('notice-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+<span>Send Notice</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded font-label-md text-label-md bg-surface-container-high text-on-secondary-fixed-variant hover:bg-surface-container-highest transition-colors shadow-sm" onclick="openSuspensionModal('Inactive')">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+<span>Suspend Account</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded font-label-md text-label-md bg-error text-on-error hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm" onclick="openBanModal()">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Ban Account</span>
+</button>
+</div>
+</div>
+<!-- 4 Key Performance Metric Horizons -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Tier -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Current Tier Level</span>
+<span class="w-8 h-8 rounded bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-primary">Tier 4</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Gold Contractor</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">₦30.00 base yield / verified task</p>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline mb-1">
+<span>Progress to Tier 5</span>
+<span class="text-primary font-bold">1,248 / 1,500 XP</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded" style="width: 83%;"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: Verified Tasks -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Total Task Audits</span>
+<span class="w-8 h-8 rounded bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface">1,248</span>
+<span class="font-label-md text-label-md text-secondary font-bold flex items-center">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>99.2%
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">High-trust verification clearance</p>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm pt-2 bg-surface-container-low px-2 py-1 rounded">
+<span class="text-outline">Total Initiated: 1,258</span>
+<span class="text-error font-bold">10 Rejections (0.8%)</span>
+</div>
+</div>
+<!-- Card 3: Financial Horizon -->
+<div class="bg-primary text-on-primary p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Wallet Position</span>
+<span class="w-8 h-8 rounded bg-primary-container flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-primary-fixed-dim uppercase tracking-wider">Lifetime Payout</span>
+<span class="font-currency-display text-currency-display text-secondary-fixed">₦31,420<span class="text-body-lg font-normal">.00</span></span>
+</div>
+</div>
+<div class="bg-primary-container p-2 rounded flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Ready for Disbursal:</span>
+<span class="font-label-md text-label-md font-bold text-on-primary">₦3,840.00</span>
+</div>
+</div>
+<!-- Card 4: Attendance & Settlement Eligibility -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Activity Velocity</span>
+<span class="w-8 h-8 rounded bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface">24</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-normal">days logged</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary font-semibold mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Eligible for Sunday Cashouts
+          </p>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm bg-surface-container-low px-2 py-1 rounded text-on-surface-variant">
+<span>Target: 18+ active days</span>
+<span class="font-bold text-secondary">Passed (133%)</span>
+</div>
+</div>
+</div>
+<!-- Main Two-Column Architectural Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Identity & Credential Audits (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- 1. Personal Information Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md rounded-t-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">person_pin</span>
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">Personal &amp; KYC Credentials</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">Verified Node</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-2">
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-outline block uppercase tracking-wider">Full Legal Name</span>
+<span class="font-label-lg text-label-lg text-on-surface block mt-0.5 font-bold">John Ade</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Matches NIBSS BVN records</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-outline block uppercase tracking-wider">Platform Username</span>
+<span class="font-label-lg text-label-lg text-primary block mt-0.5 font-bold">@johnade</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">System alias active</span>
+</div>
+<div class="sm:col-span-2 bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block uppercase tracking-wider">Email Address</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold block mt-0.5">john.ade@workmail.ng</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-lowest px-2 py-1 rounded shadow-sm">
+<span class="material-symbols-outlined text-[14px]">mark_email_read</span> Confirmed
+              </span>
+</div>
+<div class="sm:col-span-2 bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block uppercase tracking-wider">Mobile Number</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold block mt-0.5">+234 803 123 4567</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-primary bg-primary px-2 py-1 rounded shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">lock</span> BVN Linked
+              </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-outline block uppercase tracking-wider">Registration Date</span>
+<span class="font-label-md text-label-md text-on-surface block mt-0.5 font-semibold">June 12, 2026</span>
+<span class="font-body-sm text-body-sm text-outline">Cohort 26-B Lagos</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-outline block uppercase tracking-wider">Verification Level</span>
+<span class="font-label-md text-label-md text-secondary block mt-0.5 font-bold">Level 2 (Full KYC)</span>
+<span class="font-body-sm text-body-sm text-outline">NIN slip validated</span>
+</div>
+</div>
+<!-- Payout Settlement Anchor Preview -->
+<div class="bg-surface-container-high/60 p-space-md rounded-xl flex items-center justify-between mt-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-primary text-on-primary flex items-center justify-center font-label-lg font-bold">
+                GTB
+              </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Guaranty Trust Bank</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">014****510 • Verified Account Holder</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]" title="Settlement account active">check_circle</span>
+</div>
+</div>
+<!-- 2. Connected Social Accounts Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md rounded-t-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">share</span>
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">Connected Channels</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary text-secondary-fixed font-bold">5 Linked</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Platform handles linked through OAuth or verified handle ingestion for zero-friction audit matching.
+          </p>
+<div class="flex flex-col gap-space-sm">
+<!-- Instagram -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-surface-container-highest flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Instagram</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-semibold">@johnade_ig</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold block">412</span>
+<span class="font-label-sm text-label-sm text-outline">verified submissions</span>
+</div>
+</div>
+<!-- Facebook -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-surface-container-highest flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Facebook</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-semibold">facebook.com/johnade</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold block">280</span>
+<span class="font-label-sm text-label-sm text-outline">submissions</span>
+</div>
+</div>
+<!-- TikTok -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-surface-container-highest flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">TikTok</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-semibold">@johnade</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold block">310</span>
+<span class="font-label-sm text-label-sm text-outline">submissions</span>
+</div>
+</div>
+<!-- X (Twitter) -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-surface-container-highest flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">tag</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">X (Twitter)</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-semibold">@johnade</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold block">196</span>
+<span class="font-label-sm text-label-sm text-outline">submissions</span>
+</div>
+</div>
+<!-- YouTube -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-surface-container-highest flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">smart_display</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">YouTube</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container">Connected</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-semibold">@johnade</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold block">50</span>
+<span class="font-label-sm text-label-sm text-outline">submissions</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Performance, Financials & Governance (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- 1. Task Performance Deep Dive Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md rounded-t-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">speed</span>
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">Operational Performance Scorecard</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> Prime Health
+            </span>
+</div>
+<!-- Analytical Breakdown Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Total Started</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold block mt-1">1,258</span>
+<span class="font-body-sm text-body-sm text-outline">Lifetime attempts</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Verified Completed</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold block mt-1">1,248</span>
+<span class="font-body-sm text-body-sm text-secondary">Funds disbursed</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Rejected Proofs</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold block mt-1">10</span>
+<span class="font-body-sm text-body-sm text-outline">Low resolution/miss</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Completion Rate</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold block mt-1">99.2%</span>
+<span class="font-body-sm text-body-sm text-secondary font-bold">Benchmark: 85%</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Fraud Violations</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold block mt-1">0</span>
+<span class="font-body-sm text-body-sm text-secondary font-bold">Clean Record</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Current Tier Yield</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold block mt-1">₦30/task</span>
+<span class="font-body-sm text-body-sm text-outline">+50% over Tier 1</span>
+</div>
+</div>
+<!-- Quality Distribution Visualizer -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider">Proof Audit Distribution</span>
+<span class="font-label-sm text-label-sm text-outline">Last 90 Days</span>
+</div>
+<div class="h-3 w-full bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary" style="width: 99.2%;" title="Approved (99.2%)"></div>
+<div class="h-full bg-error" style="width: 0.8%;" title="Rejected (0.8%)"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> 1,248 Valid Audits</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-error"></span> 10 Non-Compliant Proofs</span>
+</div>
+</div>
+</div>
+<!-- 2. Wallet & Settlement Activity Ledger -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md rounded-t-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">receipt_long</span>
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">Wallet &amp; Settlement Activity</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Real-Time Core Ledger</span>
+</div>
+<div class="overflow-x-auto -mx-space-lg">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-lg">Date &amp; Event</th>
+<th class="py-2.5 px-space-md">Type</th>
+<th class="py-2.5 px-space-md">Reference Detail</th>
+<th class="py-2.5 px-space-lg text-right">Amount</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-lg font-label-md text-label-md">
+<span class="font-bold block">Sep 14, 2026</span>
+<span class="text-outline font-body-sm text-body-sm">11:42 AM</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">Credit</span>
+</td>
+<td class="py-3 px-space-md">
+<p class="font-label-md text-label-md font-semibold text-on-surface">Instagram Follow</p>
+<p class="font-body-sm text-body-sm text-outline">Task ID: #TK-9821</p>
+</td>
+<td class="py-3 px-space-lg text-right font-label-lg text-label-lg font-bold text-secondary">
+                    +₦10.00
+                  </td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-surface-container-low/30 hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg font-label-md text-label-md">
+<span class="font-bold block">Sep 14, 2026</span>
+<span class="text-outline font-body-sm text-body-sm">09:15 AM</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">Credit</span>
+</td>
+<td class="py-3 px-space-md">
+<p class="font-label-md text-label-md font-semibold text-on-surface">Facebook Like</p>
+<p class="font-body-sm text-body-sm text-outline">Task ID: #TK-9810</p>
+</td>
+<td class="py-3 px-space-lg text-right font-label-lg text-label-lg font-bold text-secondary">
+                    +₦10.00
+                  </td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-lg font-label-md text-label-md">
+<span class="font-bold block">Sep 12, 2026</span>
+<span class="text-outline font-body-sm text-body-sm">04:30 PM</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">Withdrawal</span>
+</td>
+<td class="py-3 px-space-md">
+<p class="font-label-md text-label-md font-semibold text-on-surface">Paid to Bank</p>
+<p class="font-body-sm text-body-sm text-outline">GTBank NUBAN ending 4510 • Ref: PAY-99120</p>
+</td>
+<td class="py-3 px-space-lg text-right font-label-lg text-label-lg font-bold text-error">
+                    -₦5,000.00
+                  </td>
+</tr>
+<!-- Row 4 -->
+<tr class="bg-surface-container-low/30 hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg font-label-md text-label-md">
+<span class="font-bold block">Sep 07, 2026</span>
+<span class="text-outline font-body-sm text-body-sm">01:10 PM</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">Credit</span>
+</td>
+<td class="py-3 px-space-md">
+<p class="font-label-md text-label-md font-semibold text-on-surface">Survey Submission</p>
+<p class="font-body-sm text-body-sm text-outline">Task ID: #TK-9402</p>
+</td>
+<td class="py-3 px-space-lg text-right font-label-lg text-label-lg font-bold text-secondary">
+                    +₦30.00
+                  </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 3. Account Governance & Admin Controls Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md rounded-t-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">admin_panel_settings</span>
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">Account Controls &amp; Governance</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary text-secondary-fixed font-bold">Tier 4 Clearance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Administrative enforcement triggers instant webhook notifications to the tasker’s mobile node and updates wallet ledger restrictions across the Lagos Core payment gateway.
+          </p>
+<!-- Governance Buttons Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1">
+<button class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors flex items-start gap-3" onclick="openSuspensionModal('Inactive')">
+<span class="material-symbols-outlined text-secondary text-[24px]">pause_circle</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Suspend Account</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Requires reason: Inactive, Suspicious proof, Manual review</span>
+</div>
+</button>
+<button class="p-space-md rounded-lg bg-error-container/30 hover:bg-error-container/50 text-left transition-colors flex items-start gap-3" onclick="openBanModal()">
+<span class="material-symbols-outlined text-error text-[24px]">block</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-error-container block">Ban Account</span>
+<span class="font-body-sm text-body-sm text-on-error-container block mt-0.5">Irreversible lockout, freezes pending escrow</span>
+</div>
+</button>
+<button class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors flex items-start gap-3" onclick="triggerRestoreNotice()">
+<span class="material-symbols-outlined text-primary text-[24px]">restart_alt</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Restore Account</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Clears temporary holds and unfreezes queue locks</span>
+</div>
+</button>
+<button class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-colors flex items-start gap-3" onclick="document.getElementById('fraud-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-secondary text-[24px]">policy</span>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block">Review Fraud History</span>
+<span class="font-body-sm text-body-sm text-secondary font-bold block mt-0.5">0 Active Flags • View Node Log</span>
+</div>
+</button>
+</div>
+<!-- Explicit Modal Confirmation Note Warning Card -->
+<div class="bg-surface-container-high/80 p-space-md rounded-xl flex items-start gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">info</span>
+<div class="font-body-sm text-body-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-on-surface block mb-0.5">System Operational Safeguard</span>
+<p class="text-on-surface font-medium">"Any suspension immediately invalidates in-flight reservations and freezes Sunday payout eligibility."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Suspend Account Confirmation -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex items-center justify-center p-4" id="suspend-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<div class="bg-surface-container-low p-space-md flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary font-title-sm text-title-sm font-bold">
+<span class="material-symbols-outlined text-secondary text-[22px]">pause_circle</span>
+<span>Suspend Contractor Account</span>
+</div>
+<button class="p-1 rounded text-outline hover:text-on-surface hover:bg-surface-container" onclick="closeModal('suspend-modal')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="bg-surface-container-high/60 p-space-sm rounded-lg flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-primary text-on-primary flex items-center justify-center font-bold text-sm">JA</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">John Ade (@johnade)</p>
+<p class="font-body-sm text-body-sm text-outline">Tier 4 • ₦3,840.00 Current Wallet Balance</p>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-2 font-bold">Select Regulatory Reason *</label>
+<div class="space-y-2">
+<label class="flex items-center gap-3 p-2.5 rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="accent-primary" name="suspend_reason" type="radio" value="Inactive"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Inactive</span>
+<span class="font-body-sm text-body-sm text-outline">Prolonged inactivity or unacknowledged platform queries</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-2.5 rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="accent-primary" name="suspend_reason" type="radio" value="Suspicious proof"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Suspicious proof</span>
+<span class="font-body-sm text-body-sm text-outline">Proof files trigger OCR duplicate matches or image hash collision</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-2.5 rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="accent-primary" name="suspend_reason" type="radio" value="Manual review"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Manual review</span>
+<span class="font-body-sm text-body-sm text-outline">Routine compliance sampling or high velocity tier checkpoint</span>
+</div>
+</label>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded text-on-surface-variant font-body-sm text-body-sm">
+<p class="font-bold text-error flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[16px]">warning</span> Cautionary Impact Notice:
+          </p>
+<p>Any suspension immediately invalidates in-flight reservations and freezes Sunday payout eligibility.</p>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high" onclick="closeModal('suspend-modal')">Cancel</button>
+<button class="px-4 py-2 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container" onclick="confirmAction('Suspension Applied')">Execute Suspension</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Ban Account Confirmation (Irreversible) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/70 backdrop-blur-sm hidden flex items-center justify-center p-4" id="ban-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<div class="bg-error-container p-space-md flex items-center justify-between text-on-error-container">
+<div class="flex items-center gap-2 font-title-sm text-title-sm font-bold">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+<span>Permanent Account Termination (Ban)</span>
+</div>
+<button class="p-1 rounded text-on-error-container/70 hover:text-on-error-container" onclick="closeModal('ban-modal')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<p class="font-body-md text-body-md text-on-surface">
+          You are about to irreversibly ban contractor <strong class="text-error font-bold">John Ade (@johnade)</strong> from TaskNaija.
+        </p>
+<div class="bg-error-container/30 p-space-md rounded-lg flex flex-col gap-2">
+<span class="font-label-md text-label-md text-error font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">lock</span> Irreversible Lockout Protocol
+          </span>
+<ul class="font-body-sm text-body-sm text-on-error-container space-y-1 list-disc list-inside">
+<li>NIN and BVN hashes permanently blacklisted across Nigerian nodes</li>
+<li>Freezes pending escrow and revokes all active reservations</li>
+<li>Revokes linked Instagram, Facebook, TikTok, X, and YouTube handles</li>
+<li>Forfeits ₦3,840.00 ready disbursal to dispute buffer pool</li>
+</ul>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high" onclick="closeModal('ban-modal')">Cancel</button>
+<button class="px-4 py-2 rounded bg-error text-on-error font-label-md text-label-md hover:bg-error/90 font-bold" onclick="confirmAction('Contractor Banned Permanently')">Confirm Ban</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Fraud History Review -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex items-center justify-center p-4" id="fraud-modal">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-xl shadow-xl overflow-hidden">
+<div class="bg-surface-container-low p-space-md flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary font-title-sm text-title-sm font-bold">
+<span class="material-symbols-outlined text-secondary text-[22px]">policy</span>
+<span>Fraud History &amp; Automated Audit Logs</span>
+</div>
+<button class="p-1 rounded text-outline hover:text-on-surface" onclick="closeModal('fraud-modal')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="p-space-md rounded-lg bg-secondary-container text-on-secondary-container flex items-center gap-3">
+<span class="material-symbols-outlined text-[28px]">format_image_left</span>
+<div>
+<span class="font-label-lg text-label-lg font-bold block">0 Fraud Flags Detected</span>
+<span class="font-body-sm text-body-sm block mt-0.5">User maintains a 100% authentic hash submission rate across 1,258 tasks.</span>
+</div>
+</div>
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Historical Automated Sweeps</span>
+<div class="p-2.5 rounded bg-surface-container-low text-body-sm text-body-sm flex justify-between items-center">
+<span>Sep 12, 2026 - IP Geolocation Proxy Sweep (Lagos Core)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">PASS (Direct Telco)</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low text-body-sm text-body-sm flex justify-between items-center">
+<span>Aug 28, 2026 - Image Hash Proof Deduplication Sweep</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">PASS (Unique Hashes)</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low text-body-sm text-body-sm flex justify-between items-center">
+<span>Jun 12, 2026 - Initial BVN/NIN Match Registry Check</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">PASS (Score: 98.4%)</span>
+</div>
+</div>
+<div class="flex justify-end pt-2">
+<button class="px-4 py-2 rounded bg-primary text-on-primary font-label-md text-label-md" onclick="closeModal('fraud-modal')">Close Logs</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Send Notice -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex items-center justify-center p-4" id="notice-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-xl overflow-hidden">
+<div class="bg-surface-container-low p-space-md flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary font-title-sm text-title-sm font-bold">
+<span class="material-symbols-outlined text-secondary text-[22px]">forward_to_inbox</span>
+<span>Dispatch Operational Notice</span>
+</div>
+<button class="p-1 rounded text-outline hover:text-on-surface" onclick="closeModal('notice-modal')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-1">Notice Template</label>
+<select class="w-full h-11 px-3 bg-surface-container-low text-on-surface rounded font-body-sm text-body-sm focus:outline-none">
+<option>Sunday Cashout Schedule Confirmation</option>
+<option>Tier 5 Advancement Requirement Check</option>
+<option>Proof of Work Guidelines Reminder</option>
+<option>Custom Node Operational Notice</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-1">Message Payload</label>
+<textarea class="w-full p-3 bg-surface-container-low text-on-surface rounded font-body-sm text-body-sm focus:outline-none placeholder:text-outline" placeholder="Enter notification copy delivered via push notification and email..." rows="4">Your account is on pace for Tier 5 upgrade. Maintain your 99.2% approval through Sunday cashout to qualify for the ₦40/task bracket.</textarea>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded bg-surface-container text-on-surface font-label-md text-label-md" onclick="closeModal('notice-modal')">Cancel</button>
+<button class="px-4 py-2 rounded bg-primary text-on-primary font-label-md text-label-md" onclick="confirmAction('Notice Dispatched to John Ade')">Dispatch Notice</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interaction JavaScript -->
+<script>
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+    function openSuspensionModal(reason) {
+      document.getElementById('suspend-modal').classList.remove('hidden');
+    }
+    function openBanModal() {
+      document.getElementById('ban-modal').classList.remove('hidden');
+    }
+    function triggerRestoreNotice() {
+      alert("Contractor @johnade restored: Reservation locks restored, Sunday cashout eligibility verified.");
+    }
+    function confirmAction(msg) {
+      alert("Administrative Action Executed: " + msg);
+      document.querySelectorAll('[id$="-modal"]').forEach(el => el.classList.add('hidden'));
+    }
+  </script>
+</div></main></div></body></html>

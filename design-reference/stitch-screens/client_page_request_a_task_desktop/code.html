@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#4edea3", "on-secondary-fixed-variant": "#005235", "outline": "#707972", "primary-container": "#054f31", "surface-container-lowest": "#ffffff", "secondary-fixed": "#8df7c1", "surface-container-highest": "#dae2fd", "primary-fixed": "#aef1c8", "on-primary-fixed-variant": "#095133", "tertiary-container": "#004f34", "on-primary-fixed": "#002111", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-surface-variant": "#404942", "on-surface": "#131b2e", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-container-high": "#e2e7ff", "secondary-container": "#8af5be", "outline-variant": "#bfc9c0", "on-tertiary-container": "#31c98f", "surface-bright": "#faf8ff", "surface-container-low": "#f2f3ff", "surface": "#faf8ff", "on-primary-container": "#7fc099", "error": "#ba1a1a", "tertiary": "#003623", "surface-variant": "#dae2fd", "surface-tint": "#2a6a49", "on-secondary-fixed": "#002113", "on-secondary": "#ffffff", "secondary": "#006c47", "on-error-container": "#93000a", "surface-dim": "#d2d9f4", "background": "#faf8ff", "inverse-on-surface": "#eef0ff", "tertiary-fixed": "#6ffbbe", "primary-fixed-dim": "#93d5ad", "inverse-surface": "#283044", "inverse-primary": "#93d5ad", "on-background": "#131b2e", "on-secondary-container": "#00714b", "on-tertiary-fixed-variant": "#005236", "secondary-fixed-dim": "#71dba6", "surface-container": "#eaedff", "primary": "#003620", "on-tertiary-fixed": "#002113" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "space-md": "1rem", "margin-desktop": "2.5rem", "space-xl": "2.5rem", "gutter": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "label-lg": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-sm": ["Space Grotesk"], "title-sm": ["Plus Jakarta Sans"], "label-md": ["Space Grotesk"], "currency-display": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl": ["Space Grotesk"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Space Grotesk"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "currency-display": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "700" }], "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="for-clients" href="#"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed font-headline-md"><span class="material-symbols-outlined text-[24px]">work</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">TaskNaija</span><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">Business</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Secured Digital Labor Escrow</span></div></a></div><nav class="hidden lg:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-full border border-outline-variant/40" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="become-a-tasker" href="#">Become a Tasker</a><a aria-current="page" class="px-4 py-2 rounded-full transition-colors bg-primary-container text-on-primary font-bold shadow-sm" data-path="for-clients" href="#">For Clients</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><a class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-outline-variant/60 bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-low transition-colors" data-path="whatsapp-concierge" href="#"><span class="material-symbols-outlined text-secondary text-[18px]">chat</span><span>WhatsApp Desk</span></a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="sign-in" href="#">Sign In</a><a class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary transition-colors" data-path="get-started" href="#"><span>Get Started</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[920px] h-[340px] bg-gradient-to-b from-primary-fixed/25 via-secondary-container/10 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<!-- HERO SECTION -->
+<section class="relative w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop pt-space-lg lg:pt-space-xl pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
+<!-- Hero Left Content -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">MANAGED WORKFORCE SOLUTIONS • PAN-NIGERIA REACH</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight leading-tight">
+            Get Digital Tasks Done at Scale
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Need follows, likes, votes, engagement, research, testing, or other digital micro-tasks completed by real taskers? Tell us what you need and our team will handle the setup.
+          </p>
+<!-- Managed Platform Clarification Chip -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+<span class="font-bold text-primary">Fully Managed Operational Model:</span> Zero self-serve hassle. Our Ops team sets pricing, builds the campaign architecture, and validates all screenshot proofs.
+            </p>
+</div>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all" id="hero-request-trigger" type="button">
+<span class="material-symbols-outlined text-[20px]">post_add</span>
+<span>Request a Task</span>
+</button>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-secondary-container text-on-secondary-container font-label-lg text-label-lg shadow-sm hover:bg-secondary-fixed transition-all" href="https://wa.me/2348000000000?text=Hello%20TaskNaija%20Team%2C%20I%20would%20like%20to%20request%20a%20digital%20task%20campaign." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-secondary">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<!-- Stats Micro-bar -->
+<div class="pt-space-sm flex flex-wrap items-center gap-x-4 gap-y-2 text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<span class="text-on-surface font-bold">42,800+</span>
+<span>Verified Nigerian Taskers</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">fact_check</span>
+<span class="text-on-surface font-bold">100%</span>
+<span>Screenshot Verified</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">security</span>
+<span>Managed by TaskNaija Ops</span>
+</div>
+</div>
+</div>
+<!-- Hero Right: Dynamic Simulated Feed Showcase -->
+<div class="lg:col-span-5 relative">
+<div class="relative flex flex-col gap-space-sm p- space-md p-5 rounded-2xl bg-surface-container shadow-xl">
+<!-- Simulated Feed Top Header -->
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed-dim opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Admin Managed Queue</span>
+</div>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant font-medium">Auto-Disbursing</span>
+</div>
+<!-- Card 1: Instagram Follow -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Instagram Follow</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Acme Brand Nigeria</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Active &amp; Verifying</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant mt-1">
+<span>62 completed of 100 required</span>
+<span class="font-headline-sm text-headline-sm text-primary">62%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-secondary" style="width: 62%"></div>
+</div>
+</div>
+<!-- Card 2: Vote for a Page -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">how_to_vote</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Vote for a Page</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Brand XYZ Media Award</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Proof Audit Active</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant mt-1">
+<span>421 completed of 500 required</span>
+<span class="font-headline-sm text-headline-sm text-primary">84%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-secondary" style="width: 84%"></div>
+</div>
+</div>
+<!-- Card 3: Social Engagement -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Social Engagement</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">VibeStream Media Music Launch</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm">Completed &amp; Settled</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant mt-1">
+<span>250 completed of 250 required</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">100%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-primary-container" style="width: 100%"></div>
+</div>
+</div>
+<!-- Card 4: Website Testing -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2 hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">speed</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Website Usability Testing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">QuickLoan FinTech App</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Active</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant mt-1">
+<span>14 completed of 50 required</span>
+<span class="font-headline-sm text-headline-sm text-primary">28%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-secondary" style="width: 28%"></div>
+</div>
+</div>
+<!-- Footer indicator inside visual showcase -->
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span> Escrow Protection Activated</span>
+<span>Lagos Admin Node #01</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- SECTION: WHAT CAN WE HELP YOU WITH? -->
+<section class="w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop py-space-xl">
+<div class="flex flex-col gap-2 max-w-3xl mb-space-lg">
+<div class="inline-flex items-center gap-2 text-secondary font-label-lg text-label-lg uppercase tracking-wider">
+<span class="material-symbols-outlined text-[20px]">widgets</span>
+<span>Capabilities &amp; Scope</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+        Turn Your Goal Into a Completed Task
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+        From social amplification to user feedback, our distributed tasker network handles repetitive digital actions with verified proof.
+      </p>
+</div>
+<!-- 3-Column Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1: Social Engagement -->
+<div class="flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">thumb_up</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">High Velocity</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mt-2">Social Engagement</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Reach your required number of follows, likes, votes, or other supported social actions across Instagram, Facebook, TikTok, X, and YouTube.
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span>Proof Screenshot Audit</span>
+</div>
+</div>
+<!-- Card 2: Digital Micro-Tasks -->
+<div class="flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">dataset</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md">Scalable</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mt-2">Digital Micro-Tasks</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Distribute simple digital actions to a large pool of taskers with speed and precision across pan-Nigerian geo-locations.
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span>NIN &amp; Telco Verified Users</span>
+</div>
+</div>
+<!-- Card 3: Custom Campaigns -->
+<div class="flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">tune</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">Bespoke Setup</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mt-2">Custom Campaigns</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Have a specific requirement? Tell our team what you need and we will determine the best task setup, tier targeting, and execution protocol.
+          </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span>Dedicated Admin Campaign Lead</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: HOW CLIENT REQUESTS WORK (MANAGED OPERATIONAL FLOW) -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop flex flex-col gap-space-lg">
+<div class="flex flex-col gap-2 max-w-3xl">
+<div class="inline-flex items-center gap-2 text-secondary font-label-lg text-label-lg uppercase tracking-wider">
+<span class="material-symbols-outlined text-[20px]">account_tree</span>
+<span>Managed Operational Flow</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          How Client Requests Work
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Zero platform friction. Our dedicated Admin Ops team manages task architecture, micro-incentives, and screenshot verification from start to finish.
+        </p>
+</div>
+<!-- 4-Step Process Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md relative">
+<!-- Step 1 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm relative">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-10 h-10 rounded-lg bg-primary-container text-on-primary font-headline-md text-headline-md flex items-center justify-center">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Phase 01</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">Tell Us What You Need</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Send your requirements to our Admin team via our task request form or direct WhatsApp brief.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm relative">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-10 h-10 rounded-lg bg-primary-container text-on-primary font-headline-md text-headline-md flex items-center justify-center">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Phase 02</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">We Plan the Task</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            We determine the task structure, quantity, reward, pricing, proof requirements, and tier routing.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm relative">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-10 h-10 rounded-lg bg-primary-container text-on-primary font-headline-md text-headline-md flex items-center justify-center">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Phase 03</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">You Fund the Campaign</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Once the details and price are confirmed, you pay for the campaign into regulated digital escrow.
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-lowest shadow-sm relative">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-10 h-10 rounded-lg bg-secondary text-on-secondary font-headline-md text-headline-md flex items-center justify-center">4</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Phase 04</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-1">We Launch &amp; Manage</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Our team creates the task and manages submissions, timer locks, and proof verification.
+          </p>
+</div>
+</div>
+<!-- Prominent Operational Rule Card / Callout -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-md flex flex-col md:flex-row items-start md:items-center gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px] text-secondary">admin_panel_settings</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Managed Client Operating Protocol</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase">Zero Client Overhead</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Clients do not need to manage taskers or verify screenshots themselves. Our Admin team handles the operational workflow, algorithmic fraud filters, and payout disbursals.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE TASK BRIEF / REQUEST MODAL & INLINE EXPANSION SECTION -->
+<section class="w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop py-space-xl" id="brief-section">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left: Context & Instructions -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-2 text-secondary font-label-lg text-label-lg uppercase tracking-wider">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span>Direct Task Intake</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Submit Your Task Brief
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Provide your target deliverables. Our Admin team will evaluate the task complexity, set fair worker incentives based on current marketplace benchmarks, and send you a transparent campaign pro-forma invoice.
+        </p>
+<!-- Visual Trust Cards -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">price_check</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">Dynamic Micro-Incentive Modeling</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Admin matches your target volume with the optimal reward tier to guarantee completion in under 4 hours.</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">Dual-Audit Screenshot Verification</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automated OCR and human manual checks ensure fraudulent submissions are discarded before escrow release.</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">alarm</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary">30-Minute Turnaround Time</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Receive your task structure and quotation via email or WhatsApp in under half an hour.</p>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-highest/60 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">contact_support</span>
+<span class="font-body-sm text-body-sm text-on-surface">
+            Prefer direct messaging? <a class="font-bold text-secondary underline hover:text-primary" href="https://wa.me/2348000000000" rel="noopener noreferrer" target="_blank">Chat directly with an Admin Ops Specialist on WhatsApp</a>.
+          </span>
+</div>
+</div>
+<!-- Right: Intake Form (Simulated Admin Routing) -->
+<div class="lg:col-span-7 p-space-lg rounded-2xl bg-surface-container-lowest shadow-xl">
+<form class="flex flex-col gap-space-md" id="task-request-form" onsubmit="event.preventDefault(); window.handleTaskSubmit();">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Admin Managed Dispatch</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Campaign Specification</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Contact Name / Brand Rep *</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm" placeholder="e.g., Tunde Balogun" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Business / Brand Name *</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm" placeholder="e.g., Acme Pay Nigeria" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Corporate Email *</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm" placeholder="tunde@acme.ng" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">WhatsApp Number *</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm" placeholder="+234 800 000 0000" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Task Category *</label>
+<select class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm">
+<option value="social">Social Media Engagement (Follow, Like, Retweet)</option>
+<option value="voting">Public Voting &amp; Poll Amplification</option>
+<option value="testing">Website / App Usability Testing</option>
+<option value="surveys">Market Research &amp; Consumer Surveys</option>
+<option value="reviews">Product Reviews &amp; Testimonial Capture</option>
+<option value="bespoke">Bespoke Enterprise Micro-Tasks</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Desired Tasker Volume *</label>
+<select class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm">
+<option value="100">100 - 250 Taskers (Starter)</option>
+<option value="500">250 - 1,000 Taskers (Growth)</option>
+<option value="2500">1,000 - 5,000 Taskers (Scale)</option>
+<option value="10000">5,000+ Taskers (Enterprise Blast)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Target URL / Platform Link *</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm" placeholder="https://instagram.com/yourhandle or https://app.example.com" required="" type="url"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Specific Instructions &amp; Proof Requirements *</label>
+<textarea class="p-4 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm" placeholder="Tell our Admin Ops what the tasker should do, what screenshot proof is expected, and any particular criteria (e.g. Follow page and take screenshot of profile showing 'Following')." required="" rows="3"></textarea>
+</div>
+<div class="p-3 rounded-lg bg-surface-container text-on-surface-variant font-body-sm text-body-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">info</span>
+<span>TaskNaija Admin will calculate total campaign budget based on labor volume, platform escrow fee, and SLA targets. You will review before paying.</span>
+</div>
+<button class="w-full flex items-center justify-center gap-2 py-4 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm shadow-md hover:bg-primary transition-all" type="submit">
+<span class="material-symbols-outlined text-[24px]">send</span>
+<span>Send Task Request to Admin Ops</span>
+</button>
+</form>
+<!-- Dynamic Success Banner (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center gap-3 p-8 text-center bg-surface-container-lowest rounded-xl" id="form-success">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[36px] text-secondary">check_circle</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Task Request Received!</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            Our Lagos Admin Operations team is reviewing your requirements. We will send the structured campaign quote and escrow invoice via WhatsApp and Email within 30 minutes.
+          </p>
+<button class="mt-2 px-4 py-2 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="window.resetTaskForm();" type="button">
+            Submit Another Brief
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: WHY USE THE PLATFORM? -->
+<section class="w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop py-space-xl">
+<div class="flex flex-col gap-2 max-w-3xl mb-space-lg">
+<div class="inline-flex items-center gap-2 text-secondary font-label-lg text-label-lg uppercase tracking-wider">
+<span class="material-symbols-outlined text-[20px]">stars</span>
+<span>Operational Advantages</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+        Why Forward-Thinking Businesses Choose TaskNaija
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+        Engineered to eliminate client micro-management while maximizing speed, verification, and authenticity.
+      </p>
+</div>
+<!-- 4 Compact Benefit Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="flex flex-col p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[28px]">support_agent</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Managed Execution</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          No dashboard complexity. Send your brief and let our team execute end-to-end, from task creation to batch completion.
+        </p>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[28px]">groups_3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Taskers at Scale</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Instant access to 42,000+ real Nigerian mobile users across all major networks, demographics, and geo-locations.
+        </p>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[28px]">fact_check</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Proof-Based Verification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Every submission is validated via full screenshot audit and OCR inspection before settlement. Only genuine completions count.
+        </p>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[28px]">chat_bubble_outline</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Simple Client Workflow</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Direct WhatsApp liaison, upfront NGN invoicing, Central Bank-licensed escrow protection, and clear completion deliverables.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION: READY TO START? (LARGE EMERALD CTA CARD) -->
+<section class="w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop pb-space-xl">
+<div class="p-space-lg lg:p-space-xl rounded-3xl bg-primary-container text-on-primary shadow-2xl relative overflow-hidden">
+<!-- Ambient Decorative background shapes -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-60 h-60 rounded-full bg-primary-fixed/10 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-on-secondary self-start font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Instant Dispatch Protocol</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-primary tracking-tight">
+            Have a task in mind?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-xl leading-relaxed">
+            Tell us what you need completed. Our team will help turn your requirement into a live campaign.
+          </p>
+<div class="flex items-center gap-2 text-on-primary-container pt-1">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-dim">schedule</span>
+<span class="font-body-sm text-body-sm">Average Admin brief review and quotation time: <strong>under 30 minutes</strong> during Lagos business hours.</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-surface-container-lowest text-primary font-headline-sm text-headline-sm shadow-lg hover:bg-surface-bright transition-all" id="cta-request-trigger" type="button">
+<span class="material-symbols-outlined text-[22px]">post_add</span>
+<span>Request a Task</span>
+</button>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-secondary text-on-secondary font-headline-sm text-headline-sm shadow-md hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="https://wa.me/2348000000000?text=Hello%20TaskNaija%20Team%2C%20I%20have%20a%20task%20campaign%20ready%20to%20launch." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- INLINE CLIENT INTERACTION SCRIPT -->
+<script>
+  (function() {
+    const briefSection = document.getElementById('brief-section');
+    const heroBtn = document.getElementById('hero-request-trigger');
+    const ctaBtn = document.getElementById('cta-request-trigger');
+    const form = document.getElementById('task-request-form');
+    const successMsg = document.getElementById('form-success');
+
+    function scrollToForm() {
+      if (briefSection) {
+        briefSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const firstInput = briefSection.querySelector('input');
+        if (firstInput) {
+          setTimeout(() => firstInput.focus(), 600);
+        }
+      }
+    }
+
+    if (heroBtn) heroBtn.addEventListener('click', scrollToForm);
+    if (ctaBtn) ctaBtn.addEventListener('click', scrollToForm);
+
+    window.handleTaskSubmit = function() {
+      if (form && successMsg) {
+        form.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+        successMsg.classList.add('flex');
+      }
+    };
+
+    window.resetTaskForm = function() {
+      if (form && successMsg) {
+        form.reset();
+        successMsg.classList.add('hidden');
+        successMsg.classList.remove('flex');
+        form.classList.remove('hidden');
+      }
+    };
+  })();
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 mt-space-xl"><div class="w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md pr-space-lg"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-[20px]">verified_user</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight">TaskNaija Enterprise</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Nigeria's vetted digital crowd-workforce platform. Powering rapid catalog audit, AI data tagging, field verification, and social sentiment campaigns with bank-grade escrow.</p><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span><span class="font-body-sm text-body-sm font-semibold">Priority Support: concierge@tasknaija.ng</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-xs">Client Solutions</h4><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-clients" href="#">Workforce on Demand</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-clients" href="#">Automated Proof Auditing</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-clients" href="#">Enterprise SLA Pricing</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-clients" href="#">Custom Integrations</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-xs">Platform &amp; Trust</h4><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="become-a-tasker" href="#">Become a Tasker</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="faq" href="#">Escrow Guarantees</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="faq" href="#">Compliance &amp; KYC</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-xs">Immediate Concierge</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Connect with our Lagos-based account managers for bespoke high-volume deployment.</p><a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" data-path="whatsapp-concierge" href="#"><span class="material-symbols-outlined text-secondary text-[20px]">chat</span><span>WhatsApp Concierge</span></a></div></div><div class="py-space-md border-t border-b border-outline-variant/30 flex flex-wrap items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40"><span class="material-symbols-outlined text-secondary text-[20px]">security</span><span class="font-label-md text-label-md text-on-surface">NDPR Compliant</span></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40"><span class="material-symbols-outlined text-primary-container text-[20px]">account_balance</span><span class="font-label-md text-label-md text-on-surface">Central Bank Licenced Escrow Partners</span></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><span class="font-label-md text-label-md text-on-surface">NIN / BVN Tasker Verification</span></div></div><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-secondary text-[18px]">lock</span><span>256-Bit Financial Encryption</span></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 TaskNaija Digital Services Ltd. RC: 1892304. Victoria Island, Lagos, Nigeria.</p><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="faq" href="#">Terms of Service</a><a class="hover:text-primary transition-colors" data-path="faq" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="faq" href="#">Anti-Fraud Guardrails</a></div></div></div></footer></body></html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'error-container': '#ffdad6', 'on-error': '#ffffff', 'on-tertiary-fixed': '#002113', 'surface-container-highest': '#dae2fd', 'on-secondary': '#ffffff', 'on-surface': '#131b2e', 'on-tertiary': '#ffffff', 'outline-variant': '#bfc9c0', 'on-secondary-fixed': '#002113', 'on-primary-fixed': '#002111', 'background': '#faf8ff', 'secondary': '#006c47', 'secondary-fixed-dim': '#71dba6', 'inverse-primary': '#93d5ad', 'surface-tint': '#2a6a49', 'outline': '#707972', 'on-error-container': '#93000a', 'secondary-container': '#8af5be', 'surface': '#faf8ff', 'surface-variant': '#dae2fd', 'secondary-fixed': '#8df7c1', 'tertiary-fixed-dim': '#4edea3', 'primary-fixed-dim': '#93d5ad', 'error': '#ba1a1a', 'on-primary-container': '#7fc099', 'on-tertiary-container': '#31c98f', 'on-tertiary-fixed-variant': '#005236', 'on-secondary-container': '#00714b', 'surface-dim': '#d2d9f4', 'inverse-surface': '#283044', 'surface-container': '#eaedff', 'surface-container-high': '#e2e7ff', 'on-background': '#131b2e', 'on-primary': '#ffffff', 'on-primary-fixed-variant': '#095133', 'tertiary': '#003623', 'primary': '#003620', 'surface-bright': '#faf8ff', 'tertiary-container': '#004f34', 'tertiary-fixed': '#6ffbbe', 'on-surface-variant': '#404942', 'surface-container-lowest': '#ffffff', 'on-secondary-fixed-variant': '#005235', 'inverse-on-surface': '#eef0ff', 'primary-fixed': '#aef1c8', 'surface-container-low': '#f2f3ff', 'primary-container': '#054f31' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'gutter': '1rem', 'margin-desktop': '2.5rem', 'gutter-desktop': '1.5rem', 'space-sm': '0.5rem', 'space-xs': '0.25rem', 'margin': '1rem', 'space-lg': '1.5rem', 'space-xl': '2.5rem', 'space-md': '1rem' }, fontFamily: { 'headline-xl': ['Space Grotesk'], 'title-md': ['Plus Jakarta Sans'], 'headline-lg': ['Space Grotesk'], 'label-sm': ['Space Grotesk'], 'body-md': ['Plus Jakarta Sans'], 'title-sm': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Space Grotesk'], 'currency-display': ['Space Grotesk'], 'label-lg': ['Space Grotesk'], 'headline-xl-mobile': ['Space Grotesk'], 'label-md': ['Space Grotesk'], 'headline-md': ['Space Grotesk'], 'headline-sm': ['Space Grotesk'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'] }, fontSize: { 'headline-xl': ['40px', { lineHeight: '48px', fontWeight: '700' }], 'title-md': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', fontWeight: '700' }], 'label-sm': ['10px', { lineHeight: '14px', fontWeight: '700' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'title-sm': ['16px', { lineHeight: '24px', fontWeight: '600' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '700' }], 'currency-display': ['36px', { lineHeight: '44px', fontWeight: '700' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'headline-xl-mobile': ['30px', { lineHeight: '36px', fontWeight: '700' }], 'label-md': ['12px', { lineHeight: '16px', fontWeight: '600' }], 'headline-md': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'headline-sm': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><img alt="TaskNaija brand logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><div class="flex items-center gap-1.5 min-w-0 truncate"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">TaskNaija</span><span class="text-outline-variant font-label-md hidden sm:inline">•</span><span class="font-label-md text-label-md text-on-surface-variant font-semibold truncate hidden sm:inline">Home</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-high active:bg-surface-container-highest transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span></button><a class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:opacity-90 active:scale-95 transition" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full">
+<div class="flex flex-col w-full px-gutter pt-space-sm pb-space-lg max-w-xl mx-auto">
+<!-- Top Action Row -->
+<div class="flex items-center justify-between py-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Notifications</h1>
+<span class="flex items-center justify-center px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm transition-all duration-300" id="unreadCountBadge">
+          3 Unread
+        </span>
+</div>
+<button class="group flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high active:scale-95 transition-all text-on-surface-variant hover:text-primary" id="markAllReadBtn" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors">done_all</span>
+<span class="font-label-sm text-label-sm font-bold tracking-wide">Mark all as read</span>
+</button>
+</div>
+<!-- Filter Pills / Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-2 -mx-gutter px-gutter mb-space-sm">
+<button class="filter-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-on-primary shadow-sm transition-all duration-200 active:scale-95 flex items-center gap-1.5" data-filter="all" type="button">
+<span>All</span>
+<span class="tab-count px-1.5 py-0.2 rounded-full bg-surface-container-lowest/20 font-label-sm text-label-sm">5</span>
+</button>
+<button class="filter-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface-variant hover:bg-surface-container active:scale-95 transition-all duration-200 flex items-center gap-1.5" data-filter="tasks" type="button">
+<span>Tasks</span>
+<span class="tab-count px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">2</span>
+</button>
+<button class="filter-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface-variant hover:bg-surface-container active:scale-95 transition-all duration-200 flex items-center gap-1.5" data-filter="earnings" type="button">
+<span>Earnings</span>
+<span class="tab-count px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">2</span>
+</button>
+<button class="filter-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md font-semibold bg-surface-container-low text-on-surface-variant hover:bg-surface-container active:scale-95 transition-all duration-200 flex items-center gap-1.5" data-filter="account" type="button">
+<span>Account</span>
+<span class="tab-count px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">1</span>
+</button>
+</div>
+<!-- Notifications List -->
+<div class="flex flex-col gap-space-sm transition-all duration-300" id="notificationsList">
+<!-- Card 1: Task Verified (Unread) -->
+<article class="notification-item group relative flex flex-col p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 active:scale-[0.99] cursor-pointer" data-category="earnings" data-status="unread">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm font-bold text-on-surface truncate">Task Verified</span>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Just now</span>
+<span class="unread-dot w-2 h-2 rounded-full bg-secondary flex-shrink-0 animate-pulse"></span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Your Instagram Follow task has been verified. <span class="font-bold text-secondary">₦10.00</span> has been credited directly to your available balance.
+            </p>
+<div class="flex items-center gap-2 mt-2.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[14px]">account_balance_wallet</span> +₦10.00 Added
+              </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: New Task Available (Unread) -->
+<article class="notification-item group relative flex flex-col p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 active:scale-[0.99] cursor-pointer" data-category="tasks" data-status="unread">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm font-bold text-on-surface truncate">New Task Available</span>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">15 mins ago</span>
+<span class="unread-dot w-2 h-2 rounded-full bg-secondary flex-shrink-0"></span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A new Instagram task matching your account tier is now live for instant reservation.
+            </p>
+<div class="flex items-center justify-between gap-2 mt-3 pt-2">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 14m reservation window
+              </span>
+<button class="px-3.5 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm font-bold hover:bg-on-secondary-container active:scale-95 transition-all shadow-sm flex items-center gap-1" type="button">
+<span>View Task</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3: Proof Rejected (Unread) -->
+<article class="notification-item group relative flex flex-col p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 active:scale-[0.99] cursor-pointer" data-category="tasks" data-status="unread">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">error</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm font-bold text-error truncate">Proof Rejected</span>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 hours ago</span>
+<span class="unread-dot w-2 h-2 rounded-full bg-error flex-shrink-0"></span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Your screenshot was rejected because the completed action was not clearly visible in the uploaded image.
+            </p>
+<div class="mt-2.5 p-2 rounded-lg bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tip: Capture the entire screen showing your profile username.</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 4: Tier Progress (Read) -->
+<article class="notification-item group relative flex flex-col p-4 rounded-xl bg-surface-container-low/70 opacity-85 hover:opacity-100 transition-all duration-200 active:scale-[0.99] cursor-pointer" data-category="account" data-status="read">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm font-bold text-on-surface truncate">Tier Progress</span>
+<span class="font-label-sm text-label-sm text-outline">Yesterday</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              You are getting closer to your next Tasker tier! Keep completing high-accuracy tasks to unlock Tier 4 privileges.
+            </p>
+<div class="w-full mt-3">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Tier 3 → Tier 4</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">85% XP</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 5: Withdrawal Reminder (Read) -->
+<article class="notification-item group relative flex flex-col p-4 rounded-xl bg-surface-container-low/70 opacity-85 hover:opacity-100 transition-all duration-200 active:scale-[0.99] cursor-pointer" data-category="earnings" data-status="read">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest text-tertiary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1">
+<span class="font-title-sm text-title-sm font-bold text-on-surface truncate">Withdrawal Requirement</span>
+<span class="font-label-sm text-label-sm text-outline">Yesterday</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              You are currently 13 verified tasks away from meeting the task activity requirement for escrow withdrawal.
+            </p>
+<div class="flex items-center gap-2 mt-2.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-surface-container px-2.5 py-1 rounded-full font-bold">
+<span class="material-symbols-outlined text-[14px]">checklist</span> 37 / 50 Completed
+              </span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty State View (Initially Hidden, dynamic fallback) -->
+<div class="hidden flex flex-col items-center justify-center text-center py-12 px-4 rounded-2xl bg-surface-container-lowest shadow-sm mt-space-sm" id="emptyNotificationState">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center mb-space-sm text-secondary">
+<span class="material-symbols-outlined text-[32px]">celebration</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-1">You're all caught up!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-space-md">
+        No pending alerts or notifications. Active tasks and wallet updates will ping right here.
+      </p>
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container active:scale-95 transition-all shadow-sm flex items-center gap-1.5" id="refreshTasksBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+<span>Explore Available Tasks</span>
+</button>
+</div>
+<!-- Bottom Information Note -->
+<div class="flex items-center justify-center gap-1.5 py-space-md text-center text-on-surface-variant/80">
+<span class="material-symbols-outlined text-[15px] text-secondary">shield_lock</span>
+<span class="font-label-sm text-label-sm">Notifications auto-archive after 30 days of inactivity</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const markAllBtn = document.getElementById('markAllReadBtn');
+    const badge = document.getElementById('unreadCountBadge');
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const items = document.querySelectorAll('.notification-item');
+    const emptyState = document.getElementById('emptyNotificationState');
+
+    // Update unread badges
+    function updateBadgeCount() {
+      const remainingUnread = document.querySelectorAll('.notification-item[data-status="unread"]:not(.hidden)').length;
+      if (remainingUnread > 0) {
+        badge.textContent = remainingUnread + ' Unread';
+        badge.classList.remove('opacity-0', 'scale-90');
+      } else {
+        badge.textContent = 'All caught up';
+        badge.classList.replace('bg-secondary', 'bg-surface-container-highest');
+        badge.classList.replace('text-on-secondary', 'text-on-surface-variant');
+      }
+    }
+
+    // Mark all as read micro-interaction
+    if (markAllBtn) {
+      markAllBtn.addEventListener('click', () => {
+        document.querySelectorAll('.notification-item[data-status="unread"]').forEach(card => {
+          card.setAttribute('data-status', 'read');
+          card.classList.replace('bg-surface-container-lowest', 'bg-surface-container-low/70');
+          card.classList.add('opacity-85');
+          const dot = card.querySelector('.unread-dot');
+          if (dot) {
+            dot.style.transition = 'all 0.3s ease';
+            dot.style.transform = 'scale(0)';
+            setTimeout(() => dot.remove(), 300);
+          }
+        });
+        updateBadgeCount();
+        markAllBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span class="font-label-sm text-label-sm font-bold text-secondary">Done</span>';
+        markAllBtn.classList.add('pointer-events-none');
+      });
+    }
+
+    // Individual click to read
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        if (item.getAttribute('data-status') === 'unread') {
+          item.setAttribute('data-status', 'read');
+          item.classList.replace('bg-surface-container-lowest', 'bg-surface-container-low/70');
+          item.classList.add('opacity-85');
+          const dot = item.querySelector('.unread-dot');
+          if (dot) dot.remove();
+          updateBadgeCount();
+        }
+      });
+    });
+
+    // Tab Filtering
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          t.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          const countSpan = t.querySelector('.tab-count');
+          if (countSpan) {
+            countSpan.classList.remove('bg-surface-container-lowest/20');
+            countSpan.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+          }
+        });
+
+        tab.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        tab.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        const activeCount = tab.querySelector('.tab-count');
+        if (activeCount) {
+          activeCount.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+          activeCount.classList.add('bg-surface-container-lowest/20');
+        }
+
+        const filter = tab.getAttribute('data-filter');
+        let visibleCards = 0;
+
+        items.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.classList.remove('hidden');
+            visibleCards++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        if (visibleCards === 0) {
+          emptyState.classList.remove('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+        }
+      });
+    });
+
+    const refreshBtn = document.getElementById('refreshTasksBtn');
+    if (refreshBtn) {
+      refreshBtn.addEventListener('click', () => {
+        const allTab = document.querySelector('[data-filter="all"]');
+        if (allTab) allTab.click();
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-bold"><div class="flex items-stretch justify-around h-16 px-space-xs"><a aria-current="page" class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 active:scale-95 transition text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm tracking-wide">Home</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface active:scale-95 transition" data-path="tasks" href="#"><span class="material-symbols-outlined text-[22px]">assignment</span><span class="font-label-sm text-label-sm tracking-wide">Tasks</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface active:scale-95 transition" data-path="wallet" href="#"><span class="material-symbols-outlined text-[22px]">account_balance_wallet</span><span class="font-label-sm text-label-sm tracking-wide">Wallet</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface active:scale-95 transition" data-path="tier" href="#"><span class="material-symbols-outlined text-[22px]">military_tech</span><span class="font-label-sm text-label-sm tracking-wide">Tier</span></a><a class="flex-1 min-h-[48px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface active:scale-95 transition" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm tracking-wide">Profile</span></a></div></nav></body></html>

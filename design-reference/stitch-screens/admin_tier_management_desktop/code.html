@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#6ffbbe", "inverse-on-surface": "#eef0ff", "on-tertiary-container": "#31c98f", "on-error": "#ffffff", "primary": "#003620", "on-secondary-container": "#00714b", "surface-container-low": "#f2f3ff", "surface-container-lowest": "#ffffff", "tertiary": "#003623", "on-surface": "#131b2e", "secondary-container": "#8af5be", "tertiary-container": "#004f34", "outline-variant": "#bfc9c0", "surface-dim": "#d2d9f4", "on-tertiary-fixed-variant": "#005236", "primary-fixed-dim": "#93d5ad", "secondary-fixed": "#8df7c1", "tertiary-fixed-dim": "#4edea3", "on-tertiary-fixed": "#002113", "surface-container": "#eaedff", "on-primary-fixed": "#002111", "on-surface-variant": "#404942", "error": "#ba1a1a", "on-primary-fixed-variant": "#095133", "on-secondary": "#ffffff", "surface-tint": "#2a6a49", "on-secondary-fixed": "#002113", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#71dba6", "on-error-container": "#93000a", "outline": "#707972", "on-primary-container": "#7fc099", "error-container": "#ffdad6", "background": "#faf8ff", "surface-bright": "#faf8ff", "on-secondary-fixed-variant": "#005235", "surface-container-highest": "#dae2fd", "surface-variant": "#dae2fd", "inverse-primary": "#93d5ad", "secondary": "#006c47", "surface-container-high": "#e2e7ff", "primary-container": "#054f31", "surface": "#faf8ff", "inverse-surface": "#283044", "on-background": "#131b2e", "primary-fixed": "#aef1c8", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "margin-desktop": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem" }, "fontFamily": { "title-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Space Grotesk" ], "headline-xl": [ "Space Grotesk" ], "title-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-sm": [ "Space Grotesk" ], "headline-xl-mobile": [ "Space Grotesk" ], "label-lg": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "currency-display": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-md": [ "Space Grotesk" ], "body-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Space Grotesk" ] }, "fontSize": { "title-sm": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "fontWeight": "700" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "36px", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "700" } ], "currency-display": [ "36px", { "lineHeight": "44px", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-primary text-on-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col h-full"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-primary-container"><img alt="Brand logo. - Primary color: #054f31
+- Font: spaceGrotesk
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-on-primary tracking-tight truncate">TaskNaija</span><span class="font-label-sm text-label-sm text-secondary-container tracking-wider truncate">Ops Node v2.4</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-md flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="px-space-md font-label-sm text-label-sm text-secondary-container uppercase tracking-wider">Operational Units</span><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-md rounded-lg"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="operations-dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="taskers-registry" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">groups</span><span>Taskers</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="tasks-inventory" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Tasks</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="verification-queue" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">fact_check</span><span>Verification</span></div><span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">184</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="withdrawals-escrow" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">payments</span><span>Withdrawals</span></div><span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">27</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="clients-ledger" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">domain</span><span>Clients</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="transactions-audit" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Transactions</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-label-md rounded-lg" data-path="tier-management" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">military_tech</span><span>Tier Management</span></div></a></nav></div><div class="flex flex-col gap-space-xs"><span class="px-space-md font-label-sm text-label-sm text-secondary-container uppercase tracking-wider">Communications &amp; Config</span><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-md rounded-lg"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="broadcast-announcements" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">campaign</span><span>Announcements</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="financial-reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">insights</span><span>Reports</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-label-md text-label-md text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors" data-path="node-settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></div></a></nav></div></div><div class="p-space-md bg-tertiary-container m-space-sm rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[18px]">verified_user</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-tertiary font-bold truncate">Emeka Nwosu</span><span class="font-label-sm text-label-sm text-tertiary-fixed-dim truncate">Super Admin • Lagos</span></div></div><a class="p-space-xs rounded text-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-colors shrink-0" data-path="admin-logout" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><img alt="Brand logo. - Primary color: #054f31
+- Font: spaceGrotesk
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><div class="relative w-full max-w-md"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-9 pr-space-md rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-secondary transition-all" placeholder="Search tasker ID, phone, transaction reference..." type="text"/></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden lg:flex items-center gap-space-xs bg-surface-container px-space-md py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Lagos Core 01 • 99.98% SLA</span></div><div class="flex items-center gap-space-xs bg-secondary-container px-space-sm py-1 rounded-full"><span class="material-symbols-outlined text-on-secondary-container text-[14px]">sync</span><span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">Sync Live</span></div><button class="p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface w-full px-space-xl min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Level Management Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md py-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Protocol Governance</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">System Matrix 100-L</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Tier Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Configure Tasker tiers, rewards, and progression requirements across the 100-tier ladder.</p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-high px-space-md py-space-sm rounded-xl shadow-sm self-start md:self-auto">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Algorithmic Guard</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Deterministic Ladder Active: +₦5/tier</span>
+</div>
+</div>
+</div>
+<!-- Hero Insight & Rule Structure Bento Banner -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Main Rule Card -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-64 h-64 bg-primary-fixed-dim/20 rounded-full blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">stairs</span>
+</span>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Task Reward Structure</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fixed increment matrix powering instantaneous micro-task disbursement</p>
+</div>
+</div>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-space-sm py-0.5 rounded-full font-bold">Tier Formula v3.1</span>
+</div>
+<!-- Tier Progression Steps Visualizer -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-space-sm my-space-md">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tier 01</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-1">₦10<span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/task</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-2">Starting Tier</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tier 02</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-1">₦20<span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/task</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-2">+₦10 Jump</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tier 03</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-1">₦25<span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/task</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold mt-2">+₦5 Increment</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tier 04</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-1">₦30<span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/task</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold mt-2">+₦5 Increment</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tier 05</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-1">₦35<span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/task</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold mt-2">+₦5 Increment</span>
+</div>
+</div>
+<!-- Inline Formula SVG Curve -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between mt-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">functions</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">Formula Definition: <code class="font-label-sm text-label-sm text-secondary font-bold">Tn = 20 + ((n - 2) * 5)</code> for all n ≥ 2</span>
+</div>
+<div class="hidden sm:block">
+<svg class="h-6 w-32 text-secondary" fill="none" viewbox="0 0 128 24">
+<path d="M0 22 C30 18, 50 14, 80 8 C100 4, 115 2, 128 1" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="126" cy="2" fill="currentColor" r="2.5"></circle>
+</svg>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">Every tier after Tier 2 increases the unit reward by exactly ₦5.00.</span>
+<div class="flex items-center gap-space-xs text-on-primary-container bg-primary-container px-space-md py-1 rounded-full w-fit">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm font-bold tracking-tight">System Enforced Immutable</span>
+</div>
+</div>
+</div>
+<!-- Apex Reward & Tier 100 Anchor Card -->
+<div class="lg:col-span-4 bg-primary text-on-primary rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-40 h-40 bg-secondary/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider">Ceiling Milestone</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">military_tech</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-primary mt-1">Tier 100 Apex Reward</h3>
+<p class="font-body-sm text-body-sm text-surface-container-high">Top operational threshold. Highest achievable Tasker multiplier on Nigeria Core.</p>
+</div>
+<div class="my-space-md py-space-sm bg-primary-container/60 rounded-xl px-space-md flex items-baseline justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Apex Rate per verified submission</span>
+<span class="font-currency-display text-currency-display text-secondary-container font-headline-xl">₦510<span class="font-title-sm text-title-sm text-on-primary">.00</span></span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary px-space-xs py-0.5 rounded text-on-secondary font-bold">51.0x Base</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[16px]">shield_with_heart</span>
+<span>Reserved for verified High-Trust Taskers</span>
+</div>
+</div>
+</div>
+<!-- Critical Tier 100 Governance Alert Note -->
+<div class="mb-space-lg bg-amber-500/10 rounded-xl p-space-md flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-800 flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div class="flex-1 flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-amber-900 font-bold tracking-tight">Tier 100 Requirement Rule &amp; Governance Lock</span>
+<p class="font-body-sm text-body-sm text-amber-900 mt-0.5 max-w-4xl">
+          Tier 100 progression requires exactly <strong>2× the task completion requirement used for Tier 50</strong>. In accordance with system safety standards, intermediate tier thresholds remain dynamic and display <span class="bg-surface-container-lowest px-1.5 py-0.5 rounded text-on-surface font-semibold">"Not yet configured"</span> until finalized.
+        </p>
+</div>
+<span class="font-label-sm text-label-sm text-amber-800 font-semibold uppercase tracking-wider bg-surface-container-lowest px-space-sm py-1 rounded-md shrink-0 shadow-sm self-start md:self-auto">Section 4.12 B-Reg</span>
+</div>
+</div>
+<!-- Two-Column Operations Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Tier Ladder Registry Table -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">format_list_numbered</span>
+<span class="font-title-sm text-title-sm text-on-surface">Registered Tier Ladder</span>
+<span class="bg-surface-container-high px-space-xs py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant font-bold">9 Key Tiers Displayed</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">filter_alt</span>
+<span class="font-label-sm text-label-sm font-medium">Auto-Formula Filter</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="tier-ladder-table">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Tier</th>
+<th class="py-space-sm px-space-md">Unit Reward / Task</th>
+<th class="py-space-sm px-space-md">Progression Requirement</th>
+<th class="py-space-sm px-space-md">System Status</th>
+<th class="py-space-sm px-space-md text-right">Action</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface">
+<!-- Tier 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">01</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Tier 1</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-headline-sm text-headline-sm font-bold text-primary">₦10.00</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+                  Starting Tier (0 tasks)
+                </span>
+</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Active</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="tier-select-btn font-label-sm text-label-sm text-secondary hover:text-primary transition-colors font-bold px-space-xs py-1 rounded hover:bg-surface-container" data-logins="0 days" data-req="0 tasks" data-reward="₦10.00" data-tier="1" type="button">Edit</button>
+</td>
+</tr>
+<!-- Tier 2 -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">02</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Tier 2</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-headline-sm text-headline-sm font-bold text-primary">₦20.00</td>
+<td class="py-space-sm px-space-md">Configured (3 verified tasks)</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Active</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="tier-select-btn font-label-sm text-label-sm text-secondary hover:text-primary transition-colors font-bold px-space-xs py-1 rounded hover:bg-surface-container" data-logins="2 days" data-req="3 tasks" data-reward="₦20.00" data-tier="2" type="button">Edit</button>
+</td>
+</tr>
+<!-- Tier 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">03</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Tier 3</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-headline-sm text-headline-sm font-bold text-primary">₦25.00</td>
+<td class="py-space-sm px-space-md">Configured (15 verified tasks)</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Active</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="tier-select-btn font-label-sm text-label-sm text-secondary hover:text-primary transition-colors font-bold px-space-xs py-1 rounded hover:bg-surface-container" data-logins="5 days" data-req="15 tasks" data-reward="₦25.00" data-tier="3" type="button">Edit</button>
+</td>
+</tr>
+<!-- Tier 4 -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">04</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Tier 4</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-headline-sm text-headline-sm font-bold text-primary">₦30.00</td>
+<td class="py-space-sm px-space-md">Configured (50 verified tasks)</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Active</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="tier-select-btn font-label-sm text-label-sm text-secondary hover:text-primary transition-colors font-bold px-space-xs py-1 rounded hover:bg-surface-container" data-logins="10 days" data-req="50 tasks" data-reward="₦30.00" data-tier="4" type="button">Edit</button>
+</td>
+</tr>
+<!-- Tier 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">05</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Tier 5</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-headline-sm text-headline-sm font-bold text-primary">₦35.00</td>
+<td class="py-space-sm px-space-md">Configured (100 verified tasks)</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Active</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="tier-select-btn font-label-sm text-label-sm text-secondary hover:text-primary transition-colors font-bold px-space-xs py-1 rounded hover:bg-surface-container" data-logins="20 days" data-req="100 tasks" data-reward="₦35.00" data-tier="5" type="button">Edit</button>
+</td>
+</tr>
+<!-- Tier 10 -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">10</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Tier 10</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-headline-sm text-headline-sm font-bold text-primary">₦60.00</td>
+<td class="py-space-sm px-space-md">Configured</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Active</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="tier-select-btn font-label-sm text-label-sm text-secondary hover:text-primary transition-colors font-bold px-space-xs py-1 rounded hover:bg-surface-container" data-logins="45 days" data-req="350 tasks" data-reward="₦60.00" data-tier="10" type="button">Edit</button>
+</td>
+</tr>
+<!-- Tier 20 (SELECTED BY DEFAULT) -->
+<tr class="bg-secondary-container/25 transition-colors" id="row-tier-20">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm font-bold">20</span>
+<span class="font-label-md text-label-md font-bold text-secondary">Tier 20</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-headline-sm text-headline-sm font-bold text-primary">₦110.00</td>
+<td class="py-space-sm px-space-md text-on-surface-variant italic">Not yet configured</td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Active</span>
+<span class="px-1.5 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm rounded uppercase text-[9px] font-bold">Selected</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="tier-select-btn font-label-sm text-label-sm bg-secondary text-on-secondary font-bold px-space-sm py-1 rounded shadow-sm" data-logins="" data-req="" data-reward="₦110.00" data-tier="20" type="button">Editing</button>
+</td>
+</tr>
+<!-- Tier 50 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">50</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Tier 50</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-headline-sm text-headline-sm font-bold text-primary">₦260.00</td>
+<td class="py-space-sm px-space-md text-on-surface-variant italic">Not yet configured</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Active</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="tier-select-btn font-label-sm text-label-sm text-secondary hover:text-primary transition-colors font-bold px-space-xs py-1 rounded hover:bg-surface-container" data-logins="" data-req="" data-reward="₦260.00" data-tier="50" type="button">Edit</button>
+</td>
+</tr>
+<!-- Tier 100 -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-label-sm font-bold">100</span>
+<span class="font-label-md text-label-md font-bold text-primary">Tier 100</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md font-headline-sm text-headline-sm font-bold text-primary">₦510.00</td>
+<td class="py-space-sm px-space-md font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">link</span>
+                2× Tier 50 Requirement
+              </td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">Active</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<button class="tier-select-btn font-label-sm text-label-sm text-secondary hover:text-primary transition-colors font-bold px-space-xs py-1 rounded hover:bg-surface-container" data-logins="180 days" data-req="2x Tier 50" data-reward="₦510.00" data-tier="100" type="button">Edit</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-space-sm mt-auto">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>91 intermediate tiers inherit mathematical defaults dynamically</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="hover:text-primary font-bold transition-colors" type="button">Audit History</button>
+<span>•</span>
+<button class="hover:text-primary font-bold transition-colors" type="button">Export CSV Matrix</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Edit Tier Configuration Panel -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-headline-sm font-bold" id="panel-badge">
+              20
+            </div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface" id="panel-title">Configure Tier 20</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Update progression criteria and integrity conditions</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px]">tune</span>
+</div>
+<form class="flex flex-col gap-space-md" id="tier-config-form" onsubmit="event.preventDefault();">
+<!-- Readonly Tier Number -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Tier Identifier</label>
+<div class="h-12 px-space-md rounded-lg bg-surface-container flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold" id="field-tier-num">Tier 20 (Intermediate Level)</span>
+<span class="material-symbols-outlined text-[18px] text-outline">lock</span>
+</div>
+</div>
+<!-- Reward Per Unit (System Locked) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Reward per Unit</label>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Formula Locked</span>
+</div>
+<div class="h-12 px-space-md rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="field-reward-val">₦110.00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ verified task</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface font-semibold">System Controlled</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Computed dynamically via Tn = 20 + ((20 - 2) * 5)</span>
+</div>
+<!-- Task Requirement Input -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="task-requirement">Task Requirement</label>
+<span class="font-label-sm text-label-sm text-amber-800 bg-amber-500/10 px-space-xs py-0.5 rounded font-bold" id="req-status-pill">Pending Setup</span>
+</div>
+<div class="relative">
+<input class="w-full h-12 pl-space-md pr-12 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-low shadow-sm" id="task-requirement" name="task-requirement" placeholder="Enter required completed tasks" type="number"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Tasks</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Currently: <strong class="text-on-surface">Not yet configured</strong></span>
+</div>
+<!-- Active Login Days Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="login-requirement">Active Login Days Requirement</label>
+<div class="relative">
+<input class="w-full h-12 pl-space-md pr-12 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-low shadow-sm" id="login-requirement" name="login-requirement" placeholder="Enter required active login days" type="number"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Days</span>
+</div>
+</div>
+<!-- Validation & Integrity Guard Box -->
+<div class="bg-surface-container rounded-lg p-space-md flex items-start gap-space-sm">
+<div class="pt-0.5">
+<input class="w-4 h-4 rounded text-primary focus:ring-secondary accent-primary cursor-pointer mt-0.5" id="formula-override-check" type="checkbox"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface font-bold cursor-pointer" for="formula-override-check">
+                Reward formula mismatch protection
+              </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                This reward follows the configured tier progression. Inconsistent reward values cannot be saved without an explicit Super Admin cryptographic override.
+              </p>
+</div>
+</div>
+</form>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-lg">
+<button class="w-full sm:flex-1 h-12 bg-primary hover:bg-secondary text-on-primary font-headline-sm text-title-sm font-bold rounded-lg transition-colors flex items-center justify-center gap-space-xs shadow-sm" id="btn-save-tier" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Save Tier Configuration</span>
+</button>
+<button class="w-full sm:w-auto h-12 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-bold rounded-lg transition-colors flex items-center justify-center gap-space-xs" id="btn-reset-defaults" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset Defaults</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Operational Guardrails & Audit Meta Footer -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">admin_panel_settings</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Current Governance Admin</span>
+<span class="font-title-sm text-title-sm text-on-surface truncate font-bold">Emeka Nwosu (Super Admin)</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">fingerprint</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Matrix Hash Consensus</span>
+<span class="font-label-md text-label-md text-on-surface font-mono truncate">0x9F42...B83A (Synced Lagos 01)</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">published_with_changes</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Last Engine Rebalance</span>
+<span class="font-title-sm text-title-sm text-on-surface truncate font-bold">Today, 04:30 AM WAT</span>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script -->
+<script>
+    (function() {
+      const editButtons = document.querySelectorAll('.tier-select-btn');
+      const panelBadge = document.getElementById('panel-badge');
+      const panelTitle = document.getElementById('panel-title');
+      const fieldTierNum = document.getElementById('field-tier-num');
+      const fieldRewardVal = document.getElementById('field-reward-val');
+      const taskReqInput = document.getElementById('task-requirement');
+      const loginReqInput = document.getElementById('login-requirement');
+      const reqStatusPill = document.getElementById('req-status-pill');
+      const saveBtn = document.getElementById('btn-save-tier');
+      const resetBtn = document.getElementById('btn-reset-defaults');
+
+      editButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tier = btn.getAttribute('data-tier');
+          const reward = btn.getAttribute('data-reward');
+          const req = btn.getAttribute('data-req') || '';
+          const logins = btn.getAttribute('data-logins') || '';
+
+          // Reset styles on all table buttons
+          editButtons.forEach(b => {
+            b.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-sm');
+            b.classList.add('text-secondary', 'hover:text-primary', 'hover:bg-surface-container');
+            b.textContent = 'Edit';
+            b.closest('tr')?.classList.remove('bg-secondary-container/25');
+          });
+
+          // Style active button & row
+          btn.classList.remove('text-secondary', 'hover:text-primary', 'hover:bg-surface-container');
+          btn.classList.add('bg-secondary', 'text-on-secondary', 'shadow-sm');
+          btn.textContent = 'Editing';
+          btn.closest('tr')?.classList.add('bg-secondary-container/25');
+
+          // Update edit panel contents
+          panelBadge.textContent = tier;
+          panelTitle.textContent = `Configure Tier ${tier}`;
+          fieldTierNum.textContent = `Tier ${tier} (${tier === '1' ? 'Starting' : tier === '100' ? 'Apex Ceiling' : 'Intermediate'})`;
+          fieldRewardVal.textContent = reward;
+
+          const numTasks = parseInt(req.replace(/\D/g, ''), 10);
+          const numDays = parseInt(logins.replace(/\D/g, ''), 10);
+
+          taskReqInput.value = isNaN(numTasks) ? '' : numTasks;
+          loginReqInput.value = isNaN(numDays) ? '' : numDays;
+
+          if (taskReqInput.value) {
+            reqStatusPill.textContent = 'Configured';
+            reqStatusPill.className = 'font-label-sm text-label-sm text-secondary-container bg-secondary px-space-xs py-0.5 rounded font-bold text-on-secondary';
+          } else {
+            reqStatusPill.textContent = 'Pending Setup';
+            reqStatusPill.className = 'font-label-sm text-label-sm text-amber-800 bg-amber-500/10 px-space-xs py-0.5 rounded font-bold';
+          }
+        });
+      });
+
+      saveBtn.addEventListener('click', () => {
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Applying Matrix...</span>';
+        setTimeout(() => {
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">done_all</span><span>Tier Configuration Saved</span>';
+          setTimeout(() => {
+            saveBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">save</span><span>Save Tier Configuration</span>';
+          }, 2000);
+        }, 600);
+      });
+
+      resetBtn.addEventListener('click', () => {
+        taskReqInput.value = '';
+        loginReqInput.value = '';
+        reqStatusPill.textContent = 'Pending Setup';
+        reqStatusPill.className = 'font-label-sm text-label-sm text-amber-800 bg-amber-500/10 px-space-xs py-0.5 rounded font-bold';
+      });
+    })();
+  </script>
+</div></main></div></body></html>

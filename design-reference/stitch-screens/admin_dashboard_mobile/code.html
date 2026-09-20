@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'secondary-container': '#8af5be', 'inverse-primary': '#93d5ad', 'surface-bright': '#faf8ff', 'on-primary-fixed-variant': '#095133', 'outline-variant': '#bfc9c0', 'on-background': '#131b2e', 'primary-fixed-dim': '#93d5ad', 'surface-variant': '#dae2fd', 'surface-container-highest': '#dae2fd', 'surface-dim': '#d2d9f4', 'on-secondary-fixed': '#002113', 'on-error': '#ffffff', 'secondary-fixed-dim': '#71dba6', 'inverse-surface': '#283044', 'on-secondary-fixed-variant': '#005235', 'on-tertiary': '#ffffff', 'primary-fixed': '#aef1c8', 'error': '#ba1a1a', 'on-primary-fixed': '#002111', 'surface-container-lowest': '#ffffff', 'on-primary-container': '#7fc099', 'error-container': '#ffdad6', 'surface-container': '#eaedff', 'surface-container-high': '#e2e7ff', 'on-secondary-container': '#00714b', 'on-surface': '#131b2e', 'background': '#faf8ff', 'secondary-fixed': '#8df7c1', 'inverse-on-surface': '#eef0ff', 'primary-container': '#054f31', 'on-tertiary-container': '#31c98f', 'tertiary': '#003623', 'on-tertiary-fixed': '#002113', 'tertiary-fixed': '#6ffbbe', 'on-surface-variant': '#404942', 'tertiary-container': '#004f34', 'surface-container-low': '#f2f3ff', 'outline': '#707972', 'on-tertiary-fixed-variant': '#005236', 'on-error-container': '#93000a', 'tertiary-fixed-dim': '#4edea3', 'on-secondary': '#ffffff', 'on-primary': '#ffffff', 'surface-tint': '#2a6a49', 'surface': '#faf8ff', 'secondary': '#006c47', 'primary': '#003620' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-lg': '1.5rem', 'space-xl': '2.5rem', 'gutter-desktop': '1.5rem', 'margin': '1rem', 'margin-desktop': '2.5rem', 'space-xs': '0.25rem', 'gutter': '1rem', 'space-md': '1rem', 'space-sm': '0.5rem' }, fontFamily: { 'headline-md': ['Space Grotesk'], 'label-md': ['Space Grotesk'], 'label-lg': ['Space Grotesk'], 'currency-display': ['Space Grotesk'], 'headline-lg-mobile': ['Space Grotesk'], 'headline-xl-mobile': ['Space Grotesk'], 'body-md': ['Plus Jakarta Sans'], 'title-md': ['Plus Jakarta Sans'], 'headline-lg': ['Space Grotesk'], 'headline-sm': ['Space Grotesk'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'headline-xl': ['Space Grotesk'], 'label-sm': ['Space Grotesk'], 'title-sm': ['Plus Jakarta Sans'] }, fontSize: { 'headline-md': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', fontWeight: '600' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'currency-display': ['36px', { lineHeight: '44px', fontWeight: '700' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '700' }], 'headline-xl-mobile': ['30px', { lineHeight: '36px', fontWeight: '700' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'title-md': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', fontWeight: '700' }], 'headline-sm': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'headline-xl': ['40px', { lineHeight: '48px', fontWeight: '700' }], 'label-sm': ['10px', { lineHeight: '14px', fontWeight: '700' }], 'title-sm': ['16px', { lineHeight: '24px', fontWeight: '600' }] } } } };</script><style>@layer base { html, body { margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-2"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Open menu" class="w-12 h-12 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-surface-container-low active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container bg-primary-container/10 px-1.5 py-0.5 rounded">Ops Admin</span></div><h1 class="font-title-sm text-title-sm text-on-surface truncate">Dashboard</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-12 h-12 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-surface-container-low active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-3 right-3 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-6">
+<!-- Sub-Header Status Bar -->
+<div class="px-gutter pt-3 pb-2 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface-variant">Lagos Ops • Sep 14, 2026 • Live Node</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">sync</span>
+<span class="font-label-sm text-label-sm text-on-surface">Auto-sync</span>
+</div>
+</div>
+<!-- Operational Health Banner -->
+<div class="px-gutter mb-4">
+<div class="bg-primary text-on-primary rounded-xl p-4 shadow-sm relative overflow-hidden flex items-center justify-between">
+<div class="relative z-10 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">System Performance</span>
+<span class="font-headline-sm text-headline-sm text-on-primary font-bold">Lagos Mainnet 99.98%</span>
+<span class="font-body-sm text-body-sm text-on-primary-container mt-0.5">High velocity queue • 84ms batch latency</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-container/60 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">speed</span>
+</div>
+</div>
+</div>
+<!-- Top KPI Grid -->
+<div class="px-gutter mb-6">
+<div class="flex items-center justify-between mb-2.5">
+<span class="font-title-sm text-title-sm text-on-surface">Platform Pulse</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Real-time Metrics</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Card 1: Active Taskers -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Active Taskers</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">group</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">1,248</span>
+<div class="flex items-center gap-1 mt-1 text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px] text-secondary">trending_up</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">+12% this week</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Active Tasks -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Active Tasks</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">18</span>
+<div class="flex items-center gap-1 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active live batches</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Pending Verification -->
+<div class="bg-surface-container-high p-3.5 rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Pending Verification</span>
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold">Needs Action</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary-container font-bold">42</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Proof awaiting review</span>
+</div>
+</div>
+<!-- Card 4: Pending Withdrawals -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Withdrawals</span>
+<span class="bg-surface-container text-on-surface px-1.5 py-0.5 rounded-full font-label-sm text-label-sm">Sunday Batch</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">17</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Disbursement queue</span>
+</div>
+</div>
+<!-- Card 5: Today's Completions -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Completions</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">task_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">326</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-0.5">94.8% approval</span>
+</div>
+</div>
+<!-- Card 6: Revenue & Margin -->
+<div class="bg-primary-container text-on-primary rounded-xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-secondary-fixed">Platform Revenue</span>
+<span class="material-symbols-outlined text-secondary-container text-[18px]">payments</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-primary font-bold">₦8,420</span>
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold mt-0.5">Net Margin: ₦2,800</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Attention Section -->
+<div class="px-gutter mb-6">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[20px]" style="font-variation-settings: 'FILL' 1;">priority_high</span>
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">Needs Your Attention</h2>
+</div>
+<span class="font-label-md text-label-md text-secondary font-semibold">2 Critical Queues</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Callout A -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate">42 submissions waiting</span>
+<span class="font-label-sm text-label-sm text-error bg-error-container/50 px-1.5 py-0.5 rounded font-bold">Overdue</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Submissions queue backlog across Instagram, Facebook, and App reviews.</p>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary h-11 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 active:bg-secondary transition-colors shadow-sm">
+<span>Review Proof</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Callout B -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate">17 withdrawals waiting</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded font-bold">₦74,500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Weekly settlement batch queued for Sunday 5:00 PM.</p>
+</div>
+</div>
+<button class="w-full bg-surface-container-high text-on-surface h-11 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-variant active:bg-surface-dim transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">rule</span>
+<span>Review Withdrawals</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Operational Flow Visualizer -->
+<div class="px-gutter mb-6">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Hourly Validation Volume</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last 6 Hours</span>
+</div>
+<div class="flex items-end justify-between h-20 gap-2 pt-2">
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t-sm" style="height: 35%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10:00</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t-sm" style="height: 52%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">11:00</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t-sm" style="height: 68%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12:00</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container rounded-t-sm" style="height: 44%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">13:00</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-surface-container-highest rounded-t-sm" style="height: 80%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14:00</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1.5">
+<div class="w-full bg-secondary rounded-t-sm" style="height: 95%;"></div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Now</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Tasks Section -->
+<div class="px-gutter mb-6">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">Active Tasks</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live escrow slots monitored</span>
+</div>
+<a class="font-label-md text-label-md text-secondary flex items-center gap-0.5" href="#">
+<span>View all 18</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Task 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">photo_camera</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-bold truncate">Instagram Follow Campaign</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Acme Brand Nigeria</span>
+</div>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold flex-shrink-0">Active</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">₦10<span class="font-body-sm text-body-sm text-on-surface-variant font-normal"> / task</span></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">62 / 100 completed</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-2 rounded-full" style="width: 62%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">timelapse</span>
+<span class="font-label-sm text-label-sm">38 slots remaining</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Escrow: ₦1,000</span>
+</div>
+</div>
+<!-- Task 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">thumb_up</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-bold truncate">Facebook Page Engagement</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">PayFlex Solutions</span>
+</div>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold flex-shrink-0">Active</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">₦20<span class="font-body-sm text-body-sm text-on-surface-variant font-normal"> / task</span></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">143 / 200 completed</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-2 rounded-full" style="width: 71.5%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">timelapse</span>
+<span class="font-label-sm text-label-sm">57 slots remaining</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Escrow: ₦4,000</span>
+</div>
+</div>
+<!-- Task 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary font-headline-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">star</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-bold truncate">App Review &amp; Rating</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">QuickLoan FinTech</span>
+</div>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold flex-shrink-0">Active</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">₦50<span class="font-body-sm text-body-sm text-on-surface-variant font-normal"> / task</span></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">38 / 50 completed</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-2 rounded-full" style="width: 76%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">timelapse</span>
+<span class="font-label-sm text-label-sm">12 slots remaining</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Escrow: ₦2,500</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Audit & Fraud Notice Snippet -->
+<div class="px-gutter mb-6">
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">security</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Integrity Shield</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated OCR and geo-fingerprinting flagged 1 duplicate proof today.</span>
+</div>
+</div>
+</div>
+<!-- Recent Activity Section -->
+<div class="px-gutter mb-2">
+<div class="flex items-center justify-between mb-3">
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">Recent Activity</h2>
+<button class="font-label-md text-label-md text-secondary">Filter</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col gap-4">
+<!-- Item 1 -->
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary">upload_file</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">
+            Tasker <strong class="font-semibold text-primary">Amara K.</strong> submitted proof for Instagram Follow
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">2m ago • Instagram Queue</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">
+            Proof approved for <strong class="font-semibold text-primary">Babatunde A.</strong> (<span class="text-secondary font-semibold">+₦10.00</span> credited)
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">6m ago • Auto-settled</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface">account_balance_wallet</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">
+            Withdrawal requested: <strong class="font-semibold text-primary">₦6,240</strong> by Amaka Johnson
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">14m ago • GTBank Payout</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">flag</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">
+            Task completed: <strong class="font-semibold text-primary">TikTok Sound Video</strong> reached 250/250
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">28m ago • Campaign Closed</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center text-on-error-container flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-error">block</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">
+            Tasker <strong class="font-semibold text-error">@victor_bot</strong> suspended for duplicate proof match
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">42m ago • Shield Trigger</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Ensure dashboard navigation item is visually highlighted in global shell
+  document.addEventListener('DOMContentLoaded', () => {
+    const dashboardLink = document.querySelector('nav a[data-path="dashboard"]');
+    if (dashboardLink) {
+      dashboardLink.classList.remove('text-on-surface-variant');
+      dashboardLink.classList.add('text-primary-container', 'font-semibold');
+      const icon = dashboardLink.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.style.fontVariationSettings = "'FILL' 1";
+      }
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-gutter flex items-center justify-between"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg transition-colors text-primary-container font-semibold" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm tracking-tight">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg text-on-surface-variant transition-colors hover:text-on-surface" data-path="taskers" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="font-label-sm text-label-sm tracking-tight">Taskers</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg text-on-surface-variant transition-colors hover:text-on-surface" data-path="tasks" href="#"><span class="material-symbols-outlined text-[22px]">assignment</span><span class="font-label-sm text-label-sm tracking-tight">Tasks</span></a><a class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg text-on-surface-variant transition-colors hover:text-on-surface" data-path="verification" href="#"><span class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">verified_user</span><span class="absolute -top-1 -right-3 font-label-sm text-[9px] leading-tight px-1 py-0.2 bg-secondary text-on-secondary rounded-full font-bold min-w-[16px] text-center shadow-sm">42</span></span><span class="font-label-sm text-label-sm tracking-tight">Verify</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg text-on-surface-variant transition-colors hover:text-on-surface" data-path="more-options" href="#"><span class="material-symbols-outlined text-[22px]">more_horiz</span><span class="font-label-sm text-label-sm tracking-tight">More</span></a></div></nav></body></html>

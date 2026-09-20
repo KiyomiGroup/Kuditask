@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>TaskNaija</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#eef0ff", "secondary-fixed-dim": "#71dba6", "on-primary-fixed-variant": "#095133", "on-tertiary-fixed-variant": "#005236", "surface-bright": "#faf8ff", "on-error": "#ffffff", "primary": "#003620", "on-error-container": "#93000a", "on-primary-container": "#7fc099", "on-secondary-fixed-variant": "#005235", "background": "#faf8ff", "error": "#ba1a1a", "on-surface": "#131b2e", "on-tertiary-fixed": "#002113", "surface-container-low": "#f2f3ff", "surface-dim": "#d2d9f4", "on-tertiary": "#ffffff", "surface-variant": "#dae2fd", "tertiary-fixed": "#6ffbbe", "secondary-fixed": "#8df7c1", "primary-fixed-dim": "#93d5ad", "error-container": "#ffdad6", "primary-container": "#054f31", "on-surface-variant": "#404942", "primary-fixed": "#aef1c8", "on-tertiary-container": "#31c98f", "tertiary": "#003623", "surface-container-lowest": "#ffffff", "outline": "#707972", "surface-tint": "#2a6a49", "secondary-container": "#8af5be", "on-primary-fixed": "#002111", "inverse-surface": "#283044", "tertiary-fixed-dim": "#4edea3", "surface": "#faf8ff", "inverse-primary": "#93d5ad", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff", "secondary": "#006c47", "tertiary-container": "#004f34", "on-secondary-container": "#00714b", "on-primary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#eaedff", "outline-variant": "#bfc9c0", "on-secondary-fixed": "#002113", "on-background": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-desktop": "2.5rem", "margin": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-lg": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Space Grotesk"], "title-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Space Grotesk"], "label-sm": ["Space Grotesk"], "body-sm": ["Plus Jakarta Sans"], "currency-display": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}], "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-xl": ["40px", {"lineHeight": "48px", "fontWeight": "700"}], "title-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}], "headline-xl-mobile": ["30px", {"lineHeight": "36px", "fontWeight": "700"}], "label-sm": ["10px", {"lineHeight": "14px", "fontWeight": "700"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "currency-display": ["36px", {"lineHeight": "44px", "fontWeight": "700"}], "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}], "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "title-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}] } } } };</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #054f31
+- Font: spaceGrotesk
+- Mode: light
+- Roundness: rounded-md
+" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UOI60dOnlX_JWPR4wnplAM7639mnR5eaP_Ae_m1DSI6vyGILzdfzX7bsVRCMn6im7dPyd4EZpaYTcAe5dvqxNfxz40QVWqIefPSK4BN38kPvooIDNZRFMvSmPZgo7o6roYqo1ffKG8j4c9DP86NJRASD8ggcGK679Z4pkLxqkPCAgWV_XEqHhRmG1F_9DzNPmxItXdpx7Y2puTROIF0bl8pl7XfIlrcNEcwSyixxtnypLXv7hfILCymbI"/><h1 class="font-title-md text-title-md text-on-surface tracking-tight truncate max-w-[160px]">Public Faq</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl gap-space-md">
+<!-- Title & Subtitle Banner with Dynamic Tactile Card -->
+<div class="relative overflow-hidden rounded-xl bg-primary-container p-space-md shadow-md text-on-primary">
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs bg-tertiary-container/60 backdrop-blur-md px-space-sm py-1 rounded-full w-fit">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">help_center</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary-fixed">Help &amp; Knowledge Base</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile tracking-tight text-on-primary">FAQ</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container max-w-[280px]">
+        Find answers about tasks, earnings, proof verification, and guaranteed bank withdrawals.
+      </p>
+</div>
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute right-3 top-3 opacity-15 pointer-events-none">
+<span class="material-symbols-outlined text-[76px] text-tertiary-fixed">account_balance_wallet</span>
+</div>
+</div>
+<!-- Search Bar with Instant Interaction -->
+<div class="relative w-full">
+<div class="relative flex items-center w-full rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">search</span>
+<input aria-label="Search questions" class="w-full h-12 pl-11 pr-10 rounded-xl bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="faqSearchInput" placeholder="Search questions (e.g. proof, withdrawal, tier)..." type="text"/>
+<button aria-label="Clear search" class="hidden absolute right-3 w-7 h-7 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container" id="faqClearSearch" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Category Pills (Horizontal scrolling with touch ergonomics) -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1.5 -mx-margin px-margin no-scrollbar" id="categoryContainer" role="tablist">
+<button class="cat-pill active flex items-center gap-1 px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-primary text-on-primary shadow-sm transition-all duration-150 active:scale-95" data-cat="all" type="button">
+<span>All</span>
+<span class="cat-count ml-0.5 px-1.5 py-0.2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">13</span>
+</button>
+<button class="cat-pill flex items-center gap-1 px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-150 active:scale-95" data-cat="general" type="button">
+<span>General</span>
+</button>
+<button class="cat-pill flex items-center gap-1 px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-150 active:scale-95" data-cat="tasks" type="button">
+<span>Tasks</span>
+</button>
+<button class="cat-pill flex items-center gap-1 px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-150 active:scale-95" data-cat="proof" type="button">
+<span>Proof</span>
+</button>
+<button class="cat-pill flex items-center gap-1 px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-150 active:scale-95" data-cat="earnings" type="button">
+<span>Earnings</span>
+</button>
+<button class="cat-pill flex items-center gap-1 px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-150 active:scale-95" data-cat="withdrawals" type="button">
+<span>Withdrawals</span>
+</button>
+<button class="cat-pill flex items-center gap-1 px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-150 active:scale-95" data-cat="tiers" type="button">
+<span>Tiers</span>
+</button>
+</div>
+<!-- Accordion List Container -->
+<div class="flex flex-col gap-space-sm w-full" id="faqAccordionList">
+<!-- Item 1: What is this platform? (Expanded) -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="general">
+<button aria-expanded="true" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">What is this platform?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 transition-transform duration-200 rotate-180">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</div>
+</button>
+<div class="faq-body px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-xs">
+<p>It is a micro-task marketplace where Taskers complete digital tasks for rewards. Clients submit task requests through the platform's administrative process.</p>
+<div class="flex items-center gap-2 mt-1 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span class="font-body-sm text-body-sm">Protected by multi-tier automated escrow infrastructure.</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Who can become a Tasker? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="general">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">Who can become a Tasker?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-xs">
+<p>Anyone with an internet-enabled smartphone, a verified Nigerian mobile number, and an active Nigerian bank account can register. No prior technical experience is required.</p>
+</div>
+</div>
+<!-- Item 3: How do I complete a task? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="tasks">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">How do I complete a task?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-sm">
+<p>Choose an available task from your feed, review the requirements, click "Claim Task", execute the outlined steps, and upload your proof before the countdown timer elapses.</p>
+<div class="grid grid-cols-3 gap-1.5 pt-1 text-center font-label-sm text-label-sm">
+<div class="p-2 rounded-lg bg-surface-container-low text-on-surface flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[20px] text-secondary">touch_app</span>
+<span>1. Claim</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low text-on-surface flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[20px] text-secondary">task_alt</span>
+<span>2. Do Task</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low text-on-surface flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[20px] text-secondary">cloud_upload</span>
+<span>3. Submit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4: How long do I have to complete a task? (Expanded) -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="tasks">
+<button aria-expanded="true" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">How long do I have to complete a task?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 transition-transform duration-200 rotate-180">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</div>
+</button>
+<div class="faq-body px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-sm">
+<p>Starting a task reserves one slot for 10 minutes. Complete the task and submit your proof within that reservation period.</p>
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[20px] text-error">timer</span>
+<span class="font-body-sm text-body-sm">Unsubmitted tasks automatically expire after 10:00 minutes and return to the pool for other taskers.</span>
+</div>
+</div>
+</div>
+<!-- Item 5: Why do I need a screenshot? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="proof">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">Why do I need a screenshot?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-xs">
+<p>Screenshots serve as verifiable photographic evidence for campaign sponsors that your engagement occurred legitimately (e.g. follow, review, comment, or app registration).</p>
+</div>
+</div>
+<!-- Item 6: What happens if my proof is rejected? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="proof">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">What happens if my proof is rejected?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-xs">
+<p>The reward for that submission will not be confirmed. A rejection does not automatically mean you committed fraud.</p>
+<p class="font-body-sm text-body-sm text-outline">Common reasons include cropped out timestamps, incorrect profiles, or blurry text.</p>
+</div>
+</div>
+<!-- Item 7: What happens if I submit fake proof? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="proof">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">What happens if I submit fake proof?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-xs">
+<div class="p-2.5 rounded-lg bg-error-container text-on-error-container font-body-sm text-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-[20px] text-error shrink-0">gavel</span>
+<span>Deliberately altered, reused, or falsified proof triggers immediate account suspension, forfeiture of escrow balance, and permanent ban from TaskNaija.</span>
+</div>
+</div>
+</div>
+<!-- Item 8: How much can I earn per task? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="earnings">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">How much can I earn per task?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-xs">
+<p>Tier 1 starts at <span class="font-headline-sm text-headline-sm text-primary">₦10</span> per verified task.</p>
+<p>Earnings scale continuously as your tier increases, up to <span class="font-title-sm text-title-sm text-secondary">₦510</span> per task at Tier 100.</p>
+</div>
+</div>
+<!-- Item 9: What is the minimum withdrawal? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="withdrawals">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">What is the minimum withdrawal?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-xs">
+<p>The minimum withdrawal amount is <strong class="font-headline-sm text-headline-sm text-primary">₦5,000</strong>.</p>
+<p class="font-body-sm text-body-sm text-outline">Funds transfer directly into any Nigerian bank account via NIBSS Instant Payments (NIP).</p>
+</div>
+</div>
+<!-- Item 10: When can I withdraw? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="withdrawals">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">When can I withdraw?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-sm">
+<p>You must have at least 500 verified completed tasks and 10 active login days. Both requirements must be met.</p>
+<div class="flex flex-col gap-2 p-2.5 rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface">
+<span>Requirement Checklist</span>
+<span class="text-secondary font-headline-sm text-[12px]">Dual Condition</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>≥ 500 verified micro-tasks</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>≥ 10 unique daily logins</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 11: When are withdrawals processed? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="withdrawals">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">When are withdrawals processed?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-secondary">event_available</span>
+<span>Every Sunday at 5:00 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Batch disbursements execute weekly. Payouts queue automatically once verified prior to the 3:00 PM Sunday cutoff.</p>
+</div>
+</div>
+<!-- Item 12: How does the tier system work? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="tiers">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">How does the tier system work?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-sm">
+<p>The tier system consists of Levels 1 to 100. Each task you successfully finish earns XP. Higher tiers unlock higher payout multiples per action, priority task access, and VIP dispute resolution.</p>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary-container h-full w-2/5 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Item 13: How much does Tier 100 pay? -->
+<div class="faq-item rounded-xl bg-surface-container-lowest shadow-sm transition-all overflow-hidden" data-category="tiers">
+<button aria-expanded="false" class="faq-trigger w-full flex items-center justify-between p-space-md text-left gap-space-sm active:bg-surface-container-low/50" type="button">
+<span class="font-title-sm text-title-sm text-on-surface">How much does Tier 100 pay?</span>
+<div class="faq-icon-wrap w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0 transition-transform duration-200">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="faq-body hidden px-space-md pb-space-md text-on-surface-variant font-body-md text-body-md flex flex-col gap-space-xs">
+<div class="p-3 rounded-xl bg-secondary-container/40 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-secondary-container">Tier 100 Payout</span>
+<span class="font-headline-md text-headline-md text-primary">₦510.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tier 100 pays ₦510 per verified task (Tier 1 pays ₦10, Tier 2 pays ₦20, +₦5 per tier).</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty Search Result State -->
+<div class="hidden flex-col items-center justify-center text-center p-space-lg rounded-xl bg-surface-container-lowest shadow-sm gap-space-xs" id="noResultsNotice">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[28px]">search_off</span>
+</div>
+<p class="font-title-sm text-title-sm text-on-surface">No matching questions</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[260px]">Try searching for keywords like "tier", "proof", "Sunday", or "5000".</p>
+</div>
+<!-- Bottom CTA: "Ready to start earning?" -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-md p-space-md flex flex-col gap-space-md mt-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">rocket_launch</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ready to start earning?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Join thousands of verified Taskers daily across Nigeria.</p>
+</div>
+</div>
+<div class="w-full">
+<button class="w-full h-14 rounded-xl bg-primary hover:bg-secondary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" type="button">
+<span>Become a Tasker</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('faqSearchInput');
+    const clearBtn = document.getElementById('faqClearSearch');
+    const pills = document.querySelectorAll('.cat-pill');
+    const items = document.querySelectorAll('.faq-item');
+    const noResults = document.getElementById('noResultsNotice');
+
+    let currentCategory = 'all';
+    let searchQuery = '';
+
+    // Accordion Toggle
+    items.forEach(item => {
+      const trigger = item.querySelector('.faq-trigger');
+      const body = item.querySelector('.faq-body');
+      const iconWrap = item.querySelector('.faq-icon-wrap');
+      const iconSpan = iconWrap.querySelector('.material-symbols-outlined');
+
+      trigger.addEventListener('click', () => {
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+        if (isExpanded) {
+          trigger.setAttribute('aria-expanded', 'false');
+          body.classList.add('hidden');
+          iconWrap.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'rotate-180');
+          iconWrap.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          iconSpan.textContent = 'add';
+        } else {
+          trigger.setAttribute('aria-expanded', 'true');
+          body.classList.remove('hidden');
+          iconWrap.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          iconWrap.classList.add('bg-secondary-container', 'text-on-secondary-container', 'rotate-180');
+          iconSpan.textContent = 'remove';
+        }
+      });
+    });
+
+    // Filtering logic
+    function applyFilter() {
+      let visibleCount = 0;
+      const query = searchQuery.trim().toLowerCase();
+
+      items.forEach(item => {
+        const category = item.getAttribute('data-category');
+        const text = item.textContent.toLowerCase();
+
+        const matchesCat = (currentCategory === 'all' || category === currentCategory);
+        const matchesQuery = query === '' || text.includes(query);
+
+        if (matchesCat && matchesQuery) {
+          item.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+        noResults.classList.add('flex');
+      } else {
+        noResults.classList.add('hidden');
+        noResults.classList.remove('flex');
+      }
+    }
+
+    // Tab pills
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm', 'active');
+          p.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        pill.classList.remove('bg-surface-container-low', 'text-on-surface');
+        pill.classList.add('bg-primary', 'text-on-primary', 'shadow-sm', 'active');
+
+        currentCategory = pill.getAttribute('data-cat');
+        applyFilter();
+      });
+    });
+
+    // Search input handler
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      if (searchQuery.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+      applyFilter();
+    });
+
+    // Clear search handler
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearBtn.classList.add('hidden');
+      searchInput.focus();
+      applyFilter();
+    });
+  })();
+</script></main></body></html>

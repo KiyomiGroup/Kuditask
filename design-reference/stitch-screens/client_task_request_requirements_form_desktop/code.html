@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#4edea3", "on-secondary-fixed-variant": "#005235", "outline": "#707972", "primary-container": "#054f31", "surface-container-lowest": "#ffffff", "secondary-fixed": "#8df7c1", "surface-container-highest": "#dae2fd", "primary-fixed": "#aef1c8", "on-primary-fixed-variant": "#095133", "tertiary-container": "#004f34", "on-primary-fixed": "#002111", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-surface-variant": "#404942", "on-surface": "#131b2e", "error-container": "#ffdad6", "on-error": "#ffffff", "surface-container-high": "#e2e7ff", "secondary-container": "#8af5be", "outline-variant": "#bfc9c0", "on-tertiary-container": "#31c98f", "surface-bright": "#faf8ff", "surface-container-low": "#f2f3ff", "surface": "#faf8ff", "on-primary-container": "#7fc099", "error": "#ba1a1a", "tertiary": "#003623", "surface-variant": "#dae2fd", "surface-tint": "#2a6a49", "on-secondary-fixed": "#002113", "on-secondary": "#ffffff", "secondary": "#006c47", "on-error-container": "#93000a", "surface-dim": "#d2d9f4", "background": "#faf8ff", "inverse-on-surface": "#eef0ff", "tertiary-fixed": "#6ffbbe", "primary-fixed-dim": "#93d5ad", "inverse-surface": "#283044", "inverse-primary": "#93d5ad", "on-background": "#131b2e", "on-secondary-container": "#00714b", "on-tertiary-fixed-variant": "#005236", "secondary-fixed-dim": "#71dba6", "surface-container": "#eaedff", "primary": "#003620", "on-tertiary-fixed": "#002113" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "space-md": "1rem", "margin-desktop": "2.5rem", "space-xl": "2.5rem", "gutter": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "label-lg": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-sm": ["Space Grotesk"], "title-sm": ["Plus Jakarta Sans"], "label-md": ["Space Grotesk"], "currency-display": ["Space Grotesk"], "headline-md": ["Space Grotesk"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl": ["Space Grotesk"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Space Grotesk"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "currency-display": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "700" }], "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="for-clients" href="#"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed font-headline-md"><span class="material-symbols-outlined text-[24px]">work</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">TaskNaija</span><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">Business</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Secured Digital Labor Escrow</span></div></a></div><nav class="hidden lg:flex items-center gap-1 bg-surface-container-low p-1.5 rounded-full border border-outline-variant/40" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="become-a-tasker" href="#">Become a Tasker</a><a aria-current="page" class="px-4 py-2 rounded-full transition-colors bg-primary-container text-on-primary font-bold shadow-sm" data-path="for-clients" href="#">For Clients</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><a class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-outline-variant/60 bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-low transition-colors" data-path="whatsapp-concierge" href="#"><span class="material-symbols-outlined text-secondary text-[18px]">chat</span><span>WhatsApp Desk</span></a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="sign-in" href="#">Sign In</a><a class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary transition-colors" data-path="get-started" href="#"><span>Get Started</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Operational Alert Strip -->
+<div class="w-full bg-surface-container-high py-2.5 px-margin lg:px-margin-desktop shadow-sm">
+<div class="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface">Admin Review Queue Status: <span class="font-bold text-secondary">Active</span></span>
+<span class="hidden sm:inline text-outline">•</span>
+<span class="hidden sm:inline font-body-sm text-body-sm text-on-surface-variant">Estimated feasibility quote turnaround: under 45 minutes</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Concierge Desk (Lagos, GMT+1)</span>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="https://wa.me/2348000000000" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[15px]">headset_mic</span>
+<span>Direct Ops Line</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Main Work Area -->
+<div class="w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop py-space-lg lg:py-space-xl">
+<!-- Page Header Block with FinTech Hierarchy -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-3">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Enterprise &amp; Client Intake</span>
+<span class="text-outline-variant">•</span>
+<span>No Upfront Charge</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Tell Us About Your Task</h1>
+<p class="mt-2 font-body-lg text-body-lg text-on-surface-variant">
+          Give us the details below. Our Admin team will review your request, determine the best setup and pricing, and contact you to confirm the campaign.
+        </p>
+</div>
+<!-- Quick Trust Indicators -->
+<div class="hidden lg:flex items-center gap-3 bg-surface-container-lowest p-3 rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Escrow Regulated</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Funds locked only after quote sign-off</span>
+</div>
+</div>
+</div>
+<!-- 2-Column Responsive Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-gutter-desktop items-start">
+<!-- LEFT: Form Intake (approx 65% width = 8 cols) -->
+<form class="lg:col-span-8 flex flex-col gap-space-lg" id="taskIntakeForm" onsubmit="event.preventDefault(); handleFormSubmit();">
+<!-- SECTION 1: CONTACT DETAILS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center font-label-md text-label-md">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Contact Details</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Identity &amp; Verification</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="fullName">
+                Full Name <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-12 px-3.5 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:bg-surface-container-lowest shadow-sm transition-all" id="fullName" placeholder="e.g. Babatunde Williams" required="" type="text"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Primary contact name for task settlement</span>
+</div>
+<!-- Business / Brand Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="businessName">
+                Business / Brand Name <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-12 px-3.5 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:bg-surface-container-lowest shadow-sm transition-all" id="businessName" placeholder="e.g. Lagos Retail Brand Ltd" required="" type="text"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Used on official proof audit invoice</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Corporate Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="corporateEmail">
+<span>Business Email <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">shield</span> Verified Portal
+                </span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 pl-3.5 pr-10 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none shadow-sm transition-all" id="corporateEmail" placeholder="e.g. contact@business.ng" required="" type="email"/>
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[20px]">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Detailed quote &amp; feasibility sheet sent here</span>
+</div>
+<!-- Phone / WhatsApp -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="phoneNumber">
+                Phone / WhatsApp Number <span class="text-error">*</span>
+</label>
+<div class="flex rounded-lg shadow-sm overflow-hidden bg-surface-container-lowest">
+<div class="flex items-center gap-1 bg-surface-container-low px-3.5 font-label-md text-label-md text-on-surface select-none">
+<span class="text-base">🇳🇬</span>
+<span>+234</span>
+</div>
+<input class="w-full h-12 px-3.5 bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none transition-all" id="phoneNumber" placeholder="803 123 4567" required="" type="tel"/>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>Enter a valid Nigerian phone number for WhatsApp outreach</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: TASK DETAILS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center font-label-md text-label-md">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Task Details</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Operational Scope</span>
+</div>
+<!-- Task Type Selection -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="taskType">
+              Task Type <span class="text-error">*</span>
+</label>
+<div class="relative">
+<select class="w-full h-12 pl-3.5 pr-10 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface focus:outline-none appearance-none shadow-sm transition-all cursor-pointer" id="taskType" required="">
+<option disabled="" selected="" value="">Select the platform or objective category</option>
+<option value="instagram">Instagram (Engagement, Story Reshares, Follows)</option>
+<option value="facebook">Facebook (Page Likes, Group Members, Reviews)</option>
+<option value="tiktok">TikTok (Duets, Sound Trends, Video Saves)</option>
+<option value="x">X / Twitter (Retweets, Trends, Mentions)</option>
+<option value="youtube">YouTube (Subscribers, Watch Time, Comments)</option>
+<option value="web_app">Website / App (Play Store Installs, Signups, Bug QA)</option>
+<option value="survey">Survey / Research (Demographic Data Tagging, Field Polling)</option>
+<option value="other">Other / Bespoke Micro-Workforce Solution</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Our Admin calibrates anti-bot thresholds based on platform APIs</span>
+</div>
+<!-- Task Goal -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="taskGoal">
+              Task Goal <span class="text-error">*</span>
+</label>
+<input class="w-full h-12 px-3.5 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none shadow-sm transition-all" id="taskGoal" placeholder="Example: I need 500 people to follow our Instagram account." required="" type="text"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clearly state the targeted outcome for the micro-workers</span>
+</div>
+<!-- Target Link / Account -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="targetLink">
+              Target Link / Account Handle <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px]">link</span>
+<input class="w-full h-12 pl-10 pr-3.5 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none shadow-sm transition-all" id="targetLink" placeholder="https://instagram.com/yourbrand or App link" required="" type="text"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Public URL where our taskers perform the action</span>
+</div>
+<!-- Quantity and Preferred Completion Date -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Required Quantity -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="taskQuantity">
+                Required Quantity <span class="text-error">*</span>
+</label>
+<input class="w-full h-12 px-3.5 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none shadow-sm transition-all" id="taskQuantity" min="50" placeholder="e.g. 500" required="" step="10" type="number"/>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<span>Quantity must be at least 50 completions</span>
+</div>
+</div>
+<!-- Preferred Completion Date -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="completionDate">
+                Preferred Completion Date <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-12 px-3.5 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface focus:outline-none shadow-sm transition-all cursor-pointer" id="completionDate" required="" type="date"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Allows pacing distribution over hours or days</span>
+</div>
+</div>
+</div>
+<!-- SECTION 3: ADDITIONAL REQUIREMENTS -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center font-label-md text-label-md">3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Additional Requirements</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Quality &amp; Demographics</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="taskInstructions">
+              Instructions or additional details
+            </label>
+<textarea class="w-full p-3.5 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none shadow-sm transition-all resize-y" id="taskInstructions" placeholder="Tell us anything important about how the task should be completed, specific user criteria, or hashtags to include." rows="4"></textarea>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-body-sm text-body-sm">e.g., Nigerian-only IP addresses, active age bracket (18-35), proof screenshot specifications</span>
+<span class="font-label-sm text-label-sm" id="charCount">0 / 800</span>
+</div>
+</div>
+</div>
+<!-- SECTION 4: COMMUNICATION PREFERENCE -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center font-label-md text-label-md">4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Communication Preference</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Fastest Turnaround</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            How should our Campaign Feasibility Manager present your pricing quote and SLA agreement?
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm" id="commOptions">
+<!-- WhatsApp Option (Default Checked) -->
+<label class="relative flex flex-col gap-1.5 p-3.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-secondary-container/20 transition-all select-none">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 accent-[#006c47]" name="commPreference" type="radio" value="whatsapp"/>
+<span class="font-label-md text-label-md text-on-surface">WhatsApp</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Fastest</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant pl-6">Recommended. Review quote and approve task via direct chat.</span>
+</label>
+<!-- Phone Call Option -->
+<label class="relative flex flex-col gap-1.5 p-3.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-secondary-container/20 transition-all select-none">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 accent-[#006c47]" name="commPreference" type="radio" value="phone"/>
+<span class="font-label-md text-label-md text-on-surface">Phone Call</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant pl-6">Ops manager will telephone your team during working hours (9AM-5PM).</span>
+</label>
+<!-- Email Option -->
+<label class="relative flex flex-col gap-1.5 p-3.5 rounded-xl bg-surface-container-low cursor-pointer hover:bg-secondary-container/20 transition-all select-none">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 accent-[#006c47]" name="commPreference" type="radio" value="email"/>
+<span class="font-label-md text-label-md text-on-surface">Email</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant pl-6">Comprehensive formal PDF quotation &amp; escrow breakdown sent via email.</span>
+</label>
+</div>
+</div>
+<!-- FORM ACTIONS & CONSENT -->
+<div class="flex flex-col gap-space-md pt-2">
+<div class="flex flex-col sm:flex-row items-center gap-space-md">
+<!-- Primary CTA -->
+<button class="w-full sm:flex-1 h-14 bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg shadow-md hover:bg-primary transition-all flex items-center justify-center gap-2.5 group" id="submitBtn" type="submit">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">send</span>
+<span>Submit Task Request</span>
+</button>
+<!-- Secondary CTA -->
+<a class="w-full sm:w-auto h-14 px-6 bg-surface-container-lowest text-primary rounded-xl font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low transition-all flex items-center justify-center gap-2" href="https://wa.me/2348000000000" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary text-[22px]">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<!-- Privacy & Feasibility Note -->
+<div class="flex items-start gap-2.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">lock</span>
+<p class="font-body-sm text-body-sm">
+              By submitting, you agree to have a TaskNaija Campaign Specialist contact you regarding task feasibility and pricing. We never share your details.
+            </p>
+</div>
+</div>
+<!-- Submission Notification Modal State (Hidden by default) -->
+<div class="hidden rounded-xl bg-secondary-container/30 p-space-md text-on-secondary-fixed-variant flex items-center gap-3" id="successNotice">
+<span class="material-symbols-outlined text-secondary text-[28px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface">Requirements Intake Logged!</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Your reference is <strong class="text-primary font-mono">REQ-2025-NG812</strong>. An Ops Manager is reviewing platform economics now.</span>
+</div>
+</div>
+</form>
+<!-- RIGHT: Informational Summary Card (approx 35% width = 4 cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- How This Works Sticky Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">account_tree</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">How This Works</h3>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">5-Step Protocol</span>
+</div>
+<!-- 5-Step Process Timeline -->
+<div class="flex flex-col relative before:absolute before:left-4 before:top-3 before:bottom-3 before:w-0.5 before:bg-surface-container-high">
+<!-- Step 1 -->
+<div class="relative flex items-start gap-3.5 pb-6">
+<div class="w-8 h-8 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center shrink-0 font-label-md text-label-md shadow-sm">
+                1
+              </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-on-surface">Submit your request</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Specify target accounts, volumes, and requirements through this portal.</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-start gap-3.5 pb-6">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 font-label-md text-label-md shadow-sm">
+                2
+              </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-on-surface">Admin reviews the requirements</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Our ops desk assesses task safety, anti-spam metrics, and tasker demographics.</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-start gap-3.5 pb-6">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shrink-0 font-label-md text-label-md shadow-sm">
+                3
+              </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-on-surface">Pricing and task economics are determined</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Admin sets fair tasker incentives and calculates transparent escrow figures.</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex items-start gap-3.5 pb-6">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shrink-0 font-label-md text-label-md shadow-sm">
+                4
+              </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-on-surface">You confirm and pay</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Approve the quote and fund the Central Bank-regulated escrow vault.</span>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shrink-0 font-label-md text-label-md shadow-sm">
+                5
+              </div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-on-surface">Admin launches the task</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">The mission goes live on the verified Tasker feed with real-time audit logs.</span>
+</div>
+</div>
+</div>
+<!-- Highlighted Informational Security Notice -->
+<div class="rounded-xl bg-surface-container p-space-md flex gap-3 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface">Institutional Guardrail</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Submitting this form does not create a live task. Your request must be reviewed and approved by Admin first. Admin determines tasker incentives and guarantees proof verification.
+              </p>
+</div>
+</div>
+<!-- Direct Contact Alternative -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
+<span class="font-label-md text-label-md text-on-surface">Prefer immediate assistance?</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Chat with an Ops Manager directly on WhatsApp to structure customized high-volume micro-work.
+            </p>
+<a class="mt-1 inline-flex items-center justify-center gap-2 h-11 px-4 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-secondary-container/30 transition-all" href="https://wa.me/2348000000000" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary text-[18px]">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Client Trust Metrics Bento -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col">
+<span class="font-headline-md text-headline-md text-primary">99.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Audit accuracy across verified proof uploads</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary">25,000+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">NIN-verified crowd workers on standby</span>
+</div>
+</div>
+<!-- Visual Media Card for Professional Presence -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-36 bg-cover bg-center relative" data-alt="A modern Lagos fintech operations center with African professionals reviewing analytics and workforce data dashboards on high-resolution displays in ambient soft emerald office lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjs-cNMjV8hX5Z7ADgRrzVksQtJGyww4YHh-NqYXEfGUDR8YTNwAeeX7dS2I-8K24rIW0NxhEcvYRfopcEmDA0t3fUkJcoU744ODl-79X1HtIPDGjeWsFXfiIlFSPp2Kg6cKULFK1pVVFaTRwYfs0YzHxmpJdURCJuHxjy7jFD7CBF2N-97RuDp8ge6S8uggQqWCGDBMfDKWOV_NWqFawaNeEBrw32uBakeTC6bIlxn6GDEK9BQefu')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-space-md">
+<span class="text-on-primary font-label-sm text-label-sm uppercase tracking-wider">Vetted Escrow Operations Desk</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-1 bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface">Strict Anti-Fraud Guarantee</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Every participant identity is bound to biometric NIN/BVN parameters before task deployment.
+            </p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  // Character counter for instructions textarea
+  const instructionsArea = document.getElementById('taskInstructions');
+  const charCounter = document.getElementById('charCount');
+  if (instructionsArea && charCounter) {
+    instructionsArea.addEventListener('input', function() {
+      const len = this.value.length;
+      charCounter.textContent = `${len} / 800`;
+      if (len > 800) {
+        charCounter.classList.add('text-error');
+      } else {
+        charCounter.classList.remove('text-error');
+      }
+    });
+  }
+
+  // Handle client form submission simulation
+  function handleFormSubmit() {
+    const submitBtn = document.getElementById('submitBtn');
+    const notice = document.getElementById('successNotice');
+    
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span>
+        <span>Registering Request...</span>
+      `;
+      
+      setTimeout(() => {
+        submitBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px]">check_circle</span>
+          <span>Request Received by Ops</span>
+        `;
+        submitBtn.classList.remove('bg-primary-container');
+        submitBtn.classList.add('bg-secondary');
+        
+        if (notice) {
+          notice.classList.remove('hidden');
+          notice.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }, 700);
+    }
+  }
+
+  // Set default min date for completion date picker to tomorrow
+  const dateInput = document.getElementById('completionDate');
+  if (dateInput) {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const yyyy = tomorrow.getFullYear();
+    const mm = String(tomorrow.getMonth() + 1).padStart(2, '0');
+    const dd = String(tomorrow.getDate()).padStart(2, '0');
+    dateInput.min = `${yyyy}-${mm}-${dd}`;
+    dateInput.value = `${yyyy}-${mm}-${dd}`;
+  }
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/30 mt-space-xl"><div class="w-full max-w-[1280px] mx-auto px-margin lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md pr-space-lg"><div class="flex items-center gap-2"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-[20px]">verified_user</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight">TaskNaija Enterprise</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Nigeria's vetted digital crowd-workforce platform. Powering rapid catalog audit, AI data tagging, field verification, and social sentiment campaigns with bank-grade escrow.</p><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span><span class="font-body-sm text-body-sm font-semibold">Priority Support: concierge@tasknaija.ng</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-xs">Client Solutions</h4><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-clients" href="#">Workforce on Demand</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-clients" href="#">Automated Proof Auditing</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-clients" href="#">Enterprise SLA Pricing</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-clients" href="#">Custom Integrations</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-xs">Platform &amp; Trust</h4><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="become-a-tasker" href="#">Become a Tasker</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="faq" href="#">Escrow Guarantees</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="faq" href="#">Compliance &amp; KYC</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-xs">Immediate Concierge</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Connect with our Lagos-based account managers for bespoke high-volume deployment.</p><a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" data-path="whatsapp-concierge" href="#"><span class="material-symbols-outlined text-secondary text-[20px]">chat</span><span>WhatsApp Concierge</span></a></div></div><div class="py-space-md border-t border-b border-outline-variant/30 flex flex-wrap items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40"><span class="material-symbols-outlined text-secondary text-[20px]">security</span><span class="font-label-md text-label-md text-on-surface">NDPR Compliant</span></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40"><span class="material-symbols-outlined text-primary-container text-[20px]">account_balance</span><span class="font-label-md text-label-md text-on-surface">Central Bank Licenced Escrow Partners</span></div><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><span class="font-label-md text-label-md text-on-surface">NIN / BVN Tasker Verification</span></div></div><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-secondary text-[18px]">lock</span><span>256-Bit Financial Encryption</span></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 TaskNaija Digital Services Ltd. RC: 1892304. Victoria Island, Lagos, Nigeria.</p><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="faq" href="#">Terms of Service</a><a class="hover:text-primary transition-colors" data-path="faq" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="faq" href="#">Anti-Fraud Guardrails</a></div></div></div></footer></body></html>

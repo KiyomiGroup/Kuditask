@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-container-high":"#e2e7ff","surface-container":"#eaedff","on-secondary":"#ffffff","on-tertiary-container":"#31c98f","on-background":"#131b2e","on-primary-fixed":"#002111","tertiary-fixed":"#6ffbbe","surface":"#faf8ff","inverse-on-surface":"#eef0ff","tertiary":"#003623","tertiary-fixed-dim":"#4edea3","primary-fixed-dim":"#93d5ad","tertiary-container":"#004f34","inverse-primary":"#93d5ad","surface-variant":"#dae2fd","secondary-fixed-dim":"#71dba6","surface-container-highest":"#dae2fd","secondary-container":"#8af5be","surface-container-low":"#f2f3ff","on-tertiary-fixed":"#002113","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#005235","error":"#ba1a1a","primary-container":"#054f31","on-tertiary-fixed-variant":"#005236","inverse-surface":"#283044","secondary-fixed":"#8df7c1","on-secondary-fixed":"#002113","on-surface-variant":"#404942","surface-dim":"#d2d9f4","surface-bright":"#faf8ff","on-surface":"#131b2e","on-primary-fixed-variant":"#095133","secondary":"#006c47","on-error-container":"#93000a","on-secondary-container":"#00714b","on-primary-container":"#7fc099","primary":"#003620","on-error":"#ffffff","surface-tint":"#2a6a49","on-primary":"#ffffff","error-container":"#ffdad6","outline":"#707972","background":"#faf8ff","on-tertiary":"#ffffff","outline-variant":"#bfc9c0","primary-fixed":"#aef1c8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem","gutter":"1rem","space-lg":"1.5rem","margin-desktop":"2.5rem","margin":"1rem","space-xl":"2.5rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"label-lg":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-sm":["Space Grotesk"],"label-md":["Space Grotesk"],"headline-xl":["Space Grotesk"],"headline-xl-mobile":["Space Grotesk"],"title-md":["Plus Jakarta Sans"],"currency-display":["Space Grotesk"],"title-sm":["Plus Jakarta Sans"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-sm":["Space Grotesk"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"36px","fontWeight":"700"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"currency-display":["36px",{"lineHeight":"44px","fontWeight":"700"}],"title-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 bottom-0 w-72 bg-surface-container-lowest flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">account_tree</span></div><div><span class="font-label-lg text-label-lg text-primary tracking-tight block">TaskNaija</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Admin Ops Node</span></div></div><span class="inline-flex items-center px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">v2.4</span></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary text-on-primary font-bold shadow-[0_1px_3px_rgba(0,0,0,0.08)]"><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-title-sm text-title-sm">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="taskers" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-title-sm text-title-sm">Taskers</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 rounded transition-colors bg-primary text-on-primary font-bold shadow-[0_1px_3px_rgba(0,0,0,0.08)]" data-path="tasks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-title-sm text-title-sm">Tasks</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="verification" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="font-title-sm text-title-sm">Verification</span></div><span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">184</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="withdrawals" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-title-sm text-title-sm">Withdrawals</span></div><span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">27</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="clients" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">corporate_fare</span><span class="font-title-sm text-title-sm">Clients</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="transactions" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-title-sm text-title-sm">Transactions</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tier-management" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">military_tech</span><span class="font-title-sm text-title-sm">Tier Management</span></div></a><div class="pt-space-xs pb-1 px-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Communications &amp; Config</span></div><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="announcements" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-title-sm text-title-sm">Announcements</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-title-sm text-title-sm">Reports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-title-sm text-title-sm">Settings</span></div></a></nav><div class="p-space-sm bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded bg-surface-container-lowest"><div class="flex items-center gap-space-sm min-w-0"><div class="w-9 h-9 rounded bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified</span></div><div class="min-w-0 flex-1"><p class="font-label-md text-label-md text-on-surface truncate">Emeka Nwosu</p><p class="font-label-sm text-label-sm text-secondary truncate">Super Admin • Lagos</p></div></div><button class="p-1 text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded transition-colors" title="Sign Out"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-space-lg flex items-center justify-between gap-space-md"><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-24 py-2 text-body-sm font-body-sm bg-surface-container-low text-on-surface rounded placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" placeholder="Search Taskers (NIN/BVN), Task IDs, Disbursals, Hash..." type="text"/><span class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">⌘K</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 px-space-sm py-1.5 rounded bg-surface-container-low"><div class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></div><span class="font-label-sm text-label-sm text-on-surface-variant">Lagos Core 01</span><span class="text-outline font-label-sm text-label-sm">•</span><span class="font-label-sm text-label-sm text-secondary font-bold">99.98% SLA</span></div><div class="flex items-center gap-space-sm"><button class="relative p-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><button class="relative p-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">sync</span></button></div><button class="flex items-center gap-1.5 bg-primary text-on-primary hover:bg-primary-container px-3 py-2 rounded font-label-md text-label-md transition-colors"><span class="material-symbols-outlined text-[18px]">add</span><span>Fast Action</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-background min-h-screen px-gutter-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-lg pb-space-xl">
+<!-- Page Header & Action Bar -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-fixed"></span>
+        Marketplace Operations Node • NG-CENTRAL
+      </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Tasks</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Create, monitor, assign, pause, and close marketplace tasks. Manage real-time escrow pools and 10-minute worker lock queues across pan-Nigerian networks.
+      </p>
+</div>
+<!-- Actions / CTA -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-1.5 px-space-md py-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm" onclick="document.getElementById('batch-ops-drawer').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-[18px] text-outline">tune</span>
+<span>Batch Audit</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-md active:scale-98" onclick="document.getElementById('create-task-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">add_circle</span>
+<span>+ Create Task</span>
+</button>
+</div>
+</section>
+<!-- Summary Metric Bento (4 Cards) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Active Tasks Card -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Active Queues</span>
+<span class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">36</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">↑ 14% peak load</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Live slot capacity</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">12,450 slots</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden mt-3">
+<div class="bg-secondary h-full rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<!-- Pending Verification Card -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pending Approval</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">hourglass_empty</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">12</span>
+<span class="font-label-sm text-label-sm text-outline font-semibold">5 awaiting escrow</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Target turnaround</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">&lt; 25 mins</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden mt-3">
+<div class="bg-outline h-full rounded-full" style="width: 32%;"></div>
+</div>
+</div>
+<!-- In Progress (Reservations) Card -->
+<div class="relative overflow-hidden bg-primary text-on-primary p-space-md rounded-lg shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">In Progress Locks</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container text-secondary-fixed text-label-sm font-label-sm animate-pulse">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>10m window</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-secondary-fixed font-bold">184</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Live taskers locked</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-body-sm text-body-sm text-primary-fixed-dim">
+<span>Active Escrow Hold</span>
+<span class="font-label-sm text-label-sm font-bold text-white tracking-wide">₦412,850.00</span>
+</div>
+</div>
+<div class="w-full bg-primary-container h-1.5 rounded-full overflow-hidden mt-3">
+<div class="bg-secondary-fixed h-full rounded-full" style="width: 64%;"></div>
+</div>
+</div>
+<!-- Completed Tasks Card -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Completed (Total)</span>
+<span class="w-8 h-8 rounded-full bg-secondary-fixed-dim/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">428</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">99.2% payout acc.</span>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Total Disbursed</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">₦3,420,100</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden mt-3">
+<div class="bg-secondary h-full rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+</section>
+<!-- Filter Console Surface -->
+<section class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-space-sm justify-between">
+<!-- Search -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 transition-all" id="task-search-input" placeholder="Search task title or ID (e.g., #TK-4829, Instagram)..." type="text"/>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex items-center gap-2 shrink-0">
+<button class="flex items-center gap-1.5 px-3 py-2 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded hover:bg-surface-container transition-colors" onclick="resetFilters()">
+<span class="material-symbols-outlined text-[16px]">filter_alt_off</span>
+<span>Reset All</span>
+</button>
+<span class="text-surface-container-high">|</span>
+<button class="flex items-center gap-1.5 px-3 py-2 bg-surface-container text-on-surface font-label-sm text-label-sm rounded hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<!-- Dropdown Filters Bar (6 Structured Selectors) -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-space-xs font-label-sm text-label-sm">
+<!-- Status -->
+<div class="flex flex-col gap-1">
+<label class="text-on-surface-variant font-medium">Status</label>
+<select class="w-full bg-surface-container-low text-on-surface py-2 px-2.5 rounded font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer" id="filter-status">
+<option value="All">All Statuses</option>
+<option value="Active">Active</option>
+<option value="Pending">Pending</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+<option value="Paused">Paused</option>
+<option value="Rejected">Rejected</option>
+</select>
+</div>
+<!-- Platform -->
+<div class="flex flex-col gap-1">
+<label class="text-on-surface-variant font-medium">Platform</label>
+<select class="w-full bg-surface-container-low text-on-surface py-2 px-2.5 rounded font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer" id="filter-platform">
+<option value="All">All Platforms</option>
+<option value="Instagram">Instagram</option>
+<option value="Facebook">Facebook</option>
+<option value="TikTok">TikTok</option>
+<option value="X">X (Twitter)</option>
+<option value="YouTube">YouTube</option>
+<option value="Other">Other / Mobile</option>
+</select>
+</div>
+<!-- Category -->
+<div class="flex flex-col gap-1">
+<label class="text-on-surface-variant font-medium">Category</label>
+<select class="w-full bg-surface-container-low text-on-surface py-2 px-2.5 rounded font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer" id="filter-category">
+<option value="All">All Categories</option>
+<option value="Social Media">Social Media</option>
+<option value="Survey">Survey</option>
+<option value="App Review">App Review</option>
+<option value="Data">Data Entry</option>
+</select>
+</div>
+<!-- Tier -->
+<div class="flex flex-col gap-1">
+<label class="text-on-surface-variant font-medium">Tier Floor</label>
+<select class="w-full bg-surface-container-low text-on-surface py-2 px-2.5 rounded font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer" id="filter-tier">
+<option value="All">All Tiers (1–100)</option>
+<option value="1">Tier 1+ (General)</option>
+<option value="5">Tier 5+ (Verified)</option>
+<option value="15">Tier 15+ (Seasoned)</option>
+<option value="50">Tier 50+ (Elite)</option>
+<option value="75">Tier 75+ (Maestro)</option>
+</select>
+</div>
+<!-- Client -->
+<div class="flex flex-col gap-1">
+<label class="text-on-surface-variant font-medium">Client Account</label>
+<select class="w-full bg-surface-container-low text-on-surface py-2 px-2.5 rounded font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer" id="filter-client">
+<option value="All">All Clients</option>
+<option value="Acme Brand Ltd">Acme Brand</option>
+<option value="PayFlex Nigeria">PayFlex Nigeria</option>
+<option value="QuickLoan FinTech">QuickLoan</option>
+<option value="VibeStream Media">VibeStream</option>
+<option value="Apex Crypto Hub">Apex Crypto</option>
+<option value="Naija Beats Ent">Naija Beats</option>
+</select>
+</div>
+<!-- Date Range -->
+<div class="flex flex-col gap-1">
+<label class="text-on-surface-variant font-medium">Date Period</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-on-surface py-2 pl-2.5 pr-7 rounded font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-secondary cursor-pointer">
+<option>Today (Live)</option>
+<option>Last 7 Days</option>
+<option>This Month</option>
+<option>Q3 2024</option>
+<option>Custom Window...</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">calendar_today</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Operational Guard Warning / Graceful Cancellation Protocol -->
+<div class="p-space-md rounded-lg bg-surface-container-high/60 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex-1 space-y-0.5">
+<p class="font-label-md text-label-md text-on-surface font-semibold">10-Minute Lock Integrity Policy Enabled</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Pausing or closing an active task prompts a dual-key confirmation. In-flight taskers who reserved slots inside their active 10-minute window maintain proof upload priority until expiry. Unutilized reserve escrow automatically routes back to client balance upon terminal state.
+      </p>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm shrink-0">ESCROW SHIELD 2.0</span>
+</div>
+<!-- Tasks Data Table Area -->
+<section class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden flex flex-col">
+<!-- Responsive Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[1040px]">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md font-semibold">Task Title &amp; ID</th>
+<th class="py-3 px-space-md font-semibold">Client</th>
+<th class="py-3 px-space-md font-semibold">Platform</th>
+<th class="py-3 px-space-md font-semibold text-right">Reward</th>
+<th class="py-3 px-space-md font-semibold text-center">Required</th>
+<th class="py-3 px-space-md font-semibold text-center">Completed</th>
+<th class="py-3 px-space-md font-semibold text-center">Remaining</th>
+<th class="py-3 px-space-md font-semibold">Status</th>
+<th class="py-3 px-space-md font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<a class="font-label-md text-label-md text-on-surface font-bold hover:text-secondary truncate" href="#">Instagram Follow</a>
+<span class="font-label-sm text-label-sm text-outline font-mono">#TK-4829</span>
+</div>
+<span class="text-on-surface-variant text-[11px] block truncate">Follow official handle + screenshot proof</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">Acme Brand Ltd</span>
+<span class="font-label-sm text-label-sm text-secondary">Verified Tier 1 Partner</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-pink-600">camera_alt</span>
+                Instagram
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-md text-label-md font-bold text-primary">
+              ₦10.00
+            </td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface">100</td>
+<td class="py-3.5 px-space-md text-center font-mono font-semibold text-secondary">62</td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface-variant">38</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="relative inline-block text-left">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="viewTaskDetail('#TK-4829', 'Instagram Follow', 'Acme Brand Ltd', '10.00', '100', '62', 'Active')" title="View details">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="openActionMenu(event, '#TK-4829', 'Instagram Follow', 'Active')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<a class="font-label-md text-label-md text-on-surface font-bold hover:text-secondary truncate" href="#">Facebook Like</a>
+<span class="font-label-sm text-label-sm text-outline font-mono">#TK-4811</span>
+</div>
+<span class="text-on-surface-variant text-[11px] block truncate">Like product launch promo post</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">PayFlex Nigeria</span>
+<span class="font-label-sm text-label-sm text-outline">Fintech Merchant</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-blue-600">thumb_up</span>
+                Facebook
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-md text-label-md font-bold text-primary">
+              ₦10.00
+            </td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface">500</td>
+<td class="py-3.5 px-space-md text-center font-mono font-semibold text-secondary">421</td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface-variant">79</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="viewTaskDetail('#TK-4811', 'Facebook Like', 'PayFlex Nigeria', '10.00', '500', '421', 'Active')" title="View details">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="openActionMenu(event, '#TK-4811', 'Facebook Like', 'Active')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group bg-surface-container-low/20">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[18px]">audiotrack</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<a class="font-label-md text-label-md text-on-surface font-bold hover:text-secondary truncate" href="#">TikTok Sound Video</a>
+<span class="font-label-sm text-label-sm text-outline font-mono">#TK-4790</span>
+</div>
+<span class="text-on-surface-variant text-[11px] block truncate">Create 15s dance/reaction with audio tag</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">VibeStream Media</span>
+<span class="font-label-sm text-label-sm text-outline">Creator Network</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">music_note</span>
+                TikTok
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-md text-label-md font-bold text-primary">
+              ₦25.00
+            </td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface">250</td>
+<td class="py-3.5 px-space-md text-center font-mono font-semibold text-on-surface">250</td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-outline">0</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Completed
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="viewTaskDetail('#TK-4790', 'TikTok Sound Video', 'VibeStream Media', '25.00', '250', '250', 'Completed')" title="View details">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="openActionMenu(event, '#TK-4790', 'TikTok Sound Video', 'Completed')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<a class="font-label-md text-label-md text-on-surface font-bold hover:text-secondary truncate" href="#">App Store Review &amp; Star</a>
+<span class="font-label-sm text-label-sm text-outline font-mono">#TK-4835</span>
+</div>
+<span class="text-on-surface-variant text-[11px] block truncate">5-star text review on Google Play</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">QuickLoan FinTech</span>
+<span class="font-label-sm text-label-sm text-secondary">Verified Enterprise</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-amber-600">smartphone</span>
+                Mobile/App
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-md text-label-md font-bold text-primary">
+              ₦50.00
+            </td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface">50</td>
+<td class="py-3.5 px-space-md text-center font-mono font-semibold text-secondary">14</td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface-variant">36</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="viewTaskDetail('#TK-4835', 'App Store Review &amp; Star', 'QuickLoan FinTech', '50.00', '50', '14', 'Active')" title="View details">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="openActionMenu(event, '#TK-4835', 'App Store Review &amp; Star', 'Active')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">repeat</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<a class="font-label-md text-label-md text-on-surface font-bold hover:text-secondary truncate" href="#">X Thread Repost</a>
+<span class="font-label-sm text-label-sm text-outline font-mono">#TK-4840</span>
+</div>
+<span class="text-on-surface-variant text-[11px] block truncate">Repost pinned announcement thread + bookmark</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">Apex Crypto Hub</span>
+<span class="font-label-sm text-label-sm text-outline">Web3 Client</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">tag</span>
+                X (Twitter)
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-md text-label-md font-bold text-primary">
+              ₦15.00
+            </td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface">300</td>
+<td class="py-3.5 px-space-md text-center font-mono font-semibold text-secondary">45</td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface-variant">255</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="viewTaskDetail('#TK-4840', 'X Thread Repost', 'Apex Crypto Hub', '15.00', '300', '45', 'Active')" title="View details">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="openActionMenu(event, '#TK-4840', 'X Thread Repost', 'Active')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">smart_display</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<a class="font-label-md text-label-md text-on-surface font-bold hover:text-secondary truncate" href="#">YouTube Channel Subscribe</a>
+<span class="font-label-sm text-label-sm text-outline font-mono">#TK-4802</span>
+</div>
+<span class="text-on-surface-variant text-[11px] block truncate">Subscribe &amp; enable notifications bell</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-md text-label-md text-on-surface block">Naija Beats Ent</span>
+<span class="font-label-sm text-label-sm text-outline">Media House</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-red-600">play_circle</span>
+                YouTube
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-label-md text-label-md font-bold text-primary">
+              ₦10.00
+            </td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface">200</td>
+<td class="py-3.5 px-space-md text-center font-mono font-semibold text-on-surface-variant">88</td>
+<td class="py-3.5 px-space-md text-center font-mono font-medium text-on-surface-variant">112</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                Paused
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="viewTaskDetail('#TK-4802', 'YouTube Channel Subscribe', 'Naija Beats Ent', '10.00', '200', '88', 'Paused')" title="View details">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="openActionMenu(event, '#TK-4802', 'YouTube Channel Subscribe', 'Paused')">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Bulk Meta Footer -->
+<div class="p-space-md bg-surface-container-low/40 flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm">
+<div class="flex items-center gap-space-md text-on-surface-variant">
+<span>Showing <strong class="text-on-surface">6</strong> of <strong class="text-on-surface">660</strong> registered tasks</span>
+<span class="hidden sm:inline">•</span>
+<span class="hidden sm:inline">Active Lock Buffer: <strong class="text-secondary">10 mins max</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-bold">1</button>
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface">2</button>
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="px-3 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface">110</button>
+<button class="px-2.5 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Split Panel: Live Operational Telemetry & Tasker Tier Distribution -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Real-time Lock Expiration Watch -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">Real-time Task Locks &amp; Expirations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">10-minute slot timers actively cycling across geo-regions.</p>
+</div>
+<span class="px-2 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+          4 Locks Cleared / Min
+        </span>
+</div>
+<!-- Realtime Timer Feed Cards -->
+<div class="space-y-space-xs">
+<div class="p- space-sm p-3 rounded bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">timer</span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface block truncate">User #TK-9021 locked slot on Facebook Like (#TK-4811)</span>
+<span class="text-on-surface-variant text-[11px] block">Tier 4 • IP: 102.89.44.* (Lagos, NG)</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-mono text-label-sm font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded">03:42 left</span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+</div>
+</div>
+<div class="p-3 rounded bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">timer</span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface block truncate">User #TK-1402 locked slot on App Store Review (#TK-4835)</span>
+<span class="text-on-surface-variant text-[11px] block">Tier 18 (Maestro) • IP: 197.210.65.* (Abuja, NG)</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-mono text-label-sm font-bold text-error bg-error-container/40 px-2 py-0.5 rounded">00:48 left</span>
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+</div>
+</div>
+<div class="p-3 rounded bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm font-bold text-on-surface block truncate">User #TK-3118 proof uploaded on Instagram Follow (#TK-4829)</span>
+<span class="text-on-surface-variant text-[11px] block">Tier 7 • Escrow ₦10.00 queued for automated optical verification</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Auto-verifying</span>
+</div>
+</div>
+</div>
+<!-- Tier Eligibility Architecture Visualizer -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">Tier Allocation</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">T1 to T100</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Minimum verification floors prevent multi-account automated botting.
+        </p>
+<div class="mt-space-md space-y-3">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Tier 1 - 5 (Standard Microtasks)</span>
+<span class="font-bold text-on-surface">64%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 64%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Tier 6 - 25 (Reviews &amp; UGC)</span>
+<span class="font-bold text-on-surface">24%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 24%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-medium">Tier 26 - 100 (Financial &amp; High-Yield)</span>
+<span class="font-bold text-on-surface">12%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full rounded-full" style="width: 12%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">military_tech</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">System Anti-Fraud Lock</span>
+</div>
+<span class="text-secondary font-label-sm text-label-sm font-bold">100% Active</span>
+</div>
+</div>
+</section>
+<!-- CONTEXTUAL FLOATING ACTION MENU (Dynamic Javascript Positioned) -->
+<div class="fixed hidden bg-surface-container-lowest rounded shadow-xl py-1 z-50 w-52 text-left" id="action-dropdown">
+<div class="px-3 py-1.5 bg-surface-container-low/50">
+<p class="font-label-sm text-label-sm text-outline font-mono uppercase truncate" id="dropdown-task-id">#TK-4829</p>
+<p class="font-label-md text-label-md text-on-surface font-bold truncate" id="dropdown-task-name">Task Actions</p>
+</div>
+<div class="py-1">
+<button class="w-full px-3 py-2 text-left font-label-sm text-label-sm text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="executeAction('view')">
+<span class="material-symbols-outlined text-[16px] text-outline">visibility</span>
+<span>View Details</span>
+</button>
+<button class="w-full px-3 py-2 text-left font-label-sm text-label-sm text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="executeAction('edit')">
+<span class="material-symbols-outlined text-[16px] text-outline">edit</span>
+<span>Edit Parameters</span>
+</button>
+<button class="w-full px-3 py-2 text-left font-label-sm text-label-sm text-on-surface hover:bg-surface-container flex items-center gap-2" onclick="executeAction('assign')">
+<span class="material-symbols-outlined text-[16px] text-secondary">group_add</span>
+<span>Assign Taskers Direct</span>
+</button>
+<button class="w-full px-3 py-2 text-left font-label-sm text-label-sm text-amber-700 hover:bg-amber-50 flex items-center gap-2" id="toggle-pause-btn" onclick="requestPauseConfirmation()">
+<span class="material-symbols-outlined text-[16px]">pause_circle</span>
+<span id="toggle-pause-text">Pause Task</span>
+</button>
+<div class="h-px bg-surface-container my-1"></div>
+<button class="w-full px-3 py-2 text-left font-label-sm text-label-sm text-error hover:bg-error-container/40 flex items-center gap-2" onclick="requestCloseConfirmation()">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span>Close / Terminate Task</span>
+</button>
+</div>
+</div>
+<!-- MODAL: Confirmation Guard for Pausing/Closing Active Task with 10-Minute Lock Warning -->
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-space-md" id="confirmation-modal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-150">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-high/40 flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="confirm-modal-title">Confirm Task State Transition</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Task: <span class="font-bold text-on-surface" id="modal-task-target"></span></p>
+</div>
+</div>
+<!-- Modal Body / Critical Notice -->
+<div class="p-space-lg space-y-space-md">
+<div class="p-space-md rounded bg-surface-container-low space-y-2">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-error font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+<span>Graceful Lock Expiry Protocol</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            There are currently <strong class="text-on-surface font-semibold">14 Taskers</strong> holding active 10-minute reservations for this task. 
+            By proceeding:
+          </p>
+<ul class="font-body-sm text-body-sm text-on-surface-variant list-disc pl-5 space-y-1">
+<li>New reservations will be halted immediately.</li>
+<li>Currently reserved taskers will have their full remaining timer honored to submit proof of work.</li>
+<li>Unclaimed escrow allocations will unlock and return to the client balance upon completion of active timers.</li>
+</ul>
+</div>
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded text-primary focus:ring-secondary cursor-pointer" id="confirm-ack" type="checkbox"/>
+<label class="font-label-sm text-label-sm text-on-surface cursor-pointer" for="confirm-ack">
+            I understand and authorize releasing unverified slots after timer grace period.
+          </label>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2 rounded bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-colors" onclick="closeConfirmationModal()">
+          Cancel
+        </button>
+<button class="px-space-md py-2 rounded bg-error text-on-error font-label-md text-label-md opacity-50 cursor-not-allowed transition-all" disabled="" id="modal-execute-btn" onclick="executeConfirmedAction()">
+          Authorize State Shift
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL: + Create Task Wizard -->
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-space-md overflow-y-auto" id="create-task-modal">
+<div class="bg-surface-container-lowest max-w-2xl w-full rounded-xl shadow-2xl my-8 overflow-hidden">
+<div class="p-space-md bg-primary text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">post_add</span>
+<h3 class="font-headline-sm text-headline-sm font-bold">Create Marketplace Task</h3>
+</div>
+<button class="p-1 rounded hover:bg-primary-container text-on-primary" onclick="document.getElementById('create-task-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="p-space-lg space-y-space-md max-h-[819px] overflow-y-auto" onsubmit="handleCreateTask(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Task Title</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:ring-1 focus:ring-secondary focus:outline-none" placeholder="e.g., Follow Twitter Account &amp; Retweet" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Client Organization</label>
+<select class="w-full px-3 py-2 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:ring-1 focus:ring-secondary focus:outline-none">
+<option>Acme Brand Ltd (Bal: ₦1,240,000)</option>
+<option>PayFlex Nigeria (Bal: ₦850,200)</option>
+<option>QuickLoan FinTech (Bal: ₦2,400,000)</option>
+<option>VibeStream Media (Bal: ₦112,000)</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Platform</label>
+<select class="w-full px-3 py-2 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:ring-1 focus:ring-secondary focus:outline-none">
+<option>Instagram</option>
+<option>Facebook</option>
+<option>TikTok</option>
+<option>X (Twitter)</option>
+<option>YouTube</option>
+<option>Mobile App</option>
+<option>Survey / Form</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Reward Per Tasker (₦)</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:ring-1 focus:ring-secondary focus:outline-none" min="5" required="" type="number" value="15"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Total Slots Required</label>
+<input class="w-full px-3 py-2 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:ring-1 focus:ring-secondary focus:outline-none" min="10" required="" type="number" value="500"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Eligibility Floor</label>
+<select class="w-full px-3 py-2 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:ring-1 focus:ring-secondary focus:outline-none">
+<option>Tier 1+ (Basic NIN verified)</option>
+<option>Tier 5+ (Bank BVN verified)</option>
+<option>Tier 15+ (Over 50 successful tasks)</option>
+<option>Tier 50+ (Elite Taskers)</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Reservation Lockout Window</label>
+<input class="w-full px-3 py-2 bg-surface-container text-on-surface-variant rounded font-body-sm text-body-sm cursor-not-allowed" readonly="" type="text" value="10 Minutes (Standard Escrow Rule)"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Task Instructions &amp; Proof Criteria</label>
+<textarea class="w-full px-3 py-2 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:ring-1 focus:ring-secondary focus:outline-none" placeholder="Provide step-by-step instructions for the tasker and explicitly specify screenshot requirements..." rows="3"></textarea>
+</div>
+<div class="p-3 bg-secondary-container/40 rounded flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-secondary-container block">Calculated Escrow Commitment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">500 slots × ₦15.00 + 5% platform protocol fee</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₦7,875.00</span>
+</div>
+<div class="pt-space-sm flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2 rounded bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-colors" onclick="document.getElementById('create-task-modal').classList.add('hidden')" type="button">
+            Discard
+          </button>
+<button class="px-space-lg py-2 rounded bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors shadow-md" type="submit">
+            Deploy Task &amp; Fund Escrow
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- DRAWER / DETAIL PANEL: Task Deep Inspector -->
+<div class="fixed inset-y-0 right-0 w-full max-w-md bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-200 ease-in-out flex flex-col" id="detail-drawer">
+<div class="h-16 px-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">analytics</span>
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Task Node Inspection</span>
+</div>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" onclick="closeDetailDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto p-space-md space-y-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-low space-y-1">
+<span class="font-mono text-label-sm text-outline font-bold" id="detail-drawer-id">#TK-4829</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface" id="detail-drawer-title">Instagram Follow</h4>
+<span class="font-body-sm text-body-sm text-secondary font-semibold block" id="detail-drawer-client">Acme Brand Ltd</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm font-label-sm text-label-sm">
+<div class="p-3 bg-surface-container-low rounded">
+<span class="text-on-surface-variant block">Payout / Tasker</span>
+<span class="font-bold text-title-sm text-primary" id="detail-drawer-reward">₦10.00</span>
+</div>
+<div class="p-3 bg-surface-container-low rounded">
+<span class="text-on-surface-variant block">Progress</span>
+<span class="font-bold text-title-sm text-on-surface" id="detail-drawer-progress">62 / 100</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Active Lock Escrow Metrics</span>
+<div class="p-space-sm rounded bg-surface-container-low text-body-sm space-y-2">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">In 10-Min Timer Reserve</span>
+<span class="font-bold text-on-surface">14 slots</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Escrow Encumbered</span>
+<span class="font-bold text-primary">₦140.00</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Proof Rejection Rate</span>
+<span class="font-bold text-secondary">1.8%</span>
+</div>
+</div>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Assigned Tasker Pools</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Tier 1+ Verified</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Lagos Region</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Android &amp; iOS</span>
+</div>
+</div>
+<div class="pt-space-md space-y-2">
+<button class="w-full py-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-2" onclick="requestPauseConfirmation()">
+<span class="material-symbols-outlined text-[18px]">pause</span>
+<span>Pause Task Gracefully</span>
+</button>
+<button class="w-full py-2.5 rounded bg-error-container hover:bg-error/20 text-on-error-container font-label-md text-label-md transition-colors flex items-center justify-center gap-2" onclick="requestCloseConfirmation()">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>Terminate Task &amp; Reclaim Escrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // State variables for dynamic operations
+  let currentTargetTask = { id: '#TK-4829', name: 'Instagram Follow', status: 'Active' };
+  let pendingActionType = null;
+
+  // Contextual dropdown handler
+  function openActionMenu(e, id, name, status) {
+    e.stopPropagation();
+    currentTargetTask = { id, name, status };
+    const dropdown = document.getElementById('action-dropdown');
+    document.getElementById('dropdown-task-id').textContent = id;
+    document.getElementById('dropdown-task-name').textContent = name;
+
+    const pauseText = document.getElementById('toggle-pause-text');
+    if (status === 'Paused') {
+      pauseText.textContent = 'Resume Task';
+    } else {
+      pauseText.textContent = 'Pause Task';
+    }
+
+    // Position menu near button
+    const rect = e.currentTarget.getBoundingClientRect();
+    dropdown.style.top = `${rect.bottom + window.scrollY + 6}px`;
+    dropdown.style.left = `${Math.min(window.innerWidth - 220, rect.left - 160)}px`;
+    dropdown.classList.remove('hidden');
+  }
+
+  // Dismiss contextual menus when clicking outside
+  document.addEventListener('click', function(e) {
+    const dropdown = document.getElementById('action-dropdown');
+    if (dropdown && !dropdown.contains(e.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+
+  // Action dispatcher
+  function executeAction(type) {
+    document.getElementById('action-dropdown').classList.add('hidden');
+    if (type === 'view') {
+      viewTaskDetail(currentTargetTask.id, currentTargetTask.name, 'Client Org', '10.00', '100', '62', currentTargetTask.status);
+    } else if (type === 'edit') {
+      alert(`Opening editor for task ${currentTargetTask.id}`);
+    } else if (type === 'assign') {
+      alert(`Opening manual tasker assignor for ${currentTargetTask.id}`);
+    }
+  }
+
+  // Confirmation modal triggers with 10m lock safeguard
+  function requestPauseConfirmation() {
+    document.getElementById('action-dropdown').classList.add('hidden');
+    pendingActionType = currentTargetTask.status === 'Paused' ? 'Resume' : 'Pause';
+    
+    document.getElementById('confirm-modal-title').textContent = `${pendingActionType} Task Confirmation`;
+    document.getElementById('modal-task-target').textContent = `${currentTargetTask.name} (${currentTargetTask.id})`;
+    document.getElementById('modal-execute-btn').textContent = `Authorize ${pendingActionType}`;
+    
+    // Reset checkbox
+    const check = document.getElementById('confirm-ack');
+    check.checked = false;
+    document.getElementById('modal-execute-btn').disabled = true;
+    document.getElementById('modal-execute-btn').classList.add('opacity-50', 'cursor-not-allowed');
+
+    document.getElementById('confirmation-modal').classList.remove('hidden');
+  }
+
+  function requestCloseConfirmation() {
+    document.getElementById('action-dropdown').classList.add('hidden');
+    pendingActionType = 'Close';
+    
+    document.getElementById('confirm-modal-title').textContent = `Close & Terminate Task`;
+    document.getElementById('modal-task-target').textContent = `${currentTargetTask.name} (${currentTargetTask.id})`;
+    document.getElementById('modal-execute-btn').textContent = `Authorize Permanent Closure`;
+
+    const check = document.getElementById('confirm-ack');
+    check.checked = false;
+    document.getElementById('modal-execute-btn').disabled = true;
+    document.getElementById('modal-execute-btn').classList.add('opacity-50', 'cursor-not-allowed');
+
+    document.getElementById('confirmation-modal').classList.remove('hidden');
+  }
+
+  function closeConfirmationModal() {
+    document.getElementById('confirmation-modal').classList.add('hidden');
+  }
+
+  // Handle acknowledge checkbox
+  document.getElementById('confirm-ack').addEventListener('change', function(e) {
+    const btn = document.getElementById('modal-execute-btn');
+    if (e.target.checked) {
+      btn.disabled = false;
+      btn.classList.remove('opacity-50', 'cursor-not-allowed');
+    } else {
+      btn.disabled = true;
+      btn.classList.add('opacity-50', 'cursor-not-allowed');
+    }
+  });
+
+  function executeConfirmedAction() {
+    alert(`State updated successfully: ${pendingActionType} enacted on ${currentTargetTask.id}. In-flight 10m reservations are protected.`);
+    closeConfirmationModal();
+  }
+
+  // Detail Drawer toggle
+  function viewTaskDetail(id, title, client, reward, req, comp, status) {
+    currentTargetTask = { id, name: title, status };
+    document.getElementById('detail-drawer-id').textContent = id;
+    document.getElementById('detail-drawer-title').textContent = title;
+    document.getElementById('detail-drawer-client').textContent = client;
+    document.getElementById('detail-drawer-reward').innerHTML = `&#8358;${reward}`;
+    document.getElementById('detail-drawer-progress').textContent = `${comp} / ${req}`;
+
+    const drawer = document.getElementById('detail-drawer');
+    drawer.classList.remove('translate-x-full');
+  }
+
+  function closeDetailDrawer() {
+    document.getElementById('detail-drawer').classList.add('translate-x-full');
+  }
+
+  // Create Task form submission
+  function handleCreateTask(e) {
+    e.preventDefault();
+    alert('Task successfully deployed! Escrow has been committed and task is published to eligible Nigerian workers.');
+    document.getElementById('create-task-modal').classList.add('hidden');
+  }
+
+  // Quick reset filters
+  function resetFilters() {
+    document.getElementById('task-search-input').value = '';
+    document.getElementById('filter-status').value = 'All';
+    document.getElementById('filter-platform').value = 'All';
+    document.getElementById('filter-category').value = 'All';
+    document.getElementById('filter-tier').value = 'All';
+    document.getElementById('filter-client').value = 'All';
+  }
+</script></main></div></body></html>

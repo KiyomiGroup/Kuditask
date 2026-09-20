@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'secondary-container': '#8af5be', 'inverse-primary': '#93d5ad', 'surface-bright': '#faf8ff', 'on-primary-fixed-variant': '#095133', 'outline-variant': '#bfc9c0', 'on-background': '#131b2e', 'primary-fixed-dim': '#93d5ad', 'surface-variant': '#dae2fd', 'surface-container-highest': '#dae2fd', 'surface-dim': '#d2d9f4', 'on-secondary-fixed': '#002113', 'on-error': '#ffffff', 'secondary-fixed-dim': '#71dba6', 'inverse-surface': '#283044', 'on-secondary-fixed-variant': '#005235', 'on-tertiary': '#ffffff', 'primary-fixed': '#aef1c8', 'error': '#ba1a1a', 'on-primary-fixed': '#002111', 'surface-container-lowest': '#ffffff', 'on-primary-container': '#7fc099', 'error-container': '#ffdad6', 'surface-container': '#eaedff', 'surface-container-high': '#e2e7ff', 'on-secondary-container': '#00714b', 'on-surface': '#131b2e', 'background': '#faf8ff', 'secondary-fixed': '#8df7c1', 'inverse-on-surface': '#eef0ff', 'primary-container': '#054f31', 'on-tertiary-container': '#31c98f', 'tertiary': '#003623', 'on-tertiary-fixed': '#002113', 'tertiary-fixed': '#6ffbbe', 'on-surface-variant': '#404942', 'tertiary-container': '#004f34', 'surface-container-low': '#f2f3ff', 'outline': '#707972', 'on-tertiary-fixed-variant': '#005236', 'on-error-container': '#93000a', 'tertiary-fixed-dim': '#4edea3', 'on-secondary': '#ffffff', 'on-primary': '#ffffff', 'surface-tint': '#2a6a49', 'surface': '#faf8ff', 'secondary': '#006c47', 'primary': '#003620' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-lg': '1.5rem', 'space-xl': '2.5rem', 'gutter-desktop': '1.5rem', 'margin': '1rem', 'margin-desktop': '2.5rem', 'space-xs': '0.25rem', 'gutter': '1rem', 'space-md': '1rem', 'space-sm': '0.5rem' }, fontFamily: { 'headline-md': ['Space Grotesk'], 'label-md': ['Space Grotesk'], 'label-lg': ['Space Grotesk'], 'currency-display': ['Space Grotesk'], 'headline-lg-mobile': ['Space Grotesk'], 'headline-xl-mobile': ['Space Grotesk'], 'body-md': ['Plus Jakarta Sans'], 'title-md': ['Plus Jakarta Sans'], 'headline-lg': ['Space Grotesk'], 'headline-sm': ['Space Grotesk'], 'body-lg': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'headline-xl': ['Space Grotesk'], 'label-sm': ['Space Grotesk'], 'title-sm': ['Plus Jakarta Sans'] }, fontSize: { 'headline-md': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', fontWeight: '600' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'currency-display': ['36px', { lineHeight: '44px', fontWeight: '700' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '700' }], 'headline-xl-mobile': ['30px', { lineHeight: '36px', fontWeight: '700' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'title-md': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', fontWeight: '700' }], 'headline-sm': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'headline-xl': ['40px', { lineHeight: '48px', fontWeight: '700' }], 'label-sm': ['10px', { lineHeight: '14px', fontWeight: '700' }], 'title-sm': ['16px', { lineHeight: '24px', fontWeight: '600' }] } } } };</script><style>@layer base { html, body { margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-2"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Open menu" class="w-12 h-12 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-surface-container-low active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container bg-primary-container/10 px-1.5 py-0.5 rounded">Ops Admin</span></div><h1 class="font-title-sm text-title-sm text-on-surface truncate">Verification</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-12 h-12 flex items-center justify-center rounded-xl text-on-surface-variant hover:bg-surface-container-low active:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-3 right-3 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full">
+<section class="px-gutter pt-space-sm pb-space-xs flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Live Verification Desk</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span class="font-label-sm text-label-sm">42 Pending Submissions</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Queue Audit</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Avg review: 1m 24s</span>
+</div>
+</section>
+<!-- SEARCH BAR -->
+<section class="px-gutter mt-space-sm">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-12 pl-11 pr-10 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-colors shadow-sm" id="queue-search-input" placeholder="Search Tasker handle or task..." type="text"/>
+<button aria-label="Clear search" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface p-1" id="clear-search-btn">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</section>
+<!-- HORIZONTAL FILTER PILL BAR -->
+<section class="mt-space-sm">
+<div class="flex items-center gap-space-xs px-gutter overflow-x-auto no-scrollbar py-1 text-nowrap" id="filter-pills">
+<button class="filter-pill active px-3.5 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary-container text-on-primary flex items-center gap-1.5" data-filter="all">
+<span>All</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-fixed text-on-primary-fixed font-bold text-[10px]">42</span>
+</button>
+<button class="filter-pill px-3.5 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container flex items-center gap-1.5" data-filter="new">
+<span>New</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-semibold text-[10px]">18</span>
+</button>
+<button class="filter-pill px-3.5 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container flex items-center gap-1.5" data-filter="priority">
+<span class="material-symbols-outlined text-[14px] text-secondary">star</span>
+<span>High Priority</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-semibold text-[10px]">8</span>
+</button>
+<button class="filter-pill px-3.5 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container flex items-center gap-1.5" data-filter="flagged">
+<span class="material-symbols-outlined text-[14px] text-error">flag</span>
+<span>Flagged</span>
+<span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-semibold text-[10px]">4</span>
+</button>
+<button class="filter-pill px-3.5 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container flex items-center gap-1.5" data-filter="recent">
+<span>Recently Submitted</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant font-semibold text-[10px]">12</span>
+</button>
+</div>
+</section>
+<!-- CARDS FEED -->
+<section class="px-gutter mt-space-md flex flex-col gap-space-md pb-space-xl" id="cards-container">
+<!-- CARD 1: Standard Pending -->
+<article class="verification-card bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden" data-category="new" data-handle="@amara_tasks" data-task="Instagram Follow">
+<!-- Top Meta Row -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-primary-container shrink-0">
+            AK
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate">Amara K.</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px]">Tier 2</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">@amara_tasks • 5 min ago</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-md text-headline-md text-primary-container font-bold">₦10</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Escrow Locked</span>
+</div>
+</div>
+<!-- Task Details Row -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">photo_camera</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Instagram Follow</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Pending Verification
+        </span>
+</div>
+<!-- Proof Thumbnail Preview & Timer Lock -->
+<div class="grid grid-cols-12 gap-space-sm items-center bg-surface-container/40 p-2.5 rounded-xl">
+<div class="col-span-4 relative rounded-lg overflow-hidden bg-surface-container aspect-square shadow-inner">
+<img alt="Instagram follow proof screenshot" class="w-full h-full object-cover" data-alt="Smartphone screen showing Nigerian Instagram business profile with active green Following button, user handle @amara_tasks visible in comments, modern sleek app interface, crisp lighting, high fidelity details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTfaOwuthdmNwSpFE--O8tJmykrKkV67lkILLLG9Bg11gtm62v8oEgJ4dT4KRBLV4X0sON2-qA1qQUXKtkZAvZbgwKb8YjD2-swC1quGiwSD1_kn2JIr1hcZNsMNzgNguorceyie8eDiwESpiIac2y2m-T-GIEsXdG_qpZ-_zcW8_6t3Oe9VzR_TCJvz-t4jItsHKN8MI6l3CEtEFn3L61dB0Du-ot42gJ4JU7w6HM88Y5mC_z1rMJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end p-1">
+<span class="material-symbols-outlined text-surface-container-lowest text-[16px]">zoom_in</span>
+</div>
+</div>
+<div class="col-span-8 flex flex-col justify-between h-full py-0.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Reservation Hold</span>
+<div class="inline-flex items-center gap-1.5 text-error mt-0.5">
+<span class="material-symbols-outlined text-[18px] animate-pulse">schedule</span>
+<span class="font-label-md text-label-md font-bold tracking-tight">4m 18s left in lock</span>
+</div>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-2 leading-tight">
+            Single target verified: account followed, notification bell enabled as requested.
+          </p>
+</div>
+</div>
+<!-- Action Area -->
+<button class="w-full h-12 rounded-xl bg-primary-container hover:bg-secondary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-all" onclick="triggerReviewModal('Amara K.', '@amara_tasks', 'Instagram Follow', '₦10', '4m 18s')" type="button">
+<span>Review Submission</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</article>
+<!-- CARD 2: Flagged / Suspect Submission -->
+<article class="verification-card bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden" data-category="flagged" data-handle="@chidi_99" data-task="Facebook Like">
+<!-- High-Priority Warning Ribbon -->
+<div class="bg-error-container text-on-error-container px-3 py-1.5 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-error font-bold">warning</span>
+<span class="font-label-md text-label-md font-bold">Flagged: Hash Match Suspect</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest text-error px-1.5 py-0.2 rounded font-bold">99.4% Match</span>
+</div>
+<!-- Meta Row -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-error-container/60 text-error flex items-center justify-center font-headline-sm text-headline-sm shrink-0">
+            CO
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate">Chidi Okafor</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Tier 4</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">@chidi_99 • 12 min ago</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-md text-headline-md text-primary-container font-bold">₦20</span>
+<span class="font-label-sm text-[10px] text-error uppercase font-semibold">Payment Frozen</span>
+</div>
+</div>
+<!-- Task Details -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">thumb_up</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Facebook Like</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm">
+          Fraud Warning
+        </span>
+</div>
+<!-- Suspicious Proof Thumbnail Preview -->
+<div class="grid grid-cols-12 gap-space-sm items-center bg-error-container/20 p-2.5 rounded-xl">
+<div class="col-span-4 relative rounded-lg overflow-hidden bg-surface-container aspect-square shadow-inner">
+<img alt="Flagged Facebook like proof" class="w-full h-full object-cover" data-alt="Digital screenshot of a Facebook post with like button highlighted in caution amber, pixel analysis bounding boxes showing duplicate metadata markers, tactical fintech security dashboard overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLlTVZJ4YlAUfnPMcyO5YeEr_kffPf4-3A1MCmDG179v9hJ9K0hDev56x2xDDJol6TkY8zcCWjhtXPyy-eMg50AQVOeigMgdj5ytbQ4mLpOnhYIoYIoxUi6vZ_S2-R0xz8V0JvxIM5g_usHOg1xTQlBGHzGNmyW4YP8ZnETG-vvjcdZG38gUW6AMe0TiFmM1H93zo9IN0U4w7rYP355GQ5MD8Gh8UMG-NqWWvi46LAliDix6KrXD4G"/>
+<div class="absolute top-1 right-1 bg-error text-on-error rounded-full p-0.5">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+</div>
+</div>
+<div class="col-span-8 flex flex-col justify-between h-full py-0.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-error font-bold">Duplicate Perceptual Hash</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5 leading-snug">
+              Identical image uploaded by tasker <span class="font-semibold text-on-surface">@sammy_t</span> 44 mins prior.
+            </span>
+</div>
+<div class="inline-flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">fingerprint</span>
+<span class="font-label-sm text-[10px]">Hash: 8f3c...b04e</span>
+</div>
+</div>
+</div>
+<!-- Alert Button -->
+<button class="w-full h-12 rounded-xl bg-error hover:bg-error/90 text-on-error font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-all" onclick="triggerReviewModal('Chidi Okafor', '@chidi_99', 'Facebook Like', '₦20', 'SUSPECT FRAUD')" type="button">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+<span>Review Flagged Proof</span>
+</button>
+</article>
+<!-- CARD 3: High Priority -->
+<article class="verification-card bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden" data-category="priority" data-handle="@tunde_worker" data-task="App Review &amp; Rating">
+<!-- Priority Badge Tag -->
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">workspace_premium</span>
+          High Value Payout (₦50)
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tier 1 Fast-track</span>
+</div>
+<!-- Top Meta Row -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-headline-sm text-headline-sm text-primary-container shrink-0">
+            BA
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate">Babatunde A.</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Tier 1</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">@tunde_worker • 15 min ago</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-md text-headline-md text-primary font-bold">₦50</span>
+<span class="font-label-sm text-[10px] text-secondary uppercase font-semibold">Priority Queue</span>
+</div>
+</div>
+<!-- Task Details Row -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">rate_review</span>
+<span class="font-label-md text-label-md text-on-surface truncate">App Review &amp; Rating</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm">
+          Pending Verification
+        </span>
+</div>
+<!-- Proof Preview -->
+<div class="grid grid-cols-12 gap-space-sm items-center bg-surface-container/40 p-2.5 rounded-xl">
+<div class="col-span-4 relative rounded-lg overflow-hidden bg-surface-container aspect-square shadow-inner">
+<img alt="Play Store review screenshot" class="w-full h-full object-cover" data-alt="Google Play Store store rating review card with 5 gold stars and thoughtful text testimonial written by Babatunde, clear Android system status bar visible, crisp contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1abciPKS8QlfAjMjl3hxnSyQwYI_88D_Xl5OS8WRF2X7n1PD6FcdW6XS-3nlSUq26cbhX1jyID-6mQiKQmY3nxpWaEvsyKEPTVuS3O0o71llT-CA0D3KH-WN7-x_y6WROa5cPrGJRbUad6ML3IPdVhJoTYa5YmdHf9hfUDePzohwudvbcaDyfwExUXrTq2oTbYnWNUAVDakA_r1L18iHukP40AjaGnqmR5FsKK3U_Q6O6kN1r_458"/>
+<div class="absolute bottom-1 right-1 bg-surface-container-lowest/90 px-1 py-0.5 rounded font-label-sm text-[9px] text-on-surface font-bold">5 Stars</div>
+</div>
+<div class="col-span-8 flex flex-col justify-between h-full py-0.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Detailed Review Text</span>
+<p class="font-body-sm text-[11px] text-on-surface mt-0.5 line-clamp-2 leading-tight italic">
+              "Fastest payout microtasking app in Lagos. Smooth interface and reliable deposits."
+            </p>
+</div>
+<div class="inline-flex items-center gap-1 text-on-surface-variant text-[11px]">
+<span class="material-symbols-outlined text-[14px]">smartphone</span>
+<span>Samsung SM-A536B • Android 14</span>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full h-12 rounded-xl bg-primary-container hover:bg-secondary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-all" onclick="triggerReviewModal('Babatunde A.', '@tunde_worker', 'App Review &amp; Rating', '₦50', '8m 42s')" type="button">
+<span>Review Submission</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</article>
+<!-- CARD 4: Standard Repost -->
+<article class="verification-card bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden" data-category="recent" data-handle="@ngozi_work" data-task="X (Twitter) Repost">
+<!-- Top Meta Row -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center font-headline-sm text-headline-sm text-secondary-container text-on-secondary-container font-bold shrink-0">
+            NE
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate">Ngozi Eze</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px]">Tier 3</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">@ngozi_work • 22 min ago</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-md text-headline-md text-primary-container font-bold">₦15</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Escrow Locked</span>
+</div>
+</div>
+<!-- Task Details Row -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-2 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">repeat</span>
+<span class="font-label-md text-label-md text-on-surface truncate">X (Twitter) Repost</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm">
+          Pending Verification
+        </span>
+</div>
+<!-- Proof Preview -->
+<div class="grid grid-cols-12 gap-space-sm items-center bg-surface-container/40 p-2.5 rounded-xl">
+<div class="col-span-4 relative rounded-lg overflow-hidden bg-surface-container aspect-square shadow-inner">
+<img alt="X repost proof screenshot" class="w-full h-full object-cover" data-alt="Mobile display showing an official corporate marketing post on X Twitter retweeted with green repost icon highlighted, status bar visible, clean dark mode UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEhF-bxB2KoOCqS-a4AOGwKNuWSLwerz4nsgUokGlL7Io7yhsP1Sa2w5iwqVW2jJWiZ2UaR4_g3OCz7BCBF63IDt7a2gj7mrB9zdfYl_UqK3ARmPszWd1ehpia5z-nUImaBOIoRiX6dQfTaJAdoAvIeqk0unqqi9Wao7-hPTnm58_ihdjWmNSZnmIfGQUGHAK1ucSEy6wyhtm7-ZnOQde49EdlbKRg2ibU6VHyyAQq7jynm8GHi8Gm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end p-1">
+<span class="material-symbols-outlined text-surface-container-lowest text-[16px]">verified</span>
+</div>
+</div>
+<div class="col-span-8 flex flex-col justify-between h-full py-0.5">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Profile Match Check</span>
+<p class="font-body-sm text-[11px] text-on-surface mt-0.5 line-clamp-2 leading-tight">
+              Handle matches registered profile. Original campaign tag `#FintechNaija` confirmed present.
+            </p>
+</div>
+<div class="inline-flex items-center gap-1 text-secondary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Auto-checked OCR: Valid</span>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full h-12 rounded-xl bg-primary-container hover:bg-secondary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-all" onclick="triggerReviewModal('Ngozi Eze', '@ngozi_work', 'X (Twitter) Repost', '₦15', '14m 10s')" type="button">
+<span>Review Submission</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</article>
+<!-- Interactive Empty State (shown when filters find 0 items) -->
+<div class="hidden flex-col items-center justify-center text-center py-12 px-space-md bg-surface-container-lowest rounded-xl shadow-sm" id="queue-empty-state">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-3">
+<span class="material-symbols-outlined text-[32px]">task_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Queue Cleared!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-1">
+        No pending task submissions match your criteria. You're fully caught up on this queue segment.
+      </p>
+<button class="mt-space-md px-5 py-2.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md" onclick="resetFilters()">
+        Reset Filters
+      </button>
+</div>
+</section>
+<!-- QUICK REVIEW BOTTOM SHEET MODAL (TACTILE FINTECH INTERFACE) -->
+<div class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-200 flex flex-col justify-end" id="review-sheet">
+<!-- Backdrop Scrim -->
+<div class="absolute inset-0 bg-on-background/60 backdrop-blur-sm transition-opacity" id="sheet-backdrop" onclick="closeReviewSheet()"></div>
+<!-- Sheet Container -->
+<div class="relative w-full bg-surface-container-lowest rounded-t-2xl shadow-xl transform translate-y-full transition-transform duration-300 max-h-[751px] overflow-y-auto pointer-events-auto p-space-md flex flex-col gap-space-md" id="sheet-body">
+<!-- Drag Handle -->
+<div class="w-12 h-1.5 rounded-full bg-surface-variant mx-auto -mt-1 mb-1"></div>
+<!-- Modal Header -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Verification Terminal</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold" id="modal-task-name">Review Task Proof</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="modal-tasker-meta">Tasker handle • Tier</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="closeReviewSheet()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Quick Proof Preview Inset -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">attachment</span>
+            Submitted Media Proof
+          </span>
+<span class="text-error font-bold font-label-sm" id="modal-lock-timer">4m 18s</span>
+</div>
+<div class="w-full h-44 rounded-lg bg-surface-container relative overflow-hidden flex items-center justify-center">
+<img alt="Full proof screenshot view" class="w-full h-full object-contain" data-alt="High resolution inspectable proof-of-work screenshot on an iPhone screen, showing verified follow action with high digital fidelity, clear typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS2b778rDKMYwSfTvImgDenx3qKQdqv9UkqOxyPYNGhd7cG8smhHdPdIZgPeqS4BeASxZyroUAIfDfhqKfOG3ROv6IsXOsoy1E3X-4yi-NJL3lb5o4dlMWjFVc_nET0A8ckjEi4nT9idbBT0tjz0xS67Dmg-1zzs9OdsTOEx68Se8Tu7pmeEwkBr1HuGqhrmKReM48HY7r5O1tWDQjq-5mYV91lvlbfXOU6NKue3fASXm4cU-3bVZM"/>
+<div class="absolute bottom-2 right-2 px-2 py-1 rounded bg-black/70 text-white font-label-sm text-[10px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">open_in_full</span>
+            Tap to Expand
+          </div>
+</div>
+</div>
+<!-- Financial Escrow Breakdown -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Instant Payout</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold" id="modal-reward-amount">₦10.00</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fraud Risk Score</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">shield_with_heart</span>
+<span class="font-label-md text-label-md font-bold">Low (0.02)</span>
+</div>
+</div>
+</div>
+<!-- Fast Action Reject / Approve Buttons -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs pb-safe">
+<button class="h-14 rounded-xl bg-error-container hover:bg-error-container/80 text-on-error-container font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform" onclick="handleDecision('reject')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+<span>Reject</span>
+</button>
+<button class="h-14 rounded-xl bg-primary-container hover:bg-secondary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-md" onclick="handleDecision('approve')" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Approve Payout</span>
+</button>
+</div>
+</div>
+</div>
+<!-- FLOATING FEEDBACK TOAST -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-all duration-300 transform translate-y-3 px-4 py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md shadow-xl flex items-center gap-2" id="audit-toast">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span>
+<span id="toast-message">Submission Approved • ₦10 released</span>
+</div>
+</div>
+<script>
+  // Filter Pill Interactions
+  const filterPills = document.querySelectorAll('.filter-pill');
+  const cards = document.querySelectorAll('.verification-card');
+  const searchInput = document.getElementById('queue-search-input');
+  const clearBtn = document.getElementById('clear-search-btn');
+  const emptyState = document.getElementById('queue-empty-state');
+
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      filterPills.forEach(p => {
+        p.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      pill.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+
+      applyFilters();
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    if (e.target.value.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+    applyFilters();
+  });
+
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearBtn.classList.add('hidden');
+    applyFilters();
+  });
+
+  function applyFilters() {
+    const activeFilter = document.querySelector('.filter-pill.bg-primary-container')?.dataset.filter || 'all';
+    const query = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cat = card.dataset.category;
+      const handle = card.dataset.handle.toLowerCase();
+      const task = card.dataset.task.toLowerCase();
+
+      const matchesFilter = (activeFilter === 'all') || (cat === activeFilter);
+      const matchesSearch = query === '' || handle.includes(query) || task.includes(query);
+
+      if (matchesFilter && matchesSearch) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+    } else {
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+    }
+  }
+
+  function resetFilters() {
+    searchInput.value = '';
+    clearBtn.classList.add('hidden');
+    const allPill = document.querySelector('[data-filter="all"]');
+    if (allPill) allPill.click();
+  }
+
+  // Modal Review Sheet Logic
+  const sheet = document.getElementById('review-sheet');
+  const sheetBody = document.getElementById('sheet-body');
+  let currentCardRef = null;
+
+  function triggerReviewModal(name, handle, task, reward, timer) {
+    document.getElementById('modal-task-name').textContent = task;
+    document.getElementById('modal-tasker-meta').textContent = `${name} (${handle})`;
+    document.getElementById('modal-reward-amount').textContent = reward;
+    document.getElementById('modal-lock-timer').textContent = timer;
+
+    sheet.classList.remove('pointer-events-none', 'opacity-0');
+    sheet.classList.add('pointer-events-auto', 'opacity-100');
+    sheetBody.classList.remove('translate-y-full');
+  }
+
+  function closeReviewSheet() {
+    sheetBody.classList.add('translate-y-full');
+    setTimeout(() => {
+      sheet.classList.add('pointer-events-none', 'opacity-0');
+      sheet.classList.remove('pointer-events-auto', 'opacity-100');
+    }, 250);
+  }
+
+  function handleDecision(decision) {
+    closeReviewSheet();
+    const isApprove = decision === 'approve';
+    const toast = document.getElementById('audit-toast');
+    const toastMsg = document.getElementById('toast-message');
+
+    toastMsg.textContent = isApprove 
+      ? 'Payout Released • Wallet Credited' 
+      : 'Submission Rejected • Tasker Notified';
+
+    toast.classList.remove('opacity-0', 'translate-y-3');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'translate-y-3');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 2800);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-gutter flex items-center justify-between"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg text-on-surface-variant transition-colors hover:text-on-surface" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm tracking-tight">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg text-on-surface-variant transition-colors hover:text-on-surface" data-path="taskers" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="font-label-sm text-label-sm tracking-tight">Taskers</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg text-on-surface-variant transition-colors hover:text-on-surface" data-path="tasks" href="#"><span class="material-symbols-outlined text-[22px]">assignment</span><span class="font-label-sm text-label-sm tracking-tight">Tasks</span></a><a aria-current="page" class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg transition-colors text-primary-container font-semibold" data-path="verification" href="#"><span class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">verified_user</span><span class="absolute -top-1 -right-3 font-label-sm text-[9px] leading-tight px-1 py-0.2 bg-secondary text-on-secondary rounded-full font-bold min-w-[16px] text-center shadow-sm">42</span></span><span class="font-label-sm text-label-sm tracking-tight">Verify</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] px-1 rounded-lg text-on-surface-variant transition-colors hover:text-on-surface" data-path="more-options" href="#"><span class="material-symbols-outlined text-[22px]">more_horiz</span><span class="font-label-sm text-label-sm tracking-tight">More</span></a></div></nav></body></html>
