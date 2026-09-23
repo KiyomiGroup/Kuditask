@@ -199,6 +199,7 @@ model TaskerProfile {
   submissions    TaskSubmission[]
   fraudViolations FraudViolation[]
   wallet         Wallet?
+  walletTransactions WalletTransaction[]
   withdrawals    Withdrawal[]
 }
 
@@ -451,6 +452,7 @@ model WalletTransaction {
   walletId    String
   wallet      Wallet       @relation(fields: [walletId], references: [id])
   taskerId    String       // denormalized for direct querying/audit without joining through Wallet
+  tasker      TaskerProfile @relation(fields: [taskerId], references: [id])
   type        WalletTxType
   amountKobo  Int          // positive for TASK_REWARD/ADJUSTMENT-up, negative for DEDUCTION/WITHDRAWAL/ADJUSTMENT-down
   balanceBeforeKobo Int    // availableBalanceKobo immediately before this transaction
