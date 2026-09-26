@@ -21,7 +21,7 @@ export function PublicLayout({ children }: { children: ReactNode }) {
           </Link>
           <nav className="flex items-center gap-space-md text-label-lg font-label-lg text-on-surface-variant">
             <Link href="/how-it-works" className="hover:text-on-surface">How it works</Link>
-            <Link href="/become-a-tasker" className="hover:text-on-surface">Become a Tasker</Link>
+            <Link href="/register" className="hover:text-on-surface">Become a Tasker</Link>
             <Link href="/client" className="hover:text-on-surface">For Clients</Link>
             <Link href="/login" className="hover:text-on-surface">Log in</Link>
           </nav>

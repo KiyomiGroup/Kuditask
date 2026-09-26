@@ -3,6 +3,7 @@ import { ReactNode, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Modal } from "@/components/ui/Modal";
+import { LogoutButton } from "@/components/ui/LogoutButton";
 
 // Desktop sidebar — the full 11-item nav from the spec, in order.
 const ADMIN_NAV_FULL = [
@@ -49,6 +50,7 @@ export function AdminLayout({ children }: { children: ReactNode }) {
             </Link>
           );
         })}
+        <LogoutButton className="mt-auto flex items-center rounded-md px-space-sm py-space-sm text-label-lg font-label-lg text-on-primary-container hover:bg-primary/40 text-left" />
       </aside>
 
       <div className="flex-1 flex flex-col min-h-screen">

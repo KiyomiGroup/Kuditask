@@ -2,6 +2,7 @@
 import { ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { LogoutButton } from "@/components/ui/LogoutButton";
 
 // Tasker mobile bottom nav — exactly the five items the spec names, no more.
 const TASKER_NAV = [
@@ -38,6 +39,7 @@ export function TaskerLayout({ children }: { children: ReactNode }) {
             </Link>
           );
         })}
+        <LogoutButton className="mt-auto flex items-center rounded-md px-space-sm py-space-sm text-label-lg font-label-lg text-on-primary-container hover:bg-primary/40 text-left" />
       </aside>
 
       <div className="flex-1 flex flex-col min-h-screen">
